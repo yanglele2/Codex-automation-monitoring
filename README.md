@@ -28,6 +28,10 @@ http://127.0.0.1:8765
 Vercel deployment is supported as a read-only configuration view. It cannot read
 the local machine's logs, state markers, or crontab at runtime.
 
+The hosted Vercel panel can display a local status snapshot when
+`export-status-snapshot.sh` runs. The default crontab uploads a snapshot every
+4 hours by committing `status-snapshot.json` and pushing to GitHub.
+
 ## Install Crontab
 
 ```bash

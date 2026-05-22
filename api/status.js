@@ -99,6 +99,19 @@ function nextRun(schedule, now) {
 
 module.exports = function handler(req, res) {
   const now = new Date();
+  const snapshot = readText("status-snapshot.json");
+  if (snapshot) {
+    try {
+      const payload = JSON.parse(snapshot);
+      payload.served_at = now.toISOString();
+      res.setHeader("Cache-Control", "no-store");
+      res.status(200).json(payload);
+      return;
+    } catch {
+      // Fall through to configuration-only status.
+    }
+  }
+
   const cron = readText("crontab.with-catchup") || fallbackCron;
   const cronJobs = parseCron(cron);
   const jobs = Object.keys({ ...labels, ...cronJobs }).sort().map((job) => {
