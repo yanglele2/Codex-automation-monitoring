@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>自动化任务监控</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1>自动化任务监控</h1>
+          <p id="clock">--</p>
+        </div>
+        <div class="toolbar">
+          <button id="refresh" type="button" title="刷新">刷新</button>
+          <span id="sync" class="pill">crontab --</span>
+        </div>
+      </header>
+
+      <section class="metrics" id="metrics"></section>
+
+      <section class="layout">
+        <div class="panel">
+          <div class="panel-head">
+            <h2>任务</h2>
+            <span id="job-count"></span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>状态</th>
+                  <th>任务</th>
+                  <th>调度</th>
+                  <th>最近完成</th>
+                  <th>校验</th>
+                  <th>下次运行</th>
+                </tr>
+              </thead>
+              <tbody id="jobs"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="panel detail">
+          <div class="panel-head">
+            <h2 id="detail-title">详情</h2>
+            <span id="detail-status" class="pill">--</span>
+          </div>
+          <dl id="detail-meta"></dl>
+          <div class="links" id="detail-links"></div>
+          <pre id="log"></pre>
+        </aside>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
