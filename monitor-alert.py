@@ -134,10 +134,13 @@ def build_prompt(issues: list[dict]) -> str:
     return textwrap.dedent(f"""
     你是自动化任务监控告警 Agent。请立即在 Notion 中创建一条告警提醒。
 
-    目标位置：优先写入或创建在这个金融项目页面下的「自动化任务告警」数据库：
+    目标位置：写入这个金融项目页面下名为「自动化任务告警」的 Notion database：
     {NOTION_PROJECT_URL}
 
-    如果该数据库不存在，请在该页面下创建一个普通告警页面也可以。告警内容必须包含：
+    重要：必须写入 database 记录，不要创建普通 Notion page 作为替代。
+    如果找不到「自动化任务告警」database，或者它不是 database，请直接失败并说明原因，不要创建任何告警页面。
+
+    告警记录必须包含：
     - 标题：`自动化任务告警 - YYYY-MM-DD HH:mm`
     - 严重程度：critical 或 warning
     - 状态：open
