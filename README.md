@@ -32,6 +32,12 @@ The hosted Vercel panel can display a local status snapshot when
 `export-status-snapshot.sh` runs. The default crontab uploads a snapshot every
 4 hours by committing `status-snapshot.json` and pushing to GitHub.
 
+## Notion Alerts
+
+`monitor-alert.sh` runs every 10 minutes. It checks the local dashboard API,
+job failure/warning states, crontab drift, and stale snapshots. When it finds a
+problem, it sends a deduplicated Notion alert through Codex.
+
 ## Install Crontab
 
 ```bash
