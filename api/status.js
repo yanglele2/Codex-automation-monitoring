@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const base = process.cwd();
+const base = path.resolve(__dirname, "..");
 const labels = {
   "financial-news": "金融消息",
   "earnings-search": "财报搜集",
