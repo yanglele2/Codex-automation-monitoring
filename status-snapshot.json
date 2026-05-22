@@ -9,31 +9,35 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-05-22.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-05-23.done",
       "done_today": false,
-      "duration_seconds": 253,
+      "duration_seconds": 201,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-05-21T23:04:14",
-      "last_start": "2026-05-21T23:00:01",
-      "last_validation": null,
+      "last_done": "2026-05-22T23:03:22",
+      "last_start": "2026-05-22T23:00:01",
+      "last_validation": {
+        "detail": "create_count=1 notion_read_count=7 notion_write_or_update_count=1",
+        "status": "passed",
+        "time": null
+      },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-05-22T23:00:00",
+      "next_run": "2026-05-23T23:00:00",
       "notion_pages": [
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/54aefec491604d6fa657c46f77a25117?db=06266436dd554154be19a00475973012&pvs=21\",",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/88e139937bbe445eb54fd886e2e3fab9?db=4cf9dd08d838442d8a162046904a1904&pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/b393f5ce3ef7406a870ed529cbd1b0cf?db=e15cff47bdb14b8d8ba7d2a6ca03928b&pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/b393f5ce3ef7406a870ed529cbd1b0cf?db=e15cff47bdb14b8d8ba7d2a6ca03928b&pvs=21\",",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/b4d9ec69be8844019efeaca55af18475?db=4c70b7be52b34f83844b1304dd7e635f&pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/bee18a9273a14bab81617050f7b7f529?db=78ea12adbf0a459f8a0b1a34b0abae0e&pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/cf611d1852494addadf09c6082007102?db=e2fe9e711c784180ba1241e091c1a50d&pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/cf611d1852494addadf09c6082007102?db=e2fe9e711c784180ba1241e091c1a50d&pvs=21\",",
         "https://www.notion.so/78ea12adbf0a459f8a0b1a34b0abae0e?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/88e2641094754371a9a44b368b75f5b6?pvs=21",
-        "https://www.notion.so/8d6431c1921e4d16aca33181c7080379?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
+        "https://www.notion.so/78ea12adbf0a459f8a0b1a34b0abae0e?pvs=21\",",
         "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/b4f850b429ce4a489f3919fd2d8028a1?pvs=21",
-        "https://www.notion.so/fbc627d633af442c961069c0006cbc2f?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
+        "https://www.notion.so/fbc627d633af442c961069c0006cbc2f?pvs=21"
       ],
       "prompt_exists": true,
       "retry_count": 0,
@@ -47,36 +51,36 @@
       "skipped_count": 0,
       "status": "idle",
       "tail": [
-        "codex",
-        "去重搜索没有发现 `NVDA` 或 `TGT` 在 `2026-05-20` 的既有财报页。接下来我会写入两条美股记录，正文保留来源链接和“无法确认具体 EMA 数值”的技术面限定；A股、港股本次不写入。",
-        "mcp: codex_apps/notion_notion-create-pages started",
-        "mcp: codex_apps/notion_notion-create-pages (completed)",
-        "codex",
-        "两条美股记录已写入 Notion。最后我会做一次读取校验，确认页面属性和正文已落库。",
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
         "codex",
-        "已完成本次财报搜集并写入 Notion 美股财报记录库：",
+        "已完成本次财报搜集，窗口为北京时间 `2026-05-21 23:00 ~ 2026-05-22 23:00`。",
         "",
-        "- [NVIDIA（NVDA）— 2026-05-20 财报](https://www.notion.so/367040fc8033810e8d09eccd0ec4ab5a)",
-        "- [Target（TGT）— 2026-05-20 财报](https://www.notion.so/367040fc8033810d93aad67bcac204da)",
+        "写入 Notion「美股财报记录」2 条：",
         "",
-        "本次窗口按北京时间 `2026-05-20 23:00` 至 `2026-05-21 23:00` 执行。已完成去重检查，未发现同日期重复记录；写入后也已读取校验页面属性和正文。",
+        "- [Workday（WDAY）— 2026-05-21 财报](https://www.notion.so/368040fc80338131a91bfd1600083650)",
+        "- [Booz Allen Hamilton（BAH）— 2026-05-22 财报](https://www.notion.so/368040fc80338109800fdc14c3311c8c)",
         "",
-        "A股、港股本次未写入：公开检索中没有找到同时满足“窗口内披露时间可核验 + 核心财报数据 + 电话会/管理层/市场反应之一可靠公开信息”的高置信度候选，因此按规则跳过。",
+        "校验结果：已在写入前按标题/代码/日期查重，未发现重复；写入后已逐条回读页面，确认标题、股票代码、日期、AI总结与正文四个小节均已落库。",
+        "",
+        "A股、港股本次未写入：公开检索没有找到同时满足“窗口内披露时间可核验 + 核心财报数据 + 电话会/管理层表述/市场反应之一可靠公开信息”的高置信度候选，因此按规则跳过。",
         "tokens used",
-        "209,889",
-        "已完成本次财报搜集并写入 Notion 美股财报记录库：",
+        "153,652",
+        "已完成本次财报搜集，窗口为北京时间 `2026-05-21 23:00 ~ 2026-05-22 23:00`。",
         "",
-        "- [NVIDIA（NVDA）— 2026-05-20 财报](https://www.notion.so/367040fc8033810e8d09eccd0ec4ab5a)",
-        "- [Target（TGT）— 2026-05-20 财报](https://www.notion.so/367040fc8033810d93aad67bcac204da)",
+        "写入 Notion「美股财报记录」2 条：",
         "",
-        "本次窗口按北京时间 `2026-05-20 23:00` 至 `2026-05-21 23:00` 执行。已完成去重检查，未发现同日期重复记录；写入后也已读取校验页面属性和正文。",
+        "- [Workday（WDAY）— 2026-05-21 财报](https://www.notion.so/368040fc80338131a91bfd1600083650)",
+        "- [Booz Allen Hamilton（BAH）— 2026-05-22 财报](https://www.notion.so/368040fc80338109800fdc14c3311c8c)",
         "",
-        "A股、港股本次未写入：公开检索中没有找到同时满足“窗口内披露时间可核验 + 核心财报数据 + 电话会/管理层/市场反应之一可靠公开信息”的高置信度候选，因此按规则跳过。",
-        "===== 2026-05-21 23:04:14 earnings-search done ====="
+        "校验结果：已在写入前按标题/代码/日期查重，未发现重复；写入后已逐条回读页面，确认标题、股票代码、日期、AI总结与正文四个小节均已落库。",
+        "",
+        "A股、港股本次未写入：公开检索没有找到同时满足“窗口内披露时间可核验 + 核心财报数据 + 电话会/管理层表述/市场反应之一可靠公开信息”的高置信度候选，因此按规则跳过。",
+        "===== 2026-05-22 23:03:22 earnings-search validation start =====",
+        "validation passed: create_count=1 notion_read_count=7 notion_write_or_update_count=1",
+        "===== 2026-05-22 23:03:22 earnings-search done ====="
       ]
     },
     {
@@ -86,8 +90,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-05-22.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-05-23.done",
+      "done_today": false,
       "duration_seconds": 321,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -113,7 +117,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "使用的官方来源包括 NVIDIA Newsroom 与 Target 官方 Press Release；每个季度的来源链接已写入对应 Notion 页面。",
         "tokens used",
@@ -154,8 +158,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-05-22.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-05-23.done",
+      "done_today": false,
       "duration_seconds": 305,
       "hard_error": false,
       "job": "financial-news",
@@ -191,7 +195,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 币圈每日消息：https://www.notion.so/368040fc803381eab51ed56d09becd15",
         "",
@@ -232,8 +236,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-05-22.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-05-23.done",
+      "done_today": false,
       "duration_seconds": 510,
       "hard_error": false,
       "job": "sector-rotation",
@@ -269,7 +273,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "  https://www.notion.so/368040fc803381b5ba70c3945ed05ee1  ",
         "  校验通过：标题、分析日期、AI总结、相对强弱、资金流向、热点板块、事件驱动、强势个股与正文均已落库。",
@@ -310,8 +314,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-05-22.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-05-23.done",
+      "done_today": false,
       "duration_seconds": 345,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -342,7 +346,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_notion-create-pages started",
         "mcp: codex_apps/notion_notion-create-pages (completed)",
@@ -383,8 +387,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-05-22.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-05-23.done",
+      "done_today": false,
       "duration_seconds": 62,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -412,7 +416,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 板块排名匹配：公用事业 +1.03%、可选消费 +0.77% 领涨；必需消费 -1.63%、能源 -1.01% 领跌。",
         "- 热点驱动匹配：油价从早盘高位回落，推动美股从早盘跌势中修复并收涨。",
@@ -453,8 +457,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-22.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-23.done",
+      "done_today": false,
       "duration_seconds": 500,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -489,7 +493,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_notion-create-pages started",
         "mcp: codex_apps/notion_notion-create-pages (completed)",
@@ -530,8 +534,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-05-22.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-05-23.done",
+      "done_today": false,
       "duration_seconds": 240,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -557,7 +561,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "页面已创建，接下来我会重新读取刚写入的页面，确认标题属性和正文都已落库。",
@@ -592,6 +596,6 @@
       ]
     }
   ],
-  "now": "2026-05-22T20:05:01.423962",
+  "now": "2026-05-23T00:05:02.100780",
   "snapshot_source": "local-cron"
 }
