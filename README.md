@@ -13,6 +13,8 @@ Local scheduled Codex automation jobs for financial research workflows.
 
 ## Dashboard
 
+Local live dashboard:
+
 ```bash
 python3 /root/codex-automations/dashboard/server.py
 ```
@@ -22,6 +24,9 @@ Then open:
 ```text
 http://127.0.0.1:8765
 ```
+
+Vercel deployment is supported as a read-only configuration view. It cannot read
+the local machine's logs, state markers, or crontab at runtime.
 
 ## Install Crontab
 
