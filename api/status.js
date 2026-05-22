@@ -13,6 +13,30 @@ const labels = {
   "us-sector-opportunity": "美股机会洞察",
 };
 
+const fallbackCron = `0 19 * * * /root/codex-automations/run.sh financial-news
+*/10 19-21 * * * /root/codex-automations/run-if-missed.sh financial-news 19:00 '*' 180
+
+0 23 * * 2-6 /root/codex-automations/run.sh earnings-search
+*/10 23 * * 2-6 /root/codex-automations/run-if-missed.sh earnings-search 23:00 2,3,4,5,6 59
+
+0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals
+*/10 8-10 * * 2-6 /root/codex-automations/run-if-missed.sh stock-crypto-fundamentals 08:00 2,3,4,5,6 180
+
+30 8 * * * /root/codex-automations/run.sh sector-trend-data
+*/10 8-11 * * * /root/codex-automations/run-if-missed.sh sector-trend-data 08:30 '*' 180
+
+0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review
+*/10 10-12 * * 2-6 /root/codex-automations/run-if-missed.sh sector-trend-us-close-review 10:00 2,3,4,5,6 180
+
+30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation
+*/10 10-13 * * 2-6 /root/codex-automations/run-if-missed.sh sector-rotation 10:30 2,3,4,5,6 180
+
+0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare
+*/10 12-14 * * 2-6 /root/codex-automations/run-if-missed.sh earnings-vertical-compare 12:00 2,3,4,5,6 180
+
+0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity
+*/10 13-15 * * 2-6 /root/codex-automations/run-if-missed.sh us-sector-opportunity 13:00 2,3,4,5,6 180`;
+
 function readText(file) {
   try {
     return fs.readFileSync(path.join(base, file), "utf8");
@@ -75,7 +99,7 @@ function nextRun(schedule, now) {
 
 module.exports = function handler(req, res) {
   const now = new Date();
-  const cron = readText("crontab.with-catchup");
+  const cron = readText("crontab.with-catchup") || fallbackCron;
   const cronJobs = parseCron(cron);
   const jobs = Object.keys({ ...labels, ...cronJobs }).sort().map((job) => {
     const promptPath = path.join(base, "prompts", `${job}.md`);
