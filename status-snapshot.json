@@ -9,7 +9,7 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-05-25.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-05-26.done",
       "done_today": false,
       "duration_seconds": 209,
       "hard_error": false,
@@ -89,7 +89,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-05-25.done",
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-05-26.done",
       "done_today": false,
       "duration_seconds": 194,
       "hard_error": false,
@@ -157,8 +157,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-05-25.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-05-26.done",
+      "done_today": false,
       "duration_seconds": 293,
       "hard_error": false,
       "job": "financial-news",
@@ -194,7 +194,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "- 美股：[2026-05-25 每日消息](https://www.notion.so/36b040fc8033811c9764c26194b416f2)  ",
@@ -235,7 +235,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-05-25.done",
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-05-26.done",
       "done_today": false,
       "duration_seconds": 475,
       "hard_error": false,
@@ -313,8 +313,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-05-25.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-05-26.done",
+      "done_today": false,
       "duration_seconds": 184,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -346,7 +346,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "校验结果：已重新读取页面，确认 `标题`、`日期=2026-05-24`、`AI总结` 和正文内容均已写入目标币圈板块记录库。",
         "",
@@ -387,7 +387,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-05-25.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-05-26.done",
       "done_today": false,
       "duration_seconds": 221,
       "hard_error": false,
@@ -457,7 +457,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-25.done",
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-26.done",
       "done_today": false,
       "duration_seconds": 517,
       "hard_error": false,
@@ -538,7 +538,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-05-25.done",
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-05-26.done",
       "done_today": false,
       "duration_seconds": 152,
       "hard_error": false,
@@ -602,6 +602,6 @@
       ]
     }
   ],
-  "now": "2026-05-25T20:05:01.962290",
+  "now": "2026-05-26T00:05:01.616676",
   "snapshot_source": "local-cron"
 }
