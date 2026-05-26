@@ -459,34 +459,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-26.done",
       "done_today": false,
-      "duration_seconds": 517,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-05-23T08:08:38",
-      "last_start": "2026-05-23T08:00:01",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=21 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-05-26T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-05-26T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/369040fc80338115b9e4ec30498a35c5",
-        "https://www.notion.so/369040fc803381c89a23c31fb1c1bb1f",
-        "https://www.notion.so/369040fc803381d59dacee29b4123974",
-        "https://www.notion.so/369040fc803381d8b8f0c0778b9ef7be",
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-05-27T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -497,38 +480,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "- 港股：[3690 - 美团](https://www.notion.so/369040fc803381c89a23c31fb1c1bb1f)  ",
-        "  校验：属性含 `研究日期=2026-05-23`、`评级=中性`、正文已落库，库内可检索。",
-        "",
-        "- A股：[300750 - 宁德时代](https://www.notion.so/369040fc803381d8b8f0c0778b9ef7be)  ",
-        "  校验：属性含 `研究日期=2026-05-23`、`评级=推荐`、正文已落库，库内可检索。",
-        "",
-        "- 加密货币：[USDT - Tether](https://www.notion.so/369040fc803381d59dacee29b4123974)  ",
-        "  校验：属性含 `研究日期=2026-05-23`、`评级=中性`、正文已落库，库内可检索。",
-        "",
-        "说明：Notion SQL 查询工具在本次会话返回不可用错误，我改用库内搜索完成 90 天去重和写入后复查。加密实时价格工具调用未成功，USDT 报告中已明确改用 CoinGecko / CoinMarketCap 与 Tether 官方披露交叉验证。",
-        "tokens used",
-        "280,000",
-        "已完成 4 份报告并写入 Notion，均已回读页面属性和正文，并做了写入后库内搜索校验。",
-        "",
-        "- 美股：[AMZN - Amazon.com](https://www.notion.so/369040fc80338115b9e4ec30498a35c5)  ",
-        "  校验：属性含 `研究日期=2026-05-23`、`评级=推荐`、正文已落库，库内可检索。",
-        "",
-        "- 港股：[3690 - 美团](https://www.notion.so/369040fc803381c89a23c31fb1c1bb1f)  ",
-        "  校验：属性含 `研究日期=2026-05-23`、`评级=中性`、正文已落库，库内可检索。",
-        "",
-        "- A股：[300750 - 宁德时代](https://www.notion.so/369040fc803381d8b8f0c0778b9ef7be)  ",
-        "  校验：属性含 `研究日期=2026-05-23`、`评级=推荐`、正文已落库，库内可检索。",
-        "",
-        "- 加密货币：[USDT - Tether](https://www.notion.so/369040fc803381d59dacee29b4123974)  ",
-        "  校验：属性含 `研究日期=2026-05-23`、`评级=中性`、正文已落库，库内可检索。",
-        "",
-        "说明：Notion SQL 查询工具在本次会话返回不可用错误，我改用库内搜索完成 90 天去重和写入后复查。加密实时价格工具调用未成功，USDT 报告中已明确改用 CoinGecko / CoinMarketCap 与 Tether 官方披露交叉验证。",
-        "===== 2026-05-23 08:08:38 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=21 notion_write_or_update_count=4",
-        "===== 2026-05-23 08:08:38 stock-crypto-fundamentals done ====="
+        "===== 2026-05-26 08:00:01 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -602,6 +556,6 @@
       ]
     }
   ],
-  "now": "2026-05-26T04:05:01.861662",
+  "now": "2026-05-26T08:05:01.446098",
   "snapshot_source": "local-cron"
 }
