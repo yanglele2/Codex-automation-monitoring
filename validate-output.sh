@@ -108,7 +108,9 @@ case "$JOB" in
       echo "validation failed: expected a Notion update or an explicit no-op reason" >&2
       exit 1
     fi
-    require_notion_read
+    if ! allow_explicit_noop; then
+      require_notion_read
+    fi
     ;;
   *)
     if [ "$CREATE_COUNT" -lt 1 ] && [ "$NOTION_WRITE_OR_UPDATE_COUNT" -lt 1 ] && ! allow_explicit_noop; then
