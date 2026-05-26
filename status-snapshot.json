@@ -9,25 +9,23 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-05-26.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-05-27.done",
       "done_today": false,
-      "duration_seconds": 209,
+      "duration_seconds": 243,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-05-23T23:03:30",
-      "last_start": "2026-05-23T23:00:01",
+      "last_done": "2026-05-26T23:04:04",
+      "last_start": "2026-05-26T23:00:01",
       "last_validation": {
-        "detail": "create_count=0 notion_read_count=6 notion_write_or_update_count=0",
+        "detail": "create_count=2 notion_read_count=7 notion_write_or_update_count=2",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-05-26T23:00:00",
+      "next_run": "2026-05-27T23:00:00",
       "notion_pages": [
-        "https://www.notion.so/368040fc80338109800fdc14c3311c8c",
-        "https://www.notion.so/368040fc80338131a91bfd1600083650",
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/88e139937bbe445eb54fd886e2e3fab9?db=4cf9dd08d838442d8a162046904a1904&pvs=21",
@@ -36,6 +34,7 @@
         "https://www.notion.so/78ea12adbf0a459f8a0b1a34b0abae0e?pvs=21",
         "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21",
         "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21\",",
+        "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21\\\",\",",
         "https://www.notion.so/fbc627d633af442c961069c0006cbc2f?pvs=21"
       ],
       "prompt_exists": true,
@@ -50,36 +49,36 @@
       "skipped_count": 0,
       "status": "idle",
       "tail": [
-        "web search: ",
-        "web search: https://www.businesswire.com/news/home/20260522380094/en/BJs-Wholesale-Club-Holdings-Inc.-Announces-First-Quarter-Fiscal-2026-Results",
-        "codex",
-        "已执行本次财报搜集，窗口为北京时间 `2026-05-22 23:00 ~ 2026-05-23 23:00`。",
         "",
-        "本次未写入 Notion。原因是公开检索没有找到同时满足“窗口内披露时间可核验 + 核心财报数据 + 电话会/管理层表述/市场反应之一可靠公开信息”的候选公司。",
+        "- 美股：`AutoZone（AZO）— 2026-05-26 财报`",
+        "  已写入 **美股财报记录**，页面已重新读取校验成功。属性包含标题、日期 `2026-05-26`、股票代码 `AZO`、季度 `2026Q3`、AI总结；正文包含 4 个指定小节。",
+        "- 港股：`小米集团-W（01810 HK）— 2026-05-26 财报`",
+        "  已写入 **港股财报记录**，页面已重新读取校验成功。属性包含标题、日期 `2026-05-26`、AI总结；正文包含 4 个指定小节。",
         "",
-        "校验结果：",
-        "- Notion 三个目标数据库均可访问，schema 已读取正常。",
-        "- 美股：Benzinga 显示 2026-05-22 有 GSL、BAH、BJ、FRO 等财报记录，但可核验的披露/电话会时间主要在美东 2026-05-22 盘前，对应北京时间 2026-05-22 晚间，早于本轮 `23:00` 起点；例如 GSL 为 `May 22, 2026 08:00 ET`，BJ 电话会为 `8:30 A.M. Eastern Time`。因此按本轮窗口跳过。来源：Benzinga、GSL、BJ、BAH。([benzinga.com](https://www.benzinga.com/earnings)) ([globenewswire.com](https://www.globenewswire.com/news-release/2026/05/22/3300083/0/en/global-ship-lease-reports-results-for-the-first-quarter-of-2026.html?utm_source=openai)) ([businesswire.com](https://www.businesswire.com/news/home/20260522380094/en/BJs-Wholesale-Club-Holdings-Inc.-Announces-First-Quarter-Fiscal-2026-Results)) ([businesswire.com](https://www.businesswire.com/news/home/20260522055202/en/Booz-Allen-Hamilton-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2026-Results?utm_source=openai))",
-        "- 港股：HKEX “Results Announcements” 最新 7 日列表中最新一条为联想集团 `22/05/2026 07:32`，早于本轮窗口；未见 2026-05-22 23:00 之后的高置信度业绩公告。([www1.hkexnews.hk](https://www1.hkexnews.hk/search/predefineddoc.xhtml?predefineddocuments=7))",
-        "- A股：巨潮资讯为深交所法定信息披露平台；公开检索未找到 2026-05-22 23:00 之后可核验的 A股定期报告/业绩快报候选。([cninfo.com.cn](https://www.cninfo.com.cn/?lang=en))",
+        "去重校验：写入前已在对应 Notion 数据库内按公司/代码/日期关键词搜索，未发现同日重复记录。",
         "",
-        "未创建页面，因此没有新增页面需要落库复查；本次结果为“无候选可写入”，不是执行失败。",
+        "A股本次跳过：公开检索未找到窗口内同时满足“披露时间可核验 + 核心财报数据 + 电话会/管理层表述/市场反应之一可靠公开信息”的 A 股候选。",
+        "",
+        "主要来源包括 AutoZone 官方新闻稿、AutoZone IR、Investing.com、MarketBeat、小米官方业绩公告、小米 IR、36氪与 IT之家。",
         "tokens used",
-        "160,230",
-        "已执行本次财报搜集，窗口为北京时间 `2026-05-22 23:00 ~ 2026-05-23 23:00`。",
+        "206,627",
+        "已完成本次财报搜集，窗口为北京时间 `2026-05-25 23:00 ~ 2026-05-26 23:00`。",
         "",
-        "本次未写入 Notion。原因是公开检索没有找到同时满足“窗口内披露时间可核验 + 核心财报数据 + 电话会/管理层表述/市场反应之一可靠公开信息”的候选公司。",
+        "写入 Notion 2 条：",
         "",
-        "校验结果：",
-        "- Notion 三个目标数据库均可访问，schema 已读取正常。",
-        "- 美股：Benzinga 显示 2026-05-22 有 GSL、BAH、BJ、FRO 等财报记录，但可核验的披露/电话会时间主要在美东 2026-05-22 盘前，对应北京时间 2026-05-22 晚间，早于本轮 `23:00` 起点；例如 GSL 为 `May 22, 2026 08:00 ET`，BJ 电话会为 `8:30 A.M. Eastern Time`。因此按本轮窗口跳过。来源：Benzinga、GSL、BJ、BAH。([benzinga.com](https://www.benzinga.com/earnings)) ([globenewswire.com](https://www.globenewswire.com/news-release/2026/05/22/3300083/0/en/global-ship-lease-reports-results-for-the-first-quarter-of-2026.html?utm_source=openai)) ([businesswire.com](https://www.businesswire.com/news/home/20260522380094/en/BJs-Wholesale-Club-Holdings-Inc.-Announces-First-Quarter-Fiscal-2026-Results)) ([businesswire.com](https://www.businesswire.com/news/home/20260522055202/en/Booz-Allen-Hamilton-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2026-Results?utm_source=openai))",
-        "- 港股：HKEX “Results Announcements” 最新 7 日列表中最新一条为联想集团 `22/05/2026 07:32`，早于本轮窗口；未见 2026-05-22 23:00 之后的高置信度业绩公告。([www1.hkexnews.hk](https://www1.hkexnews.hk/search/predefineddoc.xhtml?predefineddocuments=7))",
-        "- A股：巨潮资讯为深交所法定信息披露平台；公开检索未找到 2026-05-22 23:00 之后可核验的 A股定期报告/业绩快报候选。([cninfo.com.cn](https://www.cninfo.com.cn/?lang=en))",
+        "- 美股：`AutoZone（AZO）— 2026-05-26 财报`",
+        "  已写入 **美股财报记录**，页面已重新读取校验成功。属性包含标题、日期 `2026-05-26`、股票代码 `AZO`、季度 `2026Q3`、AI总结；正文包含 4 个指定小节。",
+        "- 港股：`小米集团-W（01810 HK）— 2026-05-26 财报`",
+        "  已写入 **港股财报记录**，页面已重新读取校验成功。属性包含标题、日期 `2026-05-26`、AI总结；正文包含 4 个指定小节。",
         "",
-        "未创建页面，因此没有新增页面需要落库复查；本次结果为“无候选可写入”，不是执行失败。",
-        "===== 2026-05-23 23:03:30 earnings-search validation start =====",
-        "validation passed: create_count=0 notion_read_count=6 notion_write_or_update_count=0",
-        "===== 2026-05-23 23:03:30 earnings-search done ====="
+        "去重校验：写入前已在对应 Notion 数据库内按公司/代码/日期关键词搜索，未发现同日重复记录。",
+        "",
+        "A股本次跳过：公开检索未找到窗口内同时满足“披露时间可核验 + 核心财报数据 + 电话会/管理层表述/市场反应之一可靠公开信息”的 A 股候选。",
+        "",
+        "主要来源包括 AutoZone 官方新闻稿、AutoZone IR、Investing.com、MarketBeat、小米官方业绩公告、小米 IR、36氪与 IT之家。",
+        "===== 2026-05-26 23:04:04 earnings-search validation start =====",
+        "validation passed: create_count=2 notion_read_count=7 notion_write_or_update_count=2",
+        "===== 2026-05-26 23:04:04 earnings-search done ====="
       ]
     },
     {
@@ -89,8 +88,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-05-26.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-05-27.done",
+      "done_today": false,
       "duration_seconds": 111,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -116,7 +115,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "**写回与验证**",
@@ -157,8 +156,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-05-26.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-05-27.done",
+      "done_today": false,
       "duration_seconds": 311,
       "hard_error": false,
       "job": "financial-news",
@@ -194,7 +193,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- `AI总结` 均已写入",
         "- 正文均包含：市场概览、重大消息、板块消息、个股/代币消息、宏观与政策、验证摘要",
@@ -235,8 +234,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-05-26.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-05-27.done",
+      "done_today": false,
       "duration_seconds": 442,
       "hard_error": false,
       "job": "sector-rotation",
@@ -272,7 +271,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成本次板块轮动分析，只读取 Notion 内部板块记录，未修改本地文件、脚本或配置，未写入币圈相关数据库。",
@@ -313,8 +312,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-05-26.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-05-27.done",
+      "done_today": false,
       "duration_seconds": 223,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -346,7 +345,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_notion-create-pages started",
         "mcp: codex_apps/notion_notion-create-pages (completed)",
@@ -387,8 +386,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-05-26.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-05-27.done",
+      "done_today": false,
       "duration_seconds": 19,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -416,7 +415,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "/bin/bash -lc \"date '+%Y-%m-%d %H:%M:%S %Z %z' && python - <<'PY'",
         "from datetime import date, timedelta",
@@ -457,8 +456,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-26.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-27.done",
+      "done_today": false,
       "duration_seconds": 439,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -497,7 +496,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "- A股：601398 - 工商银行，已校验  ",
@@ -538,8 +537,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-05-26.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-05-27.done",
+      "done_today": false,
       "duration_seconds": 165,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -567,7 +566,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 写入前已在目标库查询 `2026-05-26`，未发现同名页面",
         "- 已创建页面：`2026-05-26`",
@@ -602,6 +601,6 @@
       ]
     }
   ],
-  "now": "2026-05-26T20:05:01.584391",
+  "now": "2026-05-27T00:05:01.905805",
   "snapshot_source": "local-cron"
 }
