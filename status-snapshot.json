@@ -9,23 +9,25 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-05-27.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-05-28.done",
       "done_today": false,
-      "duration_seconds": 243,
+      "duration_seconds": 264,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-05-26T23:04:04",
-      "last_start": "2026-05-26T23:00:01",
+      "last_done": "2026-05-27T23:04:25",
+      "last_start": "2026-05-27T23:00:01",
       "last_validation": {
-        "detail": "create_count=2 notion_read_count=7 notion_write_or_update_count=2",
+        "detail": "create_count=1 notion_read_count=10 notion_write_or_update_count=1",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-05-27T23:00:00",
+      "next_run": "2026-05-28T23:00:00",
       "notion_pages": [
+        "https://www.notion.so/36d040fc803381ddad22cc93d1026b4d",
+        "https://www.notion.so/36d040fc803381f0995fff2592ca7241",
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/88e139937bbe445eb54fd886e2e3fab9?db=4cf9dd08d838442d8a162046904a1904&pvs=21",
@@ -33,8 +35,6 @@
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/bee18a9273a14bab81617050f7b7f529?db=78ea12adbf0a459f8a0b1a34b0abae0e&pvs=21",
         "https://www.notion.so/78ea12adbf0a459f8a0b1a34b0abae0e?pvs=21",
         "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21",
-        "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21\",",
-        "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21\\\",\",",
         "https://www.notion.so/fbc627d633af442c961069c0006cbc2f?pvs=21"
       ],
       "prompt_exists": true,
@@ -50,35 +50,35 @@
       "status": "idle",
       "tail": [
         "",
-        "- 美股：`AutoZone（AZO）— 2026-05-26 财报`",
-        "  已写入 **美股财报记录**，页面已重新读取校验成功。属性包含标题、日期 `2026-05-26`、股票代码 `AZO`、季度 `2026Q3`、AI总结；正文包含 4 个指定小节。",
-        "- 港股：`小米集团-W（01810 HK）— 2026-05-26 财报`",
-        "  已写入 **港股财报记录**，页面已重新读取校验成功。属性包含标题、日期 `2026-05-26`、AI总结；正文包含 4 个指定小节。",
+        "本次窗口：`2026-05-26 23:00 ~ 2026-05-27 23:00` 北京时间。",
         "",
-        "去重校验：写入前已在对应 Notion 数据库内按公司/代码/日期关键词搜索，未发现同日重复记录。",
+        "写入美股财报记录 2 条：",
+        "- Zscaler（ZS）— 2026-05-26 财报  ",
+        "  https://www.notion.so/36d040fc803381ddad22cc93d1026b4d",
+        "- Agora（API）— 2026-05-26 财报  ",
+        "  https://www.notion.so/36d040fc803381f0995fff2592ca7241",
         "",
-        "A股本次跳过：公开检索未找到窗口内同时满足“披露时间可核验 + 核心财报数据 + 电话会/管理层表述/市场反应之一可靠公开信息”的 A 股候选。",
+        "校验结果：已重新读取两条新建页面，确认均落在 `美股财报记录` data source 下；`标题`、`股票代码`、`季度`、`日期`、`AI总结` 属性均已保存，正文也包含 `核心财报数据`、`电话会议要点`、`市场反应`、`技术面分析（Vegas EMA）` 四个小节。",
         "",
-        "主要来源包括 AutoZone 官方新闻稿、AutoZone IR、Investing.com、MarketBeat、小米官方业绩公告、小米 IR、36氪与 IT之家。",
+        "A股、港股本次跳过：公开检索未找到同时满足披露时间、核心财报数据、电话会/管理层表述或市场反应的高置信度候选。",
         "tokens used",
-        "206,627",
-        "已完成本次财报搜集，窗口为北京时间 `2026-05-25 23:00 ~ 2026-05-26 23:00`。",
+        "192,987",
+        "已完成本次财报搜集并写入 Notion。",
         "",
-        "写入 Notion 2 条：",
+        "本次窗口：`2026-05-26 23:00 ~ 2026-05-27 23:00` 北京时间。",
         "",
-        "- 美股：`AutoZone（AZO）— 2026-05-26 财报`",
-        "  已写入 **美股财报记录**，页面已重新读取校验成功。属性包含标题、日期 `2026-05-26`、股票代码 `AZO`、季度 `2026Q3`、AI总结；正文包含 4 个指定小节。",
-        "- 港股：`小米集团-W（01810 HK）— 2026-05-26 财报`",
-        "  已写入 **港股财报记录**，页面已重新读取校验成功。属性包含标题、日期 `2026-05-26`、AI总结；正文包含 4 个指定小节。",
+        "写入美股财报记录 2 条：",
+        "- Zscaler（ZS）— 2026-05-26 财报  ",
+        "  https://www.notion.so/36d040fc803381ddad22cc93d1026b4d",
+        "- Agora（API）— 2026-05-26 财报  ",
+        "  https://www.notion.so/36d040fc803381f0995fff2592ca7241",
         "",
-        "去重校验：写入前已在对应 Notion 数据库内按公司/代码/日期关键词搜索，未发现同日重复记录。",
+        "校验结果：已重新读取两条新建页面，确认均落在 `美股财报记录` data source 下；`标题`、`股票代码`、`季度`、`日期`、`AI总结` 属性均已保存，正文也包含 `核心财报数据`、`电话会议要点`、`市场反应`、`技术面分析（Vegas EMA）` 四个小节。",
         "",
-        "A股本次跳过：公开检索未找到窗口内同时满足“披露时间可核验 + 核心财报数据 + 电话会/管理层表述/市场反应之一可靠公开信息”的 A 股候选。",
-        "",
-        "主要来源包括 AutoZone 官方新闻稿、AutoZone IR、Investing.com、MarketBeat、小米官方业绩公告、小米 IR、36氪与 IT之家。",
-        "===== 2026-05-26 23:04:04 earnings-search validation start =====",
-        "validation passed: create_count=2 notion_read_count=7 notion_write_or_update_count=2",
-        "===== 2026-05-26 23:04:04 earnings-search done ====="
+        "A股、港股本次跳过：公开检索未找到同时满足披露时间、核心财报数据、电话会/管理层表述或市场反应的高置信度候选。",
+        "===== 2026-05-27 23:04:25 earnings-search validation start =====",
+        "validation passed: create_count=1 notion_read_count=10 notion_write_or_update_count=1",
+        "===== 2026-05-27 23:04:25 earnings-search done ====="
       ]
     },
     {
@@ -88,8 +88,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-05-27.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-05-28.done",
+      "done_today": false,
       "duration_seconds": 180,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -115,7 +115,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- AutoZone FY2026 Q1 官方 PDF：https://about.autozone.com/node/28866/pdf",
         "- AutoZone FY2025 Q4 官方发布渠道：https://www.globenewswire.com/news-release/2025/09/23/3154526/3935/en/autozone-4th-quarter-total-company-same-store-sales-increase-5-1-domestic-same-store-sales-increase-4-8-4th-quarter-eps-of-48-71-annual-sales-of-18-9-billion.html",
@@ -156,8 +156,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-05-27.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-05-28.done",
+      "done_today": false,
       "duration_seconds": 335,
       "hard_error": false,
       "job": "financial-news",
@@ -193,7 +193,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
@@ -234,8 +234,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-05-27.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-05-28.done",
+      "done_today": false,
       "duration_seconds": 414,
       "hard_error": false,
       "job": "sector-rotation",
@@ -271,7 +271,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成三份 Notion 板块轮动分析，并已回读校验落库成功。",
@@ -312,8 +312,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-05-27.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-05-28.done",
+      "done_today": false,
       "duration_seconds": 388,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -348,7 +348,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "校验结果：",
@@ -389,8 +389,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-05-27.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-05-28.done",
+      "done_today": false,
       "duration_seconds": 142,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -418,7 +418,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- Reuters / Investing.com",
         "- 新华社英文",
@@ -459,8 +459,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-27.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-28.done",
+      "done_today": false,
       "duration_seconds": 452,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -499,7 +499,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成 4 个市场报告并写入 Notion，均已回读校验页面属性和正文已落库：",
@@ -540,8 +540,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-05-27.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-05-28.done",
+      "done_today": false,
       "duration_seconds": 158,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -569,7 +569,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已创建 `2026-05-27` 洞察页。按要求还需要回读刚创建的页面，确认标题属性和正文都已落库。",
@@ -604,6 +604,6 @@
       ]
     }
   ],
-  "now": "2026-05-27T20:05:01.754967",
+  "now": "2026-05-28T00:05:01.536668",
   "snapshot_source": "local-cron"
 }
