@@ -458,34 +458,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-27.done",
       "done_today": false,
-      "duration_seconds": 439,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-05-26T08:07:20",
-      "last_start": "2026-05-26T08:00:01",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=19 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-05-27T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-05-27T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/36c040fc80338126b972f5d0c1322555",
-        "https://www.notion.so/36c040fc80338168a1f3db7f728639dd",
-        "https://www.notion.so/36c040fc8033819aaad6d71a16a27acc",
-        "https://www.notion.so/36c040fc803381e69652f1888ead0119",
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-05-28T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -496,38 +479,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "",
-        "- A股：601398 - 工商银行，已校验  ",
-        "  https://www.notion.so/36c040fc803381e69652f1888ead0119  ",
-        "  注意：Notion 更新工具两次被取消，正文首句仍保留一个单位自检提示；表格中的正确口径是 `CNY 869.41亿元`。",
-        "",
-        "- 加密货币：SOL - Solana，已校验  ",
-        "  https://www.notion.so/36c040fc8033819aaad6d71a16a27acc",
-        "",
-        "加密实时行情专用 `crypto-price` worker 本轮未暴露为可调用工具，因此使用了 Binance 市场概览、CoinGecko/CoinMarketCap 与 DeFiLlama 口径交叉验证。",
-        "tokens used",
-        "199,239",
-        "已完成 4 个市场的研究并写入 Notion。写入前均按 `2026-05-26 + 标的名称` 做了同日查重，结果为空；写入后均已回读页面确认属性和正文已落库。",
-        "",
-        "- 美股：META - Meta Platforms，已校验  ",
-        "  https://www.notion.so/36c040fc80338126b972f5d0c1322555",
-        "",
-        "- 港股：9988 - 阿里巴巴，已校验  ",
-        "  https://www.notion.so/36c040fc80338168a1f3db7f728639dd",
-        "",
-        "- A股：601398 - 工商银行，已校验  ",
-        "  https://www.notion.so/36c040fc803381e69652f1888ead0119  ",
-        "  注意：Notion 更新工具两次被取消，正文首句仍保留一个单位自检提示；表格中的正确口径是 `CNY 869.41亿元`。",
-        "",
-        "- 加密货币：SOL - Solana，已校验  ",
-        "  https://www.notion.so/36c040fc8033819aaad6d71a16a27acc",
-        "",
-        "加密实时行情专用 `crypto-price` worker 本轮未暴露为可调用工具，因此使用了 Binance 市场概览、CoinGecko/CoinMarketCap 与 DeFiLlama 口径交叉验证。",
-        "===== 2026-05-26 08:07:20 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=19 notion_write_or_update_count=4",
-        "===== 2026-05-26 08:07:20 stock-crypto-fundamentals done ====="
+        "===== 2026-05-27 08:00:01 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -601,6 +555,6 @@
       ]
     }
   ],
-  "now": "2026-05-27T04:05:02.136291",
+  "now": "2026-05-27T08:05:01.802613",
   "snapshot_source": "local-cron"
 }
