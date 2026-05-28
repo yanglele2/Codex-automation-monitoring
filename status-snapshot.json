@@ -461,34 +461,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-28.done",
       "done_today": false,
-      "duration_seconds": 452,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-05-27T08:07:33",
-      "last_start": "2026-05-27T08:00:01",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=17 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-05-28T08:00:02",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-05-28T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/36d040fc803381178e23f55cd784c4f0",
-        "https://www.notion.so/36d040fc80338121bde8da46e41ab0c8",
-        "https://www.notion.so/36d040fc8033817ba627ec63a688e5e9",
-        "https://www.notion.so/36d040fc803381b3917fd00fb0ada360",
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-05-29T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -499,38 +482,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "codex",
-        "已完成 4 个市场报告并写入 Notion，均已回读校验页面属性和正文已落库：",
-        "",
-        "| 市场 | 标的 | 页面 | 校验 |",
-        "| --- | --- | --- | --- |",
-        "| 美股 | AMD - Advanced Micro Devices | https://www.notion.so/36d040fc80338121bde8da46e41ab0c8 | 已确认属性 + 正文 |",
-        "| 港股 | 2318 - 中国平安 | https://www.notion.so/36d040fc803381178e23f55cd784c4f0 | 已确认属性 + 正文 |",
-        "| A股 | 600036 - 招商银行 | https://www.notion.so/36d040fc803381b3917fd00fb0ada360 | 已确认属性 + 正文 |",
-        "| 加密货币 | BTC - Bitcoin | https://www.notion.so/36d040fc8033817ba627ec63a688e5e9 | 已确认属性 + 正文 |",
-        "",
-        "去重检查已执行：4 个库均先查了 90 天历史记录，写入前也按当天日期和标的名称做了重复检索，未发现同日同名记录。",
-        "",
-        "说明：Notion SQL 查询工具运行端不可用，我改用目标 data source 搜索完成去重检查。加密实时价格方面，`crypto-price` worker 未在当前会话暴露，Alpaca BTC/USD 调用返回取消，因此 BTC 价格/市值使用 CoinGecko，并用 Binance 市场概览、DefiLlama、YCharts/Blockchain.com、VanEck 报告交叉验证。主要来源包括 AMD IR、Ping An IR、招商银行 IR、CoinGecko、DefiLlama、Binance market overview。",
-        "tokens used",
-        "236,676",
-        "已完成 4 个市场报告并写入 Notion，均已回读校验页面属性和正文已落库：",
-        "",
-        "| 市场 | 标的 | 页面 | 校验 |",
-        "| --- | --- | --- | --- |",
-        "| 美股 | AMD - Advanced Micro Devices | https://www.notion.so/36d040fc80338121bde8da46e41ab0c8 | 已确认属性 + 正文 |",
-        "| 港股 | 2318 - 中国平安 | https://www.notion.so/36d040fc803381178e23f55cd784c4f0 | 已确认属性 + 正文 |",
-        "| A股 | 600036 - 招商银行 | https://www.notion.so/36d040fc803381b3917fd00fb0ada360 | 已确认属性 + 正文 |",
-        "| 加密货币 | BTC - Bitcoin | https://www.notion.so/36d040fc8033817ba627ec63a688e5e9 | 已确认属性 + 正文 |",
-        "",
-        "去重检查已执行：4 个库均先查了 90 天历史记录，写入前也按当天日期和标的名称做了重复检索，未发现同日同名记录。",
-        "",
-        "说明：Notion SQL 查询工具运行端不可用，我改用目标 data source 搜索完成去重检查。加密实时价格方面，`crypto-price` worker 未在当前会话暴露，Alpaca BTC/USD 调用返回取消，因此 BTC 价格/市值使用 CoinGecko，并用 Binance 市场概览、DefiLlama、YCharts/Blockchain.com、VanEck 报告交叉验证。主要来源包括 AMD IR、Ping An IR、招商银行 IR、CoinGecko、DefiLlama、Binance market overview。",
-        "===== 2026-05-27 08:07:33 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=17 notion_write_or_update_count=4",
-        "===== 2026-05-27 08:07:33 stock-crypto-fundamentals done ====="
+        "===== 2026-05-28 08:00:02 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -604,6 +558,6 @@
       ]
     }
   ],
-  "now": "2026-05-28T04:05:02.015345",
+  "now": "2026-05-28T08:05:01.707935",
   "snapshot_source": "local-cron"
 }
