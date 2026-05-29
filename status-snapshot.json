@@ -465,34 +465,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-29.done",
       "done_today": false,
-      "duration_seconds": 443,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-05-28T08:07:25",
-      "last_start": "2026-05-28T08:00:02",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=18 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-05-29T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-05-29T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/36e040fc80338106adf6ff8ff7a38b73",
-        "https://www.notion.so/36e040fc803381219920fd420e9d0a2b",
-        "https://www.notion.so/36e040fc8033817dbeeef957bc14f02f",
-        "https://www.notion.so/36e040fc8033819b867de8e5ef44079c",
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-05-30T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -503,38 +486,10 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "",
-        "- 加密货币：STETH - Lido Staked Ether  ",
-        "  页面：https://www.notion.so/36e040fc8033819b867de8e5ef44079c  ",
-        "  校验：通过，属性和完整正文可读取。",
-        "",
-        "补充说明：写入前已做 90 天去重和今日同标的重复检查。加密实时行情工具中没有可用的 `crypto-price` worker，Alpaca 加密工具调用返回取消，因此加密报告改用 CoinGecko / CoinMarketCap / DeFiLlama / CoinLore 交叉验证；ADA 当前市值低于 100 亿美元门槛，所以改选未重复且满足门槛的 STETH。",
-        "tokens used",
-        "247,043",
-        "已完成 2026-05-28 的 4 份基本面研究报告，并已写入 Notion。写入后均已重新读取页面，确认属性与正文已落库。",
-        "",
-        "- 美股：MSFT - Microsoft  ",
-        "  页面：https://www.notion.so/36e040fc8033817dbeeef957bc14f02f  ",
-        "  校验：通过，属性和完整正文可读取。",
-        "",
-        "- 港股：0992 - 联想集团  ",
-        "  页面：https://www.notion.so/36e040fc80338106adf6ff8ff7a38b73  ",
-        "  校验：通过，属性和完整正文可读取。",
-        "",
-        "- A股：000858 - 五粮液  ",
-        "  页面：https://www.notion.so/36e040fc803381219920fd420e9d0a2b  ",
-        "  校验：通过，属性和完整正文可读取。",
-        "",
-        "- 加密货币：STETH - Lido Staked Ether  ",
-        "  页面：https://www.notion.so/36e040fc8033819b867de8e5ef44079c  ",
-        "  校验：通过，属性和完整正文可读取。",
-        "",
-        "补充说明：写入前已做 90 天去重和今日同标的重复检查。加密实时行情工具中没有可用的 `crypto-price` worker，Alpaca 加密工具调用返回取消，因此加密报告改用 CoinGecko / CoinMarketCap / DeFiLlama / CoinLore 交叉验证；ADA 当前市值低于 100 亿美元门槛，所以改选未重复且满足门槛的 STETH。",
-        "===== 2026-05-28 08:07:25 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=18 notion_write_or_update_count=4",
-        "===== 2026-05-28 08:07:25 stock-crypto-fundamentals done ====="
+        "===== 2026-05-29 08:00:01 stock-crypto-fundamentals start =====",
+        "===== 2026-05-29 08:00:01 stock-crypto-fundamentals missed check triggered ====="
       ]
     },
     {
@@ -608,6 +563,6 @@
       ]
     }
   ],
-  "now": "2026-05-29T04:05:02.243197",
+  "now": "2026-05-29T08:05:01.811999",
   "snapshot_source": "local-cron"
 }
