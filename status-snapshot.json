@@ -9,27 +9,23 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-05-30.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-05-31.done",
       "done_today": false,
-      "duration_seconds": 274,
+      "duration_seconds": 164,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-05-29T23:04:35",
-      "last_start": "2026-05-29T23:00:01",
+      "last_done": "2026-05-30T23:02:45",
+      "last_start": "2026-05-30T23:00:01",
       "last_validation": {
-        "detail": "create_count=1 notion_read_count=15 notion_write_or_update_count=1",
+        "detail": "create_count=0 notion_read_count=10 notion_write_or_update_count=0",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-05-30T23:00:00",
+      "next_run": "2026-06-02T23:00:00",
       "notion_pages": [
-        "https://www.notion.so/36f040fc8033813381acd47ab779dba4",
-        "https://www.notion.so/36f040fc803381409783d26587392a03",
-        "https://www.notion.so/36f040fc8033818e9c94e0af0d98fa9f",
-        "https://www.notion.so/36f040fc803381b3b71bd69751fda04a",
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/88e139937bbe445eb54fd886e2e3fab9?db=4cf9dd08d838442d8a162046904a1904&pvs=21",
@@ -51,36 +47,36 @@
       "skipped_count": 0,
       "status": "idle",
       "tail": [
+        "- 三个目标数据库均可访问：美股、A股、港股财报记录库已读取到 schema。",
+        "- 已检索工作区每日市场页和历史财报库。",
+        "- 已检查目标库现有记录；未发现需要写入但未落库的合格候选。",
+        "- 因本次没有创建页面，故无“新建页面属性与正文落库”可复核项。",
         "",
-        "A股、港股本次跳过：公开检索结果主要集中在 4月末或 5月中旬披露，未检索到落在本次北京时间窗口内且同时满足“披露时间可核验 + 核心财报数据 + 电话会/管理层/市场反应信息”的高置信度候选。",
+        "无候选原因：",
+        "- 美股主要候选如 Dell、MongoDB、Okta、HealthEquity、Ambarella、PagerDuty 等披露时间均为 **2026-05-28 美东盘后**，折算为北京时间约 **2026-05-29 清晨**，不在本次窗口内。",
+        "- Rocky Mountain Chocolate Factory 在窗口内仅有 **2026-05-29 16:05 ET** 的电话会安排公告，核心财务数据来自 **2026-05-14** 预披露，不满足“窗口内披露财报且可提取核心数据”的写入标准。",
+        "- A股、港股公开检索与工作区线索未找到在本次窗口内同时满足“披露时间可确认 + 核心财务数据可提取 + 至少一项电话会/管理层表述/市场反应可靠公开信息”的公司。",
         "",
-        "主要来源包括公司/IR 或新闻稿页面，以及电话会和市场反应公开报道：Dell/Yahoo Finance、Investing.com、Motley Fool；Costco IR、EBC、Stocktwits；MongoDB/PRNewswire、Benzinga、Investing.com；ePlus/PRNewswire、Motley Fool、StockTitan、TipRanks。",
+        "参考核验来源包括 Dell、MongoDB、Okta、HealthEquity、Ambarella 官方/Newswire 财报页，以及 RMCF GlobeNewswire/Markets Insider 公告页。",
         "tokens used",
-        "185,025",
-        "已完成本次“财报搜集”。",
+        "196,604",
+        "本次运行按北京时间窗口 `2026-05-29 23:00 ~ 2026-05-30 23:00` 执行，结果为：**未创建任何 Notion 财报记录**。",
         "",
-        "窗口：2026-05-28 23:00 至 2026-05-29 23:00（北京时间）",
+        "校验结果：",
+        "- 三个目标数据库均可访问：美股、A股、港股财报记录库已读取到 schema。",
+        "- 已检索工作区每日市场页和历史财报库。",
+        "- 已检查目标库现有记录；未发现需要写入但未落库的合格候选。",
+        "- 因本次没有创建页面，故无“新建页面属性与正文落库”可复核项。",
         "",
-        "写入美股财报记录 4 条，写入前已按公司/代码/日期在目标库检索，未发现重复；写入后已逐条重新读取页面，确认属性和正文均已落库。",
+        "无候选原因：",
+        "- 美股主要候选如 Dell、MongoDB、Okta、HealthEquity、Ambarella、PagerDuty 等披露时间均为 **2026-05-28 美东盘后**，折算为北京时间约 **2026-05-29 清晨**，不在本次窗口内。",
+        "- Rocky Mountain Chocolate Factory 在窗口内仅有 **2026-05-29 16:05 ET** 的电话会安排公告，核心财务数据来自 **2026-05-14** 预披露，不满足“窗口内披露财报且可提取核心数据”的写入标准。",
+        "- A股、港股公开检索与工作区线索未找到在本次窗口内同时满足“披露时间可确认 + 核心财务数据可提取 + 至少一项电话会/管理层表述/市场反应可靠公开信息”的公司。",
         "",
-        "- Dell Technologies（DELL）— 2026-05-28 财报  ",
-        "  https://www.notion.so/36f040fc8033818e9c94e0af0d98fa9f",
-        "",
-        "- Costco Wholesale（COST）— 2026-05-28 财报  ",
-        "  https://www.notion.so/36f040fc8033813381acd47ab779dba4",
-        "",
-        "- MongoDB（MDB）— 2026-05-28 财报  ",
-        "  https://www.notion.so/36f040fc803381409783d26587392a03",
-        "",
-        "- ePlus（PLUS）— 2026-05-28 财报  ",
-        "  https://www.notion.so/36f040fc803381b3b71bd69751fda04a",
-        "",
-        "A股、港股本次跳过：公开检索结果主要集中在 4月末或 5月中旬披露，未检索到落在本次北京时间窗口内且同时满足“披露时间可核验 + 核心财报数据 + 电话会/管理层/市场反应信息”的高置信度候选。",
-        "",
-        "主要来源包括公司/IR 或新闻稿页面，以及电话会和市场反应公开报道：Dell/Yahoo Finance、Investing.com、Motley Fool；Costco IR、EBC、Stocktwits；MongoDB/PRNewswire、Benzinga、Investing.com；ePlus/PRNewswire、Motley Fool、StockTitan、TipRanks。",
-        "===== 2026-05-29 23:04:35 earnings-search validation start =====",
-        "validation passed: create_count=1 notion_read_count=15 notion_write_or_update_count=1",
-        "===== 2026-05-29 23:04:35 earnings-search done ====="
+        "参考核验来源包括 Dell、MongoDB、Okta、HealthEquity、Ambarella 官方/Newswire 财报页，以及 RMCF GlobeNewswire/Markets Insider 公告页。",
+        "===== 2026-05-30 23:02:45 earnings-search validation start =====",
+        "validation passed: create_count=0 notion_read_count=10 notion_write_or_update_count=0",
+        "===== 2026-05-30 23:02:45 earnings-search done ====="
       ]
     },
     {
@@ -90,8 +86,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-05-30.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-05-31.done",
+      "done_today": false,
       "duration_seconds": 283,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -117,7 +113,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- https://www.sec.gov/Archives/edgar/data/1441816/000162828026038798/mdb-043026xex991xrelease.htm",
         "- https://www.eplus.com/who-we-are/investor-relations/press-releases/2026/05/eplus-reports-fourth-quarter-and-fiscal-year-2026-financial-results",
@@ -158,8 +154,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-05-30.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-05-31.done",
+      "done_today": false,
       "duration_seconds": 318,
       "hard_error": false,
       "job": "financial-news",
@@ -195,7 +191,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- A股：已创建并回读成功  ",
         "  https://www.notion.so/370040fc8033815a9e23f94e1bf31f55",
@@ -236,8 +232,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-05-30.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-05-31.done",
+      "done_today": false,
       "duration_seconds": 471,
       "hard_error": false,
       "job": "sector-rotation",
@@ -273,7 +269,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成板块轮动分析并写入 Notion，未读取/写入币圈库，也未修改本地文件或自动化配置。",
@@ -314,8 +310,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-05-30.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-05-31.done",
+      "done_today": false,
       "duration_seconds": 351,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -350,7 +346,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 港股：[2026-05-29 · 港股 板块走势日报](https://www.notion.so/370040fc803381c4b82dd2736e1ba6d3)",
         "- 美股：[2026-05-29 · 美股 板块走势日报](https://www.notion.so/370040fc803381509181d6b16267c62f)",
@@ -391,8 +387,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-05-30.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-05-31.done",
+      "done_today": false,
       "duration_seconds": 142,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -420,7 +416,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_notion-update-page (failed)",
         "user cancelled MCP tool call",
@@ -461,8 +457,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-30.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-31.done",
+      "done_today": false,
       "duration_seconds": 448,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -500,7 +496,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "- A股：600900 - 长江电力  ",
@@ -541,8 +537,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-05-30.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-05-31.done",
+      "done_today": false,
       "duration_seconds": 175,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -570,7 +566,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "链接：https://www.notion.so/370040fc8033819688ffc7ce973858d4",
         "",
@@ -605,6 +601,6 @@
       ]
     }
   ],
-  "now": "2026-05-30T20:05:01.286349",
+  "now": "2026-05-31T00:05:01.504047",
   "snapshot_source": "local-cron"
 }
