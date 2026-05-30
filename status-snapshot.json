@@ -463,34 +463,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-05-30.done",
       "done_today": false,
-      "duration_seconds": 384,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-05-29T08:06:25",
-      "last_start": "2026-05-29T08:00:01",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=17 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-05-30T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-05-30T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/36f040fc8033810e8632dd01001c2422",
-        "https://www.notion.so/36f040fc803381228c46dac6b92ad288",
-        "https://www.notion.so/36f040fc80338143bb74c70be8d87ce4",
-        "https://www.notion.so/36f040fc80338171a968e0ac0a7495c6",
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-02T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -501,38 +484,10 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "codex",
-        "已完成 4 份报告并写入 Notion，且均已回读确认页面属性和正文存在。",
-        "",
-        "| 市场 | 标的 | 写入页面 | 校验 |",
-        "| --- | --- | --- | --- |",
-        "| 美股 | TSM - Taiwan Semiconductor Manufacturing | https://www.notion.so/36f040fc803381228c46dac6b92ad288 | 已确认属性、正文落库 |",
-        "| 港股 | 9618 - 京东集团 | https://www.notion.so/36f040fc80338143bb74c70be8d87ce4 | 已确认属性、正文落库 |",
-        "| A股 | 601899 - 紫金矿业 | https://www.notion.so/36f040fc8033810e8632dd01001c2422 | 已确认属性、正文落库 |",
-        "| 加密货币 | BNB - BNB | https://www.notion.so/36f040fc80338171a968e0ac0a7495c6 | 已确认属性、正文落库 |",
-        "",
-        "去重校验：已对 2026-02-28 至 2026-05-29 的 90 天记录做库内搜索去重，并在写入前按 2026-05-29 + 标的名称做同日重复检查，4 个候选均未发现同日重复记录。",
-        "",
-        "说明：当前环境没有可调用的 `crypto-price` worker，因此 BNB 实时价格优先使用了 Binance 公共行情连接器，并用 CoinGecko、DeFiLlama、BNB Chain 官方来源交叉验证。",
-        "tokens used",
-        "291,726",
-        "已完成 4 份报告并写入 Notion，且均已回读确认页面属性和正文存在。",
-        "",
-        "| 市场 | 标的 | 写入页面 | 校验 |",
-        "| --- | --- | --- | --- |",
-        "| 美股 | TSM - Taiwan Semiconductor Manufacturing | https://www.notion.so/36f040fc803381228c46dac6b92ad288 | 已确认属性、正文落库 |",
-        "| 港股 | 9618 - 京东集团 | https://www.notion.so/36f040fc80338143bb74c70be8d87ce4 | 已确认属性、正文落库 |",
-        "| A股 | 601899 - 紫金矿业 | https://www.notion.so/36f040fc8033810e8632dd01001c2422 | 已确认属性、正文落库 |",
-        "| 加密货币 | BNB - BNB | https://www.notion.so/36f040fc80338171a968e0ac0a7495c6 | 已确认属性、正文落库 |",
-        "",
-        "去重校验：已对 2026-02-28 至 2026-05-29 的 90 天记录做库内搜索去重，并在写入前按 2026-05-29 + 标的名称做同日重复检查，4 个候选均未发现同日重复记录。",
-        "",
-        "说明：当前环境没有可调用的 `crypto-price` worker，因此 BNB 实时价格优先使用了 Binance 公共行情连接器，并用 CoinGecko、DeFiLlama、BNB Chain 官方来源交叉验证。",
-        "===== 2026-05-29 08:06:25 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=17 notion_write_or_update_count=4",
-        "===== 2026-05-29 08:06:25 stock-crypto-fundamentals done ====="
+        "===== 2026-05-30 08:00:01 stock-crypto-fundamentals start =====",
+        "===== 2026-05-30 08:00:01 stock-crypto-fundamentals missed check triggered ====="
       ]
     },
     {
@@ -606,6 +561,6 @@
       ]
     }
   ],
-  "now": "2026-05-30T04:05:01.465590",
+  "now": "2026-05-30T08:05:01.302155",
   "snapshot_source": "local-cron"
 }
