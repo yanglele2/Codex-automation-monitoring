@@ -9,7 +9,7 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-01.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-02.done",
       "done_today": false,
       "duration_seconds": 164,
       "hard_error": false,
@@ -86,7 +86,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-01.done",
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-02.done",
       "done_today": false,
       "duration_seconds": 283,
       "hard_error": false,
@@ -154,8 +154,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-01.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-02.done",
+      "done_today": false,
       "duration_seconds": 364,
       "hard_error": false,
       "job": "financial-news",
@@ -191,7 +191,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
@@ -232,7 +232,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-01.done",
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-02.done",
       "done_today": false,
       "duration_seconds": 471,
       "hard_error": false,
@@ -310,8 +310,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-01.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-02.done",
+      "done_today": false,
       "duration_seconds": 244,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -343,7 +343,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "说明：本次会话没有提供 `crypto-price workers` 工具，因此改用 Binance 分类/行情工具与 web 来源补充。",
@@ -384,7 +384,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-01.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-02.done",
       "done_today": false,
       "duration_seconds": 142,
       "hard_error": false,
@@ -454,7 +454,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-01.done",
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-02.done",
       "done_today": false,
       "duration_seconds": 448,
       "hard_error": false,
@@ -534,7 +534,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-01.done",
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-02.done",
       "done_today": false,
       "duration_seconds": 175,
       "hard_error": false,
@@ -598,6 +598,6 @@
       ]
     }
   ],
-  "now": "2026-06-01T20:05:01.566272",
+  "now": "2026-06-02T00:05:01.664210",
   "snapshot_source": "local-cron"
 }
