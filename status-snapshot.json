@@ -456,33 +456,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-02.done",
       "done_today": false,
-      "duration_seconds": 448,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-05-30T08:07:29",
-      "last_start": "2026-05-30T08:00:01",
-      "last_validation": {
-        "detail": "create_count=3 notion_read_count=21 notion_write_or_update_count=3",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-02T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-02T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/370040fc803381688895c013da561fec",
-        "https://www.notion.so/370040fc803381e3a138f304b736a8d0",
-        "https://www.notion.so/370040fc803381fcbb33d3b89b5b6529",
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-03T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -493,38 +477,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "",
-        "- A股：600900 - 长江电力  ",
-        "  页面：https://www.notion.so/370040fc803381688895c013da561fec  ",
-        "  校验：属性与正文已落库。",
-        "",
-        "加密货币跳过：在限定轮次内未找到同时满足“90 天内未重复研究”且“市值 ≥ 100 亿美元”的候选；已覆盖标的包括 BTC、ETH、BNB、SOL、USDT、USDC、TRX、DOGE、HYPE 等，未写入低于门槛标的。",
-        "",
-        "未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
-        "tokens used",
-        "286,294",
-        "已完成并写入 Notion 3 份报告，均已回读校验到页面属性和正文存在：",
-        "",
-        "- 美股：CRM - Salesforce  ",
-        "  页面：https://www.notion.so/370040fc803381e3a138f304b736a8d0  ",
-        "  校验：属性与正文已落库。",
-        "",
-        "- 港股：1211 - 比亚迪股份  ",
-        "  页面：https://www.notion.so/370040fc803381fcbb33d3b89b5b6529  ",
-        "  校验：属性与正文已落库。注意：正文财务数据仍保留公司披露的 CNY 口径；我尝试按港股规则替换为 HKD 折算口径，但 Notion 更新调用被取消，未继续反复写入。",
-        "",
-        "- A股：600900 - 长江电力  ",
-        "  页面：https://www.notion.so/370040fc803381688895c013da561fec  ",
-        "  校验：属性与正文已落库。",
-        "",
-        "加密货币跳过：在限定轮次内未找到同时满足“90 天内未重复研究”且“市值 ≥ 100 亿美元”的候选；已覆盖标的包括 BTC、ETH、BNB、SOL、USDT、USDC、TRX、DOGE、HYPE 等，未写入低于门槛标的。",
-        "",
-        "未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
-        "===== 2026-05-30 08:07:29 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=3 notion_read_count=21 notion_write_or_update_count=3",
-        "===== 2026-05-30 08:07:29 stock-crypto-fundamentals done ====="
+        "===== 2026-06-02 08:00:01 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -598,6 +553,6 @@
       ]
     }
   ],
-  "now": "2026-06-02T04:05:01.969492",
+  "now": "2026-06-02T08:05:01.519433",
   "snapshot_source": "local-cron"
 }
