@@ -9,23 +9,26 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-02.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-03.done",
       "done_today": false,
-      "duration_seconds": 164,
+      "duration_seconds": 234,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-05-30T23:02:45",
-      "last_start": "2026-05-30T23:00:01",
+      "last_done": "2026-06-02T23:03:55",
+      "last_start": "2026-06-02T23:00:01",
       "last_validation": {
-        "detail": "create_count=0 notion_read_count=10 notion_write_or_update_count=0",
+        "detail": "create_count=1 notion_read_count=13 notion_write_or_update_count=1",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-02T23:00:00",
+      "next_run": "2026-06-03T23:00:00",
       "notion_pages": [
+        "https://www.notion.so/373040fc8033814faefdfb69e24b5057",
+        "https://www.notion.so/373040fc80338168a87ece0351bd7a96",
+        "https://www.notion.so/373040fc80338176b3e3f4736876d413",
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/88e139937bbe445eb54fd886e2e3fab9?db=4cf9dd08d838442d8a162046904a1904&pvs=21",
@@ -47,36 +50,36 @@
       "skipped_count": 0,
       "status": "idle",
       "tail": [
-        "- 三个目标数据库均可访问：美股、A股、港股财报记录库已读取到 schema。",
-        "- 已检索工作区每日市场页和历史财报库。",
-        "- 已检查目标库现有记录；未发现需要写入但未落库的合格候选。",
-        "- 因本次没有创建页面，故无“新建页面属性与正文落库”可复核项。",
-        "",
-        "无候选原因：",
-        "- 美股主要候选如 Dell、MongoDB、Okta、HealthEquity、Ambarella、PagerDuty 等披露时间均为 **2026-05-28 美东盘后**，折算为北京时间约 **2026-05-29 清晨**，不在本次窗口内。",
-        "- Rocky Mountain Chocolate Factory 在窗口内仅有 **2026-05-29 16:05 ET** 的电话会安排公告，核心财务数据来自 **2026-05-14** 预披露，不满足“窗口内披露财报且可提取核心数据”的写入标准。",
-        "- A股、港股公开检索与工作区线索未找到在本次窗口内同时满足“披露时间可确认 + 核心财务数据可提取 + 至少一项电话会/管理层表述/市场反应可靠公开信息”的公司。",
-        "",
-        "参考核验来源包括 Dell、MongoDB、Okta、HealthEquity、Ambarella 官方/Newswire 财报页，以及 RMCF GlobeNewswire/Markets Insider 公告页。",
-        "tokens used",
-        "196,604",
-        "本次运行按北京时间窗口 `2026-05-29 23:00 ~ 2026-05-30 23:00` 执行，结果为：**未创建任何 Notion 财报记录**。",
+        "- [Victoria's Secret & Co.（VSXY）— 2026-06-02 财报](https://www.notion.so/373040fc80338168a87ece0351bd7a96)",
+        "- [UP Fintech（TIGR）— 2026-06-02 财报](https://www.notion.so/373040fc8033814faefdfb69e24b5057)",
         "",
         "校验结果：",
-        "- 三个目标数据库均可访问：美股、A股、港股财报记录库已读取到 schema。",
-        "- 已检索工作区每日市场页和历史财报库。",
-        "- 已检查目标库现有记录；未发现需要写入但未落库的合格候选。",
-        "- 因本次没有创建页面，故无“新建页面属性与正文落库”可复核项。",
         "",
-        "无候选原因：",
-        "- 美股主要候选如 Dell、MongoDB、Okta、HealthEquity、Ambarella、PagerDuty 等披露时间均为 **2026-05-28 美东盘后**，折算为北京时间约 **2026-05-29 清晨**，不在本次窗口内。",
-        "- Rocky Mountain Chocolate Factory 在窗口内仅有 **2026-05-29 16:05 ET** 的电话会安排公告，核心财务数据来自 **2026-05-14** 预披露，不满足“窗口内披露财报且可提取核心数据”的写入标准。",
-        "- A股、港股公开检索与工作区线索未找到在本次窗口内同时满足“披露时间可确认 + 核心财务数据可提取 + 至少一项电话会/管理层表述/市场反应可靠公开信息”的公司。",
+        "- 写入前已按公司/代码/日期在美股库去重，未发现同日重复记录；DG 仅发现 2026-03-12 历史记录。",
+        "- 写入后已逐条读取新建页面，确认 `标题`、`日期`、`股票代码`、`季度`、`AI总结` 以及正文四个小节均已落库。",
+        "- A股、港股本次未写入：公开检索未获得足够高置信度、可核验且满足窗口要求的财报候选，按规则跳过。",
         "",
-        "参考核验来源包括 Dell、MongoDB、Okta、HealthEquity、Ambarella 官方/Newswire 财报页，以及 RMCF GlobeNewswire/Markets Insider 公告页。",
-        "===== 2026-05-30 23:02:45 earnings-search validation start =====",
-        "validation passed: create_count=0 notion_read_count=10 notion_write_or_update_count=0",
-        "===== 2026-05-30 23:02:45 earnings-search done ====="
+        "主要来源包括公司/Newswire 财报稿与公开市场反应报道：Dollar General / MarketScreener、Victoria’s Secret / GlobeNewswire、UP Fintech / GlobeNewswire、Reuters / Investing.com、Barchart。",
+        "tokens used",
+        "146,399",
+        "已完成本次财报搜集，窗口为北京时间 `2026-06-01 23:00` 至 `2026-06-02 23:00`。",
+        "",
+        "写入 Notion 美股财报记录 3 条：",
+        "",
+        "- [Dollar General（DG）— 2026-06-02 财报](https://www.notion.so/373040fc80338176b3e3f4736876d413)",
+        "- [Victoria's Secret & Co.（VSXY）— 2026-06-02 财报](https://www.notion.so/373040fc80338168a87ece0351bd7a96)",
+        "- [UP Fintech（TIGR）— 2026-06-02 财报](https://www.notion.so/373040fc8033814faefdfb69e24b5057)",
+        "",
+        "校验结果：",
+        "",
+        "- 写入前已按公司/代码/日期在美股库去重，未发现同日重复记录；DG 仅发现 2026-03-12 历史记录。",
+        "- 写入后已逐条读取新建页面，确认 `标题`、`日期`、`股票代码`、`季度`、`AI总结` 以及正文四个小节均已落库。",
+        "- A股、港股本次未写入：公开检索未获得足够高置信度、可核验且满足窗口要求的财报候选，按规则跳过。",
+        "",
+        "主要来源包括公司/Newswire 财报稿与公开市场反应报道：Dollar General / MarketScreener、Victoria’s Secret / GlobeNewswire、UP Fintech / GlobeNewswire、Reuters / Investing.com、Barchart。",
+        "===== 2026-06-02 23:03:55 earnings-search validation start =====",
+        "validation passed: create_count=1 notion_read_count=13 notion_write_or_update_count=1",
+        "===== 2026-06-02 23:03:55 earnings-search done ====="
       ]
     },
     {
@@ -86,8 +89,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-02.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-03.done",
+      "done_today": false,
       "duration_seconds": 119,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -113,7 +116,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "原因：",
@@ -154,8 +157,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-02.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-03.done",
+      "done_today": false,
       "duration_seconds": 312,
       "hard_error": false,
       "job": "financial-news",
@@ -191,7 +194,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
@@ -232,8 +235,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-02.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-03.done",
+      "done_today": false,
       "duration_seconds": 397,
       "hard_error": false,
       "job": "sector-rotation",
@@ -269,7 +272,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "  https://www.notion.so/373040fc803381a1bbb7dcd18fef7fda",
         "",
@@ -310,8 +313,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-02.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-03.done",
+      "done_today": false,
       "duration_seconds": 340,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -346,7 +349,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "| 市场 | 状态 | 页面 |",
@@ -387,8 +390,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-02.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-03.done",
+      "done_today": false,
       "duration_seconds": 93,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -417,7 +420,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 板块排名一致：信息技术 `+2.48%`、能源 `+1.86%` 领涨；公用事业 `-3.05%`、非必需消费 `-2.62%` 领跌",
         "- 热点驱动一致：AI/软件、Nvidia 新芯片、油价上行导致市场内部分化",
@@ -458,8 +461,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-02.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-03.done",
+      "done_today": false,
       "duration_seconds": 601,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -494,7 +497,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "- 美股：`COST - Costco Wholesale`，页面已落库并可读取",
@@ -535,8 +538,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-02.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-03.done",
+      "done_today": false,
       "duration_seconds": 226,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -564,7 +567,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成。",
@@ -599,6 +602,6 @@
       ]
     }
   ],
-  "now": "2026-06-02T20:05:01.411902",
+  "now": "2026-06-03T00:05:01.514545",
   "snapshot_source": "local-cron"
 }
