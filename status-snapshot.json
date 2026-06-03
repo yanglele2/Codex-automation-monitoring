@@ -9,22 +9,22 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-03.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-04.done",
       "done_today": false,
-      "duration_seconds": 234,
+      "duration_seconds": 324,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-06-02T23:03:55",
-      "last_start": "2026-06-02T23:00:01",
+      "last_done": "2026-06-03T23:05:25",
+      "last_start": "2026-06-03T23:00:01",
       "last_validation": {
-        "detail": "create_count=1 notion_read_count=13 notion_write_or_update_count=1",
+        "detail": "create_count=1 notion_read_count=12 notion_write_or_update_count=1",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-03T23:00:00",
+      "next_run": "2026-06-04T23:00:00",
       "notion_pages": [
         "https://www.notion.so/373040fc8033814faefdfb69e24b5057",
         "https://www.notion.so/373040fc80338168a87ece0351bd7a96",
@@ -50,36 +50,36 @@
       "skipped_count": 0,
       "status": "idle",
       "tail": [
-        "- [Victoria's Secret & Co.（VSXY）— 2026-06-02 财报](https://www.notion.so/373040fc80338168a87ece0351bd7a96)",
-        "- [UP Fintech（TIGR）— 2026-06-02 财报](https://www.notion.so/373040fc8033814faefdfb69e24b5057)",
+        "mcp: codex_apps/notion_fetch started",
+        "mcp: codex_apps/notion_fetch (completed)",
+        "codex",
+        "已完成本次财报搜集，窗口为北京时间 `2026-06-02 23:00` 至 `2026-06-03 23:00`。",
         "",
-        "校验结果：",
+        "写入 Notion「美股财报记录」3 条，并已逐条回读校验，确认标题、日期、股票代码、AI总结和正文四个小节均已落库：",
         "",
-        "- 写入前已按公司/代码/日期在美股库去重，未发现同日重复记录；DG 仅发现 2026-03-12 历史记录。",
-        "- 写入后已逐条读取新建页面，确认 `标题`、`日期`、`股票代码`、`季度`、`AI总结` 以及正文四个小节均已落库。",
-        "- A股、港股本次未写入：公开检索未获得足够高置信度、可核验且满足窗口要求的财报候选，按规则跳过。",
+        "- [Palo Alto Networks（PANW）— 2026-06-02 财报](https://app.notion.com/p/374040fc803381a1aaccff38dbdaa185)",
+        "- [Medtronic（MDT）— 2026-06-03 财报](https://app.notion.com/p/374040fc8033813f920bed0c9b4da586)",
+        "- [Ollie's Bargain Outlet（OLLI）— 2026-06-03 财报](https://app.notion.com/p/374040fc8033815e983af4b4c3ac07ad)",
         "",
-        "主要来源包括公司/Newswire 财报稿与公开市场反应报道：Dollar General / MarketScreener、Victoria’s Secret / GlobeNewswire、UP Fintech / GlobeNewswire、Reuters / Investing.com、Barchart。",
+        "A股、港股本次未写入：公开检索未获得足够高置信度、可核验且满足本次时间窗口的正式财报候选，按规则跳过。",
+        "",
+        "主要来源包括公司公告/SEC材料与公开报道：Palo Alto Networks / PRNewswire、Motley Fool 电话会纪要、MarketBeat；Medtronic IR / PRNewswire、Investing.com；Ollie’s 8-K / StockTitan、Investing.com。",
         "tokens used",
-        "146,399",
-        "已完成本次财报搜集，窗口为北京时间 `2026-06-01 23:00` 至 `2026-06-02 23:00`。",
+        "257,958",
+        "已完成本次财报搜集，窗口为北京时间 `2026-06-02 23:00` 至 `2026-06-03 23:00`。",
         "",
-        "写入 Notion 美股财报记录 3 条：",
+        "写入 Notion「美股财报记录」3 条，并已逐条回读校验，确认标题、日期、股票代码、AI总结和正文四个小节均已落库：",
         "",
-        "- [Dollar General（DG）— 2026-06-02 财报](https://www.notion.so/373040fc80338176b3e3f4736876d413)",
-        "- [Victoria's Secret & Co.（VSXY）— 2026-06-02 财报](https://www.notion.so/373040fc80338168a87ece0351bd7a96)",
-        "- [UP Fintech（TIGR）— 2026-06-02 财报](https://www.notion.so/373040fc8033814faefdfb69e24b5057)",
+        "- [Palo Alto Networks（PANW）— 2026-06-02 财报](https://app.notion.com/p/374040fc803381a1aaccff38dbdaa185)",
+        "- [Medtronic（MDT）— 2026-06-03 财报](https://app.notion.com/p/374040fc8033813f920bed0c9b4da586)",
+        "- [Ollie's Bargain Outlet（OLLI）— 2026-06-03 财报](https://app.notion.com/p/374040fc8033815e983af4b4c3ac07ad)",
         "",
-        "校验结果：",
+        "A股、港股本次未写入：公开检索未获得足够高置信度、可核验且满足本次时间窗口的正式财报候选，按规则跳过。",
         "",
-        "- 写入前已按公司/代码/日期在美股库去重，未发现同日重复记录；DG 仅发现 2026-03-12 历史记录。",
-        "- 写入后已逐条读取新建页面，确认 `标题`、`日期`、`股票代码`、`季度`、`AI总结` 以及正文四个小节均已落库。",
-        "- A股、港股本次未写入：公开检索未获得足够高置信度、可核验且满足窗口要求的财报候选，按规则跳过。",
-        "",
-        "主要来源包括公司/Newswire 财报稿与公开市场反应报道：Dollar General / MarketScreener、Victoria’s Secret / GlobeNewswire、UP Fintech / GlobeNewswire、Reuters / Investing.com、Barchart。",
-        "===== 2026-06-02 23:03:55 earnings-search validation start =====",
-        "validation passed: create_count=1 notion_read_count=13 notion_write_or_update_count=1",
-        "===== 2026-06-02 23:03:55 earnings-search done ====="
+        "主要来源包括公司公告/SEC材料与公开报道：Palo Alto Networks / PRNewswire、Motley Fool 电话会纪要、MarketBeat；Medtronic IR / PRNewswire、Investing.com；Ollie’s 8-K / StockTitan、Investing.com。",
+        "===== 2026-06-03 23:05:25 earnings-search validation start =====",
+        "validation passed: create_count=1 notion_read_count=12 notion_write_or_update_count=1",
+        "===== 2026-06-03 23:05:25 earnings-search done ====="
       ]
     },
     {
@@ -89,8 +89,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-03.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-04.done",
+      "done_today": false,
       "duration_seconds": 275,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -116,7 +116,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "180,718",
         "已按 Asia/Shanghai 日期执行每日流程：读取 2026-06-02 的美股财报记录，候选为 DG、TIGR、VSXY。已补齐每家公司最近 4 个连续季度，并写回“财报纵向比对”数据库。",
@@ -157,8 +157,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-03.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-04.done",
+      "done_today": false,
       "duration_seconds": 326,
       "hard_error": false,
       "job": "financial-news",
@@ -190,7 +190,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成采集、查重、写入和落库校验。未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
@@ -231,8 +231,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-03.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-04.done",
+      "done_today": false,
       "duration_seconds": 432,
       "hard_error": false,
       "job": "sector-rotation",
@@ -265,7 +265,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "  https://app.notion.com/p/374040fc8033816a83b3d06df0d94014",
         "",
@@ -306,8 +306,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-03.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-04.done",
+      "done_today": false,
       "duration_seconds": 346,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -338,7 +338,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- A股：已创建并回读成功  ",
         "  https://app.notion.com/p/374040fc8033811c8ac4d517a38a1011",
@@ -379,8 +379,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-03.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-04.done",
+      "done_today": false,
       "duration_seconds": 116,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -408,7 +408,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 未创建新页面，未修改本地文件或自动化配置。",
         "",
@@ -449,8 +449,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-03.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-04.done",
+      "done_today": false,
       "duration_seconds": 460,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -485,7 +485,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "  页面已创建并回读校验成功：属性包含研究日期 `2026-06-03`、评级 `推荐`、行业 `消费`，正文已落库。",
         "  URL: https://app.notion.com/p/374040fc803381178d37d259a91c9ec7",
@@ -526,8 +526,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-03.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-04.done",
+      "done_today": false,
       "duration_seconds": 184,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -553,7 +553,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "位置：「美股板块机会洞察」数据库  ",
         "链接：https://app.notion.com/p/374040fc803381ae8179e53afc57ca90",
@@ -588,6 +588,6 @@
       ]
     }
   ],
-  "now": "2026-06-03T20:05:02.031554",
+  "now": "2026-06-04T00:05:02.256756",
   "snapshot_source": "local-cron"
 }
