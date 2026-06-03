@@ -463,30 +463,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-03.done",
       "done_today": false,
-      "duration_seconds": 601,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-02T08:10:02",
-      "last_start": "2026-06-02T08:00:01",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=35 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-03T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-03T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-04T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -497,38 +484,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "",
-        "- 美股：`COST - Costco Wholesale`，页面已落库并可读取",
-        "- 港股：`0002 - 中电控股`，页面已落库并可读取",
-        "- A股：`601166 - 兴业银行`，页面已落库并可读取",
-        "- 加密：`ETH - Ethereum`，页面已落库并可读取",
-        "",
-        "校验结果：",
-        "",
-        "- 4 个页面的属性和正文均已写入 Notion，并通过 `_fetch` 读取确认。",
-        "- 近 90 天去重后续复核发现：`COST`、`0002`、`601166`、`ETH` 均存在历史页；其中 `ETH` 是按“主流币基本覆盖后选择距上次较久标的”的回退规则保留。",
-        "- 我尝试把港股和 A 股刚创建页面改写为未命中的替代标的，但 Notion 更新调用被取消，因此当前页面保持原状态。",
-        "tokens used",
-        "288,114",
-        "已完成写入和读取校验，但需要说明一个问题：后置校验发现部分最终页仍与近 90 天历史研究重复。",
-        "",
-        "已创建并确认正文/属性落库：",
-        "",
-        "- 美股：`COST - Costco Wholesale`，页面已落库并可读取",
-        "- 港股：`0002 - 中电控股`，页面已落库并可读取",
-        "- A股：`601166 - 兴业银行`，页面已落库并可读取",
-        "- 加密：`ETH - Ethereum`，页面已落库并可读取",
-        "",
-        "校验结果：",
-        "",
-        "- 4 个页面的属性和正文均已写入 Notion，并通过 `_fetch` 读取确认。",
-        "- 近 90 天去重后续复核发现：`COST`、`0002`、`601166`、`ETH` 均存在历史页；其中 `ETH` 是按“主流币基本覆盖后选择距上次较久标的”的回退规则保留。",
-        "- 我尝试把港股和 A 股刚创建页面改写为未命中的替代标的，但 Notion 更新调用被取消，因此当前页面保持原状态。",
-        "===== 2026-06-02 08:10:02 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=35 notion_write_or_update_count=4",
-        "===== 2026-06-02 08:10:02 stock-crypto-fundamentals done ====="
+        "===== 2026-06-03 08:00:01 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -602,6 +560,6 @@
       ]
     }
   ],
-  "now": "2026-06-03T04:05:02.153991",
+  "now": "2026-06-03T08:05:02.122882",
   "snapshot_source": "local-cron"
 }
