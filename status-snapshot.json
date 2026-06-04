@@ -9,26 +9,23 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-04.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-05.done",
       "done_today": false,
-      "duration_seconds": 324,
+      "duration_seconds": 186,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-06-03T23:05:25",
-      "last_start": "2026-06-03T23:00:01",
+      "last_done": "2026-06-04T23:03:07",
+      "last_start": "2026-06-04T23:00:01",
       "last_validation": {
-        "detail": "create_count=1 notion_read_count=12 notion_write_or_update_count=1",
+        "detail": "create_count=1 notion_read_count=8 notion_write_or_update_count=1",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-04T23:00:00",
+      "next_run": "2026-06-05T23:00:00",
       "notion_pages": [
-        "https://www.notion.so/373040fc8033814faefdfb69e24b5057",
-        "https://www.notion.so/373040fc80338168a87ece0351bd7a96",
-        "https://www.notion.so/373040fc80338176b3e3f4736876d413",
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/88e139937bbe445eb54fd886e2e3fab9?db=4cf9dd08d838442d8a162046904a1904&pvs=21",
@@ -50,36 +47,36 @@
       "skipped_count": 0,
       "status": "idle",
       "tail": [
-        "mcp: codex_apps/notion_fetch started",
-        "mcp: codex_apps/notion_fetch (completed)",
-        "codex",
-        "已完成本次财报搜集，窗口为北京时间 `2026-06-02 23:00` 至 `2026-06-03 23:00`。",
         "",
-        "写入 Notion「美股财报记录」3 条，并已逐条回读校验，确认标题、日期、股票代码、AI总结和正文四个小节均已落库：",
-        "",
-        "- [Palo Alto Networks（PANW）— 2026-06-02 财报](https://app.notion.com/p/374040fc803381a1aaccff38dbdaa185)",
-        "- [Medtronic（MDT）— 2026-06-03 财报](https://app.notion.com/p/374040fc8033813f920bed0c9b4da586)",
-        "- [Ollie's Bargain Outlet（OLLI）— 2026-06-03 财报](https://app.notion.com/p/374040fc8033815e983af4b4c3ac07ad)",
-        "",
-        "A股、港股本次未写入：公开检索未获得足够高置信度、可核验且满足本次时间窗口的正式财报候选，按规则跳过。",
-        "",
-        "主要来源包括公司公告/SEC材料与公开报道：Palo Alto Networks / PRNewswire、Motley Fool 电话会纪要、MarketBeat；Medtronic IR / PRNewswire、Investing.com；Ollie’s 8-K / StockTitan、Investing.com。",
+        "本次未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
         "tokens used",
-        "257,958",
-        "已完成本次财报搜集，窗口为北京时间 `2026-06-02 23:00` 至 `2026-06-03 23:00`。",
+        "191,991",
+        "本次已完成财报搜集并写入 Notion。",
         "",
-        "写入 Notion「美股财报记录」3 条，并已逐条回读校验，确认标题、日期、股票代码、AI总结和正文四个小节均已落库：",
+        "写入记录：Broadcom（AVGO）— 2026-06-03 财报  ",
+        "Notion 页面：https://app.notion.com/p/375040fc803381f582c1dee3d49c7d04",
         "",
-        "- [Palo Alto Networks（PANW）— 2026-06-02 财报](https://app.notion.com/p/374040fc803381a1aaccff38dbdaa185)",
-        "- [Medtronic（MDT）— 2026-06-03 财报](https://app.notion.com/p/374040fc8033813f920bed0c9b4da586)",
-        "- [Ollie's Bargain Outlet（OLLI）— 2026-06-03 财报](https://app.notion.com/p/374040fc8033815e983af4b4c3ac07ad)",
+        "校验结果：已重新读取刚创建页面，确认已落库：",
+        "- 数据库：美股财报记录",
+        "- 标题：`Broadcom（AVGO）— 2026-06-03 财报`",
+        "- 股票代码：`AVGO`",
+        "- 季度：`2026Q2`",
+        "- 日期：`2026-06-03`",
+        "- 正文包含四个要求小节：核心财报数据、电话会议要点、市场反应、技术面分析（Vegas EMA）",
         "",
-        "A股、港股本次未写入：公开检索未获得足够高置信度、可核验且满足本次时间窗口的正式财报候选，按规则跳过。",
+        "去重结果：写入前已查美股财报库，未发现同公司同财报日记录；仅发现 Broadcom 2026-03-04 的历史记录。",
         "",
-        "主要来源包括公司公告/SEC材料与公开报道：Palo Alto Networks / PRNewswire、Motley Fool 电话会纪要、MarketBeat；Medtronic IR / PRNewswire、Investing.com；Ollie’s 8-K / StockTitan、Investing.com。",
-        "===== 2026-06-03 23:05:25 earnings-search validation start =====",
-        "validation passed: create_count=1 notion_read_count=12 notion_write_or_update_count=1",
-        "===== 2026-06-03 23:05:25 earnings-search done ====="
+        "跳过情况：A 股、港股本次未写入。公开检索结果未找到在北京时间 `2026-06-03 23:00 ~ 2026-06-04 23:00` 内同时满足“披露时间可确认、核心财报数据可提取、且有电话会/管理层表述/市场反应之一”的高置信度候选。",
+        "",
+        "主要来源：",
+        "- Broadcom/PRNewswire 官方财报公告",
+        "- Reuters/Investing.com 市场反应",
+        "- TECHi、StockAnalysis 技术面数据",
+        "",
+        "本次未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
+        "===== 2026-06-04 23:03:07 earnings-search validation start =====",
+        "validation passed: create_count=1 notion_read_count=8 notion_write_or_update_count=1",
+        "===== 2026-06-04 23:03:07 earnings-search done ====="
       ]
     },
     {
@@ -89,8 +86,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-04.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-05.done",
+      "done_today": false,
       "duration_seconds": 333,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -116,7 +113,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "229,694",
         "已执行 2026-06-04 Asia/Shanghai 日跑，目标财报日期为 2026-06-03。",
@@ -157,8 +154,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-04.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-05.done",
+      "done_today": false,
       "duration_seconds": 373,
       "hard_error": false,
       "job": "financial-news",
@@ -190,7 +187,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "- 美股：已创建并读取确认  ",
@@ -231,8 +228,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-04.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-05.done",
+      "done_today": false,
       "duration_seconds": 454,
       "hard_error": false,
       "job": "sector-rotation",
@@ -265,7 +262,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
@@ -306,8 +303,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-04.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-05.done",
+      "done_today": false,
       "duration_seconds": 392,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -338,7 +335,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 加密货币：[2026-06-03 · 加密货币 板块走势日报](https://app.notion.com/p/375040fc803381a5a58bdbe6fc16394d)",
         "",
@@ -379,8 +376,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-04.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-05.done",
+      "done_today": false,
       "duration_seconds": 120,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -408,7 +405,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "目标页面存在：`2026-06-03 · 美股 板块走势日报`。  ",
@@ -449,8 +446,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-04.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-05.done",
+      "done_today": false,
       "duration_seconds": 349,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -485,7 +482,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "- A 股：`688041 - 海光信息`",
@@ -526,8 +523,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-04.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-05.done",
+      "done_today": false,
       "duration_seconds": 163,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -553,7 +550,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "校验结果：",
@@ -588,6 +585,6 @@
       ]
     }
   ],
-  "now": "2026-06-04T20:05:01.923535",
+  "now": "2026-06-05T00:05:01.538856",
   "snapshot_source": "local-cron"
 }
