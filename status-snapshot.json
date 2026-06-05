@@ -448,30 +448,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-05.done",
       "done_today": false,
-      "duration_seconds": 349,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-04T08:05:50",
-      "last_start": "2026-06-04T08:00:01",
-      "last_validation": {
-        "detail": "create_count=1 notion_read_count=25 notion_write_or_update_count=1",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-05T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-05T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-06T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -482,38 +469,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "",
-        "- A 股：`688041 - 海光信息`",
-        "- Notion 页面：https://app.notion.com/p/375040fc8033817dbf8afd5b86cd6b25",
-        "- 校验结果：已重新读取页面，确认 `股票名称`、`研究日期=2026-06-04`、`市值（亿人民币）`、`评级=推荐`、`行业=科技`、`核心观点`、`数据来源` 和正文均已落库。",
-        "",
-        "跳过市场：",
-        "",
-        "- 美股：多轮候选 `ORCL/AVGO/LLY/UBER` 均命中近 90 天历史记录，达到候选更换上限后跳过。",
-        "- 港股：多轮候选 `2318/0941/0939/0001` 均命中近 90 天历史记录，达到候选更换上限后跳过。",
-        "- 加密货币：未能在限制内找到同时满足 `≥100 亿美元市值` 且近 90 天未覆盖的候选；`ADA/TON/SUI/AVAX/BCH` 均因重复或市值低于门槛被排除。",
-        "",
-        "主要核验来源包括海光信息公告聚合页、东方财富/新浪财经、搜狐证券、中财网，以及 CoinGecko/CoinMarketCap/DefiLlama 对加密候选的市值门槛核验。",
-        "tokens used",
-        "210,378",
-        "已完成并落库 1 份报告：",
-        "",
-        "- A 股：`688041 - 海光信息`",
-        "- Notion 页面：https://app.notion.com/p/375040fc8033817dbf8afd5b86cd6b25",
-        "- 校验结果：已重新读取页面，确认 `股票名称`、`研究日期=2026-06-04`、`市值（亿人民币）`、`评级=推荐`、`行业=科技`、`核心观点`、`数据来源` 和正文均已落库。",
-        "",
-        "跳过市场：",
-        "",
-        "- 美股：多轮候选 `ORCL/AVGO/LLY/UBER` 均命中近 90 天历史记录，达到候选更换上限后跳过。",
-        "- 港股：多轮候选 `2318/0941/0939/0001` 均命中近 90 天历史记录，达到候选更换上限后跳过。",
-        "- 加密货币：未能在限制内找到同时满足 `≥100 亿美元市值` 且近 90 天未覆盖的候选；`ADA/TON/SUI/AVAX/BCH` 均因重复或市值低于门槛被排除。",
-        "",
-        "主要核验来源包括海光信息公告聚合页、东方财富/新浪财经、搜狐证券、中财网，以及 CoinGecko/CoinMarketCap/DefiLlama 对加密候选的市值门槛核验。",
-        "===== 2026-06-04 08:05:50 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=1 notion_read_count=25 notion_write_or_update_count=1",
-        "===== 2026-06-04 08:05:50 stock-crypto-fundamentals done ====="
+        "===== 2026-06-05 08:00:01 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -585,6 +543,6 @@
       ]
     }
   ],
-  "now": "2026-06-05T04:05:01.493443",
+  "now": "2026-06-05T08:05:02.117505",
   "snapshot_source": "local-cron"
 }
