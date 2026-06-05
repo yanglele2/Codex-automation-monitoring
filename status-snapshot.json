@@ -9,22 +9,22 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-05.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-06.done",
       "done_today": false,
-      "duration_seconds": 186,
+      "duration_seconds": 189,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-06-04T23:03:07",
-      "last_start": "2026-06-04T23:00:01",
+      "last_done": "2026-06-05T23:03:10",
+      "last_start": "2026-06-05T23:00:01",
       "last_validation": {
-        "detail": "create_count=1 notion_read_count=8 notion_write_or_update_count=1",
+        "detail": "create_count=1 notion_read_count=6 notion_write_or_update_count=1",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-05T23:00:00",
+      "next_run": "2026-06-06T23:00:00",
       "notion_pages": [
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
@@ -47,36 +47,36 @@
       "skipped_count": 0,
       "status": "idle",
       "tail": [
+        "- 核心来源：ABM 官方 GlobeNewswire 财报稿、8-K 摘要/原文、电话会公告、公开报价页",
         "",
-        "本次未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
+        "校验结果：",
+        "",
+        "- 写入前已在美股财报库按 `ABM / ABM Industries / 2026-06-05` 搜索，未发现重复记录。",
+        "- 写入后已重新读取页面，确认属性已落库：标题、股票代码 `ABM`、季度 `2026Q2`、日期 `2026-06-05`、AI总结均存在。",
+        "- 正文已落库，并包含四个要求小节：核心财报数据、电话会议要点、市场反应、技术面分析（Vegas EMA）。",
+        "",
+        "A股、港股本次未写入：公开检索未找到同时满足“窗口内披露时间可确认 + 核心财报数据可提取 + 电话会/管理层表述/市场反应至少一项可靠公开信息”的候选。未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
         "tokens used",
-        "191,991",
-        "本次已完成财报搜集并写入 Notion。",
+        "159,000",
+        "已完成本次财报搜集与 Notion 写入。",
         "",
-        "写入记录：Broadcom（AVGO）— 2026-06-03 财报  ",
-        "Notion 页面：https://app.notion.com/p/375040fc803381f582c1dee3d49c7d04",
+        "写入 1 条高置信度记录：",
         "",
-        "校验结果：已重新读取刚创建页面，确认已落库：",
-        "- 数据库：美股财报记录",
-        "- 标题：`Broadcom（AVGO）— 2026-06-03 财报`",
-        "- 股票代码：`AVGO`",
-        "- 季度：`2026Q2`",
-        "- 日期：`2026-06-03`",
-        "- 正文包含四个要求小节：核心财报数据、电话会议要点、市场反应、技术面分析（Vegas EMA）",
+        "- 美股：[ABM Industries（ABM）— 2026-06-05 财报](https://app.notion.com/p/376040fc803381f6860cd6f9e6ca0982)",
+        "- 目标库：美股财报记录",
+        "- 财报窗口：北京时间 2026-06-04 23:00 至 2026-06-05 23:00",
+        "- 核心来源：ABM 官方 GlobeNewswire 财报稿、8-K 摘要/原文、电话会公告、公开报价页",
         "",
-        "去重结果：写入前已查美股财报库，未发现同公司同财报日记录；仅发现 Broadcom 2026-03-04 的历史记录。",
+        "校验结果：",
         "",
-        "跳过情况：A 股、港股本次未写入。公开检索结果未找到在北京时间 `2026-06-03 23:00 ~ 2026-06-04 23:00` 内同时满足“披露时间可确认、核心财报数据可提取、且有电话会/管理层表述/市场反应之一”的高置信度候选。",
+        "- 写入前已在美股财报库按 `ABM / ABM Industries / 2026-06-05` 搜索，未发现重复记录。",
+        "- 写入后已重新读取页面，确认属性已落库：标题、股票代码 `ABM`、季度 `2026Q2`、日期 `2026-06-05`、AI总结均存在。",
+        "- 正文已落库，并包含四个要求小节：核心财报数据、电话会议要点、市场反应、技术面分析（Vegas EMA）。",
         "",
-        "主要来源：",
-        "- Broadcom/PRNewswire 官方财报公告",
-        "- Reuters/Investing.com 市场反应",
-        "- TECHi、StockAnalysis 技术面数据",
-        "",
-        "本次未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
-        "===== 2026-06-04 23:03:07 earnings-search validation start =====",
-        "validation passed: create_count=1 notion_read_count=8 notion_write_or_update_count=1",
-        "===== 2026-06-04 23:03:07 earnings-search done ====="
+        "A股、港股本次未写入：公开检索未找到同时满足“窗口内披露时间可确认 + 核心财报数据可提取 + 电话会/管理层表述/市场反应至少一项可靠公开信息”的候选。未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
+        "===== 2026-06-05 23:03:10 earnings-search validation start =====",
+        "validation passed: create_count=1 notion_read_count=6 notion_write_or_update_count=1",
+        "===== 2026-06-05 23:03:10 earnings-search done ====="
       ]
     },
     {
@@ -86,8 +86,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-05.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-06.done",
+      "done_today": false,
       "duration_seconds": 245,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -113,7 +113,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "**候选排名**",
         "1. `AVGO` Broadcom  ",
@@ -154,8 +154,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-05.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-06.done",
+      "done_today": false,
       "duration_seconds": 280,
       "hard_error": false,
       "job": "financial-news",
@@ -187,7 +187,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成采集并写入 4 个 Notion 数据库，时间窗口按 `2026-06-04 18:00` 至 `2026-06-05 18:00`（Asia/Shanghai）执行。",
@@ -228,8 +228,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-05.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-06.done",
+      "done_today": false,
       "duration_seconds": 472,
       "hard_error": false,
       "job": "sector-rotation",
@@ -262,7 +262,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成板块轮动分析并写入 Notion，共创建 3 条记录，没有读取币圈数据，也没有修改本地文件或自动化配置。",
@@ -303,8 +303,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-05.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-06.done",
+      "done_today": false,
       "duration_seconds": 445,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -335,7 +335,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "| 港股 | 已创建，属性与正文已回读确认 | https://app.notion.com/p/376040fc80338133be69cc74cac80106 |",
         "| 美股 | 已创建，属性与正文已回读确认 | https://app.notion.com/p/376040fc803381e9869afdc72151ee7c |",
@@ -376,8 +376,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-05.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-06.done",
+      "done_today": false,
       "duration_seconds": 149,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -405,7 +405,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 写入结果：两次 Notion 更新均返回 `user cancelled MCP tool call`。",
         "- 保存校验：我已重新读取页面，确认正文和 `AI总结` 均未更新。",
@@ -446,8 +446,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-05.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-06.done",
+      "done_today": false,
       "duration_seconds": 513,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -482,7 +482,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "- 加密货币：`HYPE - Hyperliquid`  ",
@@ -523,8 +523,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-05.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-06.done",
+      "done_today": false,
       "duration_seconds": 161,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -550,7 +550,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "页面：`美股板块机会洞察 / 2026-06-05`  ",
@@ -585,6 +585,6 @@
       ]
     }
   ],
-  "now": "2026-06-05T20:05:01.337612",
+  "now": "2026-06-06T00:05:01.269459",
   "snapshot_source": "local-cron"
 }
