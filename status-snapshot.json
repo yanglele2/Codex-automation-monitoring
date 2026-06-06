@@ -9,22 +9,22 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-06.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-07.done",
       "done_today": false,
-      "duration_seconds": 189,
+      "duration_seconds": 143,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-06-05T23:03:10",
-      "last_start": "2026-06-05T23:00:01",
+      "last_done": "2026-06-06T23:02:24",
+      "last_start": "2026-06-06T23:00:01",
       "last_validation": {
-        "detail": "create_count=1 notion_read_count=6 notion_write_or_update_count=1",
+        "detail": "create_count=0 notion_read_count=15 notion_write_or_update_count=0",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-06T23:00:00",
+      "next_run": "2026-06-09T23:00:00",
       "notion_pages": [
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
@@ -47,36 +47,36 @@
       "skipped_count": 0,
       "status": "idle",
       "tail": [
-        "- 核心来源：ABM 官方 GlobeNewswire 财报稿、8-K 摘要/原文、电话会公告、公开报价页",
+        "codex",
+        "最后核验发现日历还列有 Seneca Foods 等低覆盖公司，但未给出披露时段。为避免把周五盘前或仅预计日期误纳入窗口，我会逐一核验这些剩余名称的官方公告时间；只有确认在美东 6 月 5 日 11:00 之后发布才会写入。",
+        "web search: ",
+        "web search: site:senecafoods.com June 5 2026 financial results Seneca Foods",
+        "codex",
+        "本次财报搜集已完成。",
         "",
-        "校验结果：",
+        "- 时间窗口：`2026-06-05 23:00` 至 `2026-06-06 23:00`（北京时间）",
+        "- 美股：6 月 5 日已确认财报均在窗口开始前披露；例如 ABM 于北京时间 18:58 发布，StealthGas 电话会为 22:00",
+        "- A股、港股：周六未检索到窗口内可靠的正式财报披露",
+        "- Notion 三个目标数据库均可正常访问",
+        "- 新增记录：`0`",
+        "- 校验结果：无候选写入，因此无新页面需要写后复查；未修改任何本地文件或自动化配置",
         "",
-        "- 写入前已在美股财报库按 `ABM / ABM Industries / 2026-06-05` 搜索，未发现重复记录。",
-        "- 写入后已重新读取页面，确认属性已落库：标题、股票代码 `ABM`、季度 `2026Q2`、日期 `2026-06-05`、AI总结均存在。",
-        "- 正文已落库，并包含四个要求小节：核心财报数据、电话会议要点、市场反应、技术面分析（Vegas EMA）。",
-        "",
-        "A股、港股本次未写入：公开检索未找到同时满足“窗口内披露时间可确认 + 核心财报数据可提取 + 电话会/管理层表述/市场反应至少一项可靠公开信息”的候选。未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
+        "参考：[美股财报日历](https://www.tipranks.com/calendars/earnings/2026-6-5) · [StealthGas IR](https://www.stealthgas.com/press-releases-investor-relations-107.html?start=100) · [Seneca Foods](https://www.senecafoods.com/press-release/seneca-foods-reports-sales-and-earnings-quarter-and-nine-months-ended-december-27)",
         "tokens used",
-        "159,000",
-        "已完成本次财报搜集与 Notion 写入。",
+        "157,875",
+        "本次财报搜集已完成。",
         "",
-        "写入 1 条高置信度记录：",
+        "- 时间窗口：`2026-06-05 23:00` 至 `2026-06-06 23:00`（北京时间）",
+        "- 美股：6 月 5 日已确认财报均在窗口开始前披露；例如 ABM 于北京时间 18:58 发布，StealthGas 电话会为 22:00",
+        "- A股、港股：周六未检索到窗口内可靠的正式财报披露",
+        "- Notion 三个目标数据库均可正常访问",
+        "- 新增记录：`0`",
+        "- 校验结果：无候选写入，因此无新页面需要写后复查；未修改任何本地文件或自动化配置",
         "",
-        "- 美股：[ABM Industries（ABM）— 2026-06-05 财报](https://app.notion.com/p/376040fc803381f6860cd6f9e6ca0982)",
-        "- 目标库：美股财报记录",
-        "- 财报窗口：北京时间 2026-06-04 23:00 至 2026-06-05 23:00",
-        "- 核心来源：ABM 官方 GlobeNewswire 财报稿、8-K 摘要/原文、电话会公告、公开报价页",
-        "",
-        "校验结果：",
-        "",
-        "- 写入前已在美股财报库按 `ABM / ABM Industries / 2026-06-05` 搜索，未发现重复记录。",
-        "- 写入后已重新读取页面，确认属性已落库：标题、股票代码 `ABM`、季度 `2026Q2`、日期 `2026-06-05`、AI总结均存在。",
-        "- 正文已落库，并包含四个要求小节：核心财报数据、电话会议要点、市场反应、技术面分析（Vegas EMA）。",
-        "",
-        "A股、港股本次未写入：公开检索未找到同时满足“窗口内披露时间可确认 + 核心财报数据可提取 + 电话会/管理层表述/市场反应至少一项可靠公开信息”的候选。未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
-        "===== 2026-06-05 23:03:10 earnings-search validation start =====",
-        "validation passed: create_count=1 notion_read_count=6 notion_write_or_update_count=1",
-        "===== 2026-06-05 23:03:10 earnings-search done ====="
+        "参考：[美股财报日历](https://www.tipranks.com/calendars/earnings/2026-6-5) · [StealthGas IR](https://www.stealthgas.com/press-releases-investor-relations-107.html?start=100) · [Seneca Foods](https://www.senecafoods.com/press-release/seneca-foods-reports-sales-and-earnings-quarter-and-nine-months-ended-december-27)",
+        "===== 2026-06-06 23:02:24 earnings-search validation start =====",
+        "validation passed: create_count=0 notion_read_count=15 notion_write_or_update_count=0",
+        "===== 2026-06-06 23:02:24 earnings-search done ====="
       ]
     },
     {
@@ -86,8 +86,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-06.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-07.done",
+      "done_today": false,
       "duration_seconds": 196,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -113,7 +113,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
@@ -154,8 +154,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-06.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-07.done",
+      "done_today": false,
       "duration_seconds": 313,
       "hard_error": false,
       "job": "financial-news",
@@ -187,7 +187,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
@@ -228,8 +228,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-06.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-07.done",
+      "done_today": false,
       "duration_seconds": 775,
       "hard_error": false,
       "job": "sector-rotation",
@@ -262,7 +262,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "我会保留现有数据库属性，仅整体替换三页正文，将“信号面板”和 5 张固定图统一改为多行原生表格语法，同时保留 15 日证据链、轮动时间线和验证/否证信号。",
         "mcp: codex_apps/notion_notion-update-page started",
@@ -303,8 +303,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-06.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-07.done",
+      "done_today": false,
       "duration_seconds": 481,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -335,7 +335,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "| 市场 | 状态 | Notion 页面 |",
@@ -376,8 +376,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-06.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-07.done",
+      "done_today": false,
       "duration_seconds": 155,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -405,7 +405,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "我将把正文收敛为可核验版本：三大指数采用 AP 的精确收盘点位；板块只保留 Reuters 收盘稿明确支持的“防御板块上涨、科技/半导体领跌”；个股采用收盘行情中的明确百分比。原先没有可靠来源支撑的板块估算柱状图会删除。",
         "mcp: codex_apps/notion_notion-update-page started",
@@ -446,8 +446,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-06.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-07.done",
+      "done_today": false,
       "duration_seconds": 411,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -482,7 +482,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "去重说明：JPM 与 DOGE 在创建前复查发现 90 天内已有记录，因此分别替换为 BRK.B 与 SOL。港股 0005、A 股 601318 属于近 90 天核心大盘标的高度覆盖后的“距上次研究较久”回退处理。",
@@ -523,8 +523,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-06.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-07.done",
+      "done_today": false,
       "duration_seconds": 154,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -550,7 +550,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "连续性核对完成：6 月 2 日的 AI 基建局部扩散，6 月 3 日转向能源/防御，6 月 4 日短暂价值扩散，随后 6 月 5 日被强就业与收益率上行迅速否证。今天的核心应是“暂无高质量新主线”，保留医疗/金融的相对强势观察，同时将 AI 硬件降为止跌验证、能源降为事件交易。",
@@ -585,6 +585,6 @@
       ]
     }
   ],
-  "now": "2026-06-06T20:05:01.423595",
+  "now": "2026-06-07T00:05:01.362998",
   "snapshot_source": "local-cron"
 }
