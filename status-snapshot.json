@@ -448,30 +448,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-06.done",
       "done_today": false,
-      "duration_seconds": 513,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-05T08:08:34",
-      "last_start": "2026-06-05T08:00:01",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=24 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-06T08:00:02",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-06T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-09T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -482,38 +469,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "",
-        "- 加密货币：`HYPE - Hyperliquid`  ",
-        "  页面：https://app.notion.com/p/376040fc80338171ba12ccc8b5448157  ",
-        "  校验：属性、研究日期 `2026-06-05`、正文均已落库。",
-        "",
-        "说明：Notion SQL 查询工具在当前连接中不可用，我改用数据源内搜索完成 90 天去重和写入前查重。加密价格方面，Binance 未返回 `HYPEUSDT` 现货 ticker，因此报告内已明确用 CoinMarketCap / CoinGecko / DeFiLlama 交叉验证并标注限制。",
-        "tokens used",
-        "250,467",
-        "已完成 4 个市场研究并写入 Notion，且每个市场写入后都已回读确认页面属性和正文存在。",
-        "",
-        "- 美股：`ORCL - Oracle`  ",
-        "  页面：https://app.notion.com/p/376040fc803381bd8101c8f70a2131eb  ",
-        "  校验：属性、研究日期 `2026-06-05`、正文均已落库。",
-        "",
-        "- 港股：`0941 - 中国移动`  ",
-        "  页面：https://app.notion.com/p/376040fc80338172a620f005afbeeccb  ",
-        "  校验：属性、研究日期 `2026-06-05`、正文均已落库。",
-        "",
-        "- A股：`601988 - 中国银行`  ",
-        "  页面：https://app.notion.com/p/376040fc8033819fb421fa81c7c9e4bd  ",
-        "  校验：属性、研究日期 `2026-06-05`、正文均已落库。",
-        "",
-        "- 加密货币：`HYPE - Hyperliquid`  ",
-        "  页面：https://app.notion.com/p/376040fc80338171ba12ccc8b5448157  ",
-        "  校验：属性、研究日期 `2026-06-05`、正文均已落库。",
-        "",
-        "说明：Notion SQL 查询工具在当前连接中不可用，我改用数据源内搜索完成 90 天去重和写入前查重。加密价格方面，Binance 未返回 `HYPEUSDT` 现货 ticker，因此报告内已明确用 CoinMarketCap / CoinGecko / DeFiLlama 交叉验证并标注限制。",
-        "===== 2026-06-05 08:08:34 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=24 notion_write_or_update_count=4",
-        "===== 2026-06-05 08:08:34 stock-crypto-fundamentals done ====="
+        "===== 2026-06-06 08:00:02 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -585,6 +543,6 @@
       ]
     }
   ],
-  "now": "2026-06-06T04:05:01.919150",
+  "now": "2026-06-06T08:05:01.564360",
   "snapshot_source": "local-cron"
 }
