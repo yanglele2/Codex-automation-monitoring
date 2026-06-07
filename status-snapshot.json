@@ -9,7 +9,7 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-07.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-08.done",
       "done_today": false,
       "duration_seconds": 143,
       "hard_error": false,
@@ -86,7 +86,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-07.done",
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-08.done",
       "done_today": false,
       "duration_seconds": 196,
       "hard_error": false,
@@ -154,8 +154,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-07.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-08.done",
+      "done_today": false,
       "duration_seconds": 253,
       "hard_error": false,
       "job": "financial-news",
@@ -187,7 +187,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
@@ -228,7 +228,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-07.done",
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-08.done",
       "done_today": false,
       "duration_seconds": 775,
       "hard_error": false,
@@ -303,8 +303,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-07.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-08.done",
+      "done_today": false,
       "duration_seconds": 188,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -335,7 +335,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "我现在写入加密货币日报：包含完整榜单、资金代理口径、热点驱动、10 个强势币种、Mermaid 图表、趋势研判和来源链接。写入后会立即回读页面，核对标题、日期、AI总结与正文。",
@@ -376,7 +376,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-07.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-08.done",
       "done_today": false,
       "duration_seconds": 155,
       "hard_error": false,
@@ -446,7 +446,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-07.done",
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-08.done",
       "done_today": false,
       "duration_seconds": 411,
       "hard_error": false,
@@ -523,7 +523,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-07.done",
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-08.done",
       "done_today": false,
       "duration_seconds": 154,
       "hard_error": false,
@@ -585,6 +585,6 @@
       ]
     }
   ],
-  "now": "2026-06-07T20:05:02.136695",
+  "now": "2026-06-08T00:05:01.897961",
   "snapshot_source": "local-cron"
 }
