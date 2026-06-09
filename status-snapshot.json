@@ -448,30 +448,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-09.done",
       "done_today": false,
-      "duration_seconds": 411,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-06T08:06:53",
-      "last_start": "2026-06-06T08:00:02",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=17 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-09T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-09T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-10T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -482,38 +469,10 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "",
-        "去重说明：JPM 与 DOGE 在创建前复查发现 90 天内已有记录，因此分别替换为 BRK.B 与 SOL。港股 0005、A 股 601318 属于近 90 天核心大盘标的高度覆盖后的“距上次研究较久”回退处理。",
-        "",
-        "主要来源包括 Berkshire Hathaway、HSBC、中国平安官方披露，以及 Yahoo Finance、StockAnalysis、CoinGecko、CoinMarketCap、DeFiLlama/Messari/Blockworks 摘要等。加密价格专用 `crypto-price` worker 本环境未提供可调用入口，已在 SOL 报告正文中注明替代验证口径。",
-        "tokens used",
-        "239,922",
-        "已完成 4 份报告并写入 Notion，且已逐页读取校验属性和正文均已落库。",
-        "",
-        "- 美股：BRK.B - Berkshire Hathaway  ",
-        "  页面：https://app.notion.com/p/377040fc80338179b316c36845ac72c4  ",
-        "  校验：标题、研究日期 `2026-06-06`、市值、评级、行业、正文已确认。",
-        "",
-        "- 港股：0005 - 汇丰控股  ",
-        "  页面：https://app.notion.com/p/377040fc80338164a598f55d5cb29c1e  ",
-        "  校验：标题、研究日期 `2026-06-06`、市值、评级、行业、正文已确认。",
-        "",
-        "- A 股：601318 - 中国平安  ",
-        "  页面：https://app.notion.com/p/377040fc803381d5a458e6f45e1b1f72  ",
-        "  校验：标题、研究日期 `2026-06-06`、市值、评级、行业、正文已确认。",
-        "",
-        "- 加密货币：SOL - Solana  ",
-        "  页面：https://app.notion.com/p/377040fc8033811ea137efd5c1e89c66  ",
-        "  校验：标题、研究日期 `2026-06-06`、市值、评级、赛道、正文已确认。",
-        "",
-        "去重说明：JPM 与 DOGE 在创建前复查发现 90 天内已有记录，因此分别替换为 BRK.B 与 SOL。港股 0005、A 股 601318 属于近 90 天核心大盘标的高度覆盖后的“距上次研究较久”回退处理。",
-        "",
-        "主要来源包括 Berkshire Hathaway、HSBC、中国平安官方披露，以及 Yahoo Finance、StockAnalysis、CoinGecko、CoinMarketCap、DeFiLlama/Messari/Blockworks 摘要等。加密价格专用 `crypto-price` worker 本环境未提供可调用入口，已在 SOL 报告正文中注明替代验证口径。",
-        "===== 2026-06-06 08:06:53 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=17 notion_write_or_update_count=4",
-        "===== 2026-06-06 08:06:53 stock-crypto-fundamentals done ====="
+        "===== 2026-06-09 08:00:01 stock-crypto-fundamentals start =====",
+        "===== 2026-06-09 08:00:01 stock-crypto-fundamentals missed check triggered ====="
       ]
     },
     {
@@ -585,6 +544,6 @@
       ]
     }
   ],
-  "now": "2026-06-09T04:05:02.158432",
+  "now": "2026-06-09T08:05:01.778977",
   "snapshot_source": "local-cron"
 }
