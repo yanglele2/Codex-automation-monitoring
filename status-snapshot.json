@@ -155,13 +155,13 @@
       },
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/financial-news-2026-06-09.done",
-      "done_today": false,
-      "duration_seconds": 349,
+      "done_today": true,
+      "duration_seconds": 279,
       "hard_error": false,
       "job": "financial-news",
       "label": "金融消息",
-      "last_done": "2026-06-08T19:05:50",
-      "last_start": "2026-06-08T19:00:01",
+      "last_done": "2026-06-09T19:04:40",
+      "last_start": "2026-06-09T19:00:01",
       "last_validation": {
         "detail": "create_count=4 notion_read_count=13 notion_write_or_update_count=4",
         "status": "passed",
@@ -169,7 +169,7 @@
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/financial-news.log",
-      "next_run": "2026-06-09T19:00:00",
+      "next_run": "2026-06-10T19:00:00",
       "notion_pages": [
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/1039cee4dcaa48b0b7f9a9215c62797b?db=f4c798ded03b4545a343102c842e87d8&pvs=21",
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/54aefec491604d6fa657c46f77a25117?db=06266436dd554154be19a00475973012&pvs=21",
@@ -187,7 +187,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "passed",
       "tail": [
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
@@ -198,27 +198,27 @@
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
         "codex",
-        "已完成北京时间 `2026-06-07 18:00` 至 `2026-06-08 18:00` 的金融消息采集。",
+        "已完成 `2026-06-08 18:00` 至 `2026-06-09 18:00` 金融消息采集并写入 Notion：",
         "",
-        "- [美股每日消息](https://app.notion.com/p/379040fc8033816cb0b2e64cffb310ec)",
-        "- [A股每日消息](https://app.notion.com/p/379040fc8033814f8fe7f88ac64c4749)",
-        "- [港股每日消息](https://app.notion.com/p/379040fc80338191bf2fd6a0d5ce37be)",
-        "- [币圈每日消息](https://app.notion.com/p/379040fc80338175a5a2e2267e16cf9a)",
+        "- [美股](https://app.notion.com/p/37a040fc80338145b7ede8bf99dafccf)",
+        "- [A股](https://app.notion.com/p/37a040fc80338134bbc0d6d89c446bee)",
+        "- [港股](https://app.notion.com/p/37a040fc8033819e9045c572f186722b)",
+        "- [加密货币](https://app.notion.com/p/37a040fc803381f1a234ca292e9c4e62)",
         "",
-        "校验结果：写入前未发现同日页面；四个页面均已回读确认，标题、日期、AI总结、正文及验证摘要完整落库。窗口外消息已剔除，包括北京时间18:21发布的美股期指稿和18:43发布的港股快讯。",
+        "校验结果：创建前未发现同日页面；创建后已逐页回读，四个页面的标题、日期、AI总结、正文及验证摘要均已落库。未修改任何本地文件或自动化配置。",
         "tokens used",
-        "223,882",
-        "已完成北京时间 `2026-06-07 18:00` 至 `2026-06-08 18:00` 的金融消息采集。",
+        "172,395",
+        "已完成 `2026-06-08 18:00` 至 `2026-06-09 18:00` 金融消息采集并写入 Notion：",
         "",
-        "- [美股每日消息](https://app.notion.com/p/379040fc8033816cb0b2e64cffb310ec)",
-        "- [A股每日消息](https://app.notion.com/p/379040fc8033814f8fe7f88ac64c4749)",
-        "- [港股每日消息](https://app.notion.com/p/379040fc80338191bf2fd6a0d5ce37be)",
-        "- [币圈每日消息](https://app.notion.com/p/379040fc80338175a5a2e2267e16cf9a)",
+        "- [美股](https://app.notion.com/p/37a040fc80338145b7ede8bf99dafccf)",
+        "- [A股](https://app.notion.com/p/37a040fc80338134bbc0d6d89c446bee)",
+        "- [港股](https://app.notion.com/p/37a040fc8033819e9045c572f186722b)",
+        "- [加密货币](https://app.notion.com/p/37a040fc803381f1a234ca292e9c4e62)",
         "",
-        "校验结果：写入前未发现同日页面；四个页面均已回读确认，标题、日期、AI总结、正文及验证摘要完整落库。窗口外消息已剔除，包括北京时间18:21发布的美股期指稿和18:43发布的港股快讯。",
-        "===== 2026-06-08 19:05:50 financial-news validation start =====",
+        "校验结果：创建前未发现同日页面；创建后已逐页回读，四个页面的标题、日期、AI总结、正文及验证摘要均已落库。未修改任何本地文件或自动化配置。",
+        "===== 2026-06-09 19:04:40 financial-news validation start =====",
         "validation passed: create_count=4 notion_read_count=13 notion_write_or_update_count=4",
-        "===== 2026-06-08 19:05:50 financial-news done ====="
+        "===== 2026-06-09 19:04:40 financial-news done ====="
       ]
     },
     {
@@ -585,6 +585,6 @@
       ]
     }
   ],
-  "now": "2026-06-09T16:05:01.239518",
+  "now": "2026-06-09T20:05:01.291946",
   "snapshot_source": "local-cron"
 }
