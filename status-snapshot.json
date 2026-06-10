@@ -9,22 +9,22 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-10.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-11.done",
       "done_today": false,
-      "duration_seconds": 232,
+      "duration_seconds": 300,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-06-09T23:03:53",
-      "last_start": "2026-06-09T23:00:01",
+      "last_done": "2026-06-10T23:05:01",
+      "last_start": "2026-06-10T23:00:01",
       "last_validation": {
-        "detail": "create_count=1 notion_read_count=12 notion_write_or_update_count=1",
+        "detail": "create_count=1 notion_read_count=13 notion_write_or_update_count=1",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-10T23:00:00",
+      "next_run": "2026-06-11T23:00:00",
       "notion_pages": [
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
@@ -47,36 +47,36 @@
       "skipped_count": 0,
       "status": "idle",
       "tail": [
+        "mcp: codex_apps/notion_search started",
+        "mcp: codex_apps/notion_search (completed)",
+        "mcp: codex_apps/notion_search started",
+        "mcp: codex_apps/notion_search (completed)",
         "codex",
-        "已完成 `2026-06-08 23:00` 至 `2026-06-09 23:00` 财报搜集。",
+        "已完成 `2026-06-09 23:00` 至 `2026-06-10 23:00` 财报搜集。",
         "",
-        "写入美股财报库 4 条：",
+        "写入美股库 2 条：",
         "",
-        "- [Vail Resorts（MTN）](https://app.notion.com/p/37a040fc8033810daee9e13206183764)",
-        "- [Mission Produce（AVO）](https://app.notion.com/p/37a040fc80338114820eeb3f9c8f195e)",
-        "- [Mama's Creations（MAMA）](https://app.notion.com/p/37a040fc8033813691a9def961b81ca8)",
-        "- [J.M. Smucker（SJM）](https://app.notion.com/p/37a040fc80338159a9f1ffdabe5604a6)",
+        "- [Casey's General Stores（CASY）](https://app.notion.com/p/37b040fc803381d59b47c4d95b27e006)",
+        "- [Cracker Barrel（CBRL）](https://app.notion.com/p/37b040fc803381209c8ae26ce0661f88)",
         "",
-        "写入前已按公司、代码和日期搜索去重。写入后已逐页回读，确认属性、AI 总结及四个正文小节均已落库。",
+        "A股、港股未检索到同时满足披露时间、核心数据及可靠市场信息要求的候选，已跳过。",
         "",
-        "A股、港股未发现满足全部核验条件的高置信度候选，本次跳过。未修改任何本地文件或自动化配置。",
+        "两条记录均已完成写入后回读校验：标题、股票代码、日期、AI总结和四个正文小节均已落库，未发现重复记录。主要来源为 [WSJ](https://www.wsj.com/business/earnings/caseys-general-stores-results-helped-by-pizza-sales-bfa41ace)、[Barron's](https://www.barrons.com/articles/caseys-general-stores-earnings-stock-price-75d4b995) 和 [Investopedia](https://www.investopedia.com/cracker-barrel-stock-soars-as-surprise-profit-points-to-progress-in-its-turnaround-11994616)。",
         "tokens used",
-        "201,350",
-        "已完成 `2026-06-08 23:00` 至 `2026-06-09 23:00` 财报搜集。",
+        "106,251",
+        "已完成 `2026-06-09 23:00` 至 `2026-06-10 23:00` 财报搜集。",
         "",
-        "写入美股财报库 4 条：",
+        "写入美股库 2 条：",
         "",
-        "- [Vail Resorts（MTN）](https://app.notion.com/p/37a040fc8033810daee9e13206183764)",
-        "- [Mission Produce（AVO）](https://app.notion.com/p/37a040fc80338114820eeb3f9c8f195e)",
-        "- [Mama's Creations（MAMA）](https://app.notion.com/p/37a040fc8033813691a9def961b81ca8)",
-        "- [J.M. Smucker（SJM）](https://app.notion.com/p/37a040fc80338159a9f1ffdabe5604a6)",
+        "- [Casey's General Stores（CASY）](https://app.notion.com/p/37b040fc803381d59b47c4d95b27e006)",
+        "- [Cracker Barrel（CBRL）](https://app.notion.com/p/37b040fc803381209c8ae26ce0661f88)",
         "",
-        "写入前已按公司、代码和日期搜索去重。写入后已逐页回读，确认属性、AI 总结及四个正文小节均已落库。",
+        "A股、港股未检索到同时满足披露时间、核心数据及可靠市场信息要求的候选，已跳过。",
         "",
-        "A股、港股未发现满足全部核验条件的高置信度候选，本次跳过。未修改任何本地文件或自动化配置。",
-        "===== 2026-06-09 23:03:53 earnings-search validation start =====",
-        "validation passed: create_count=1 notion_read_count=12 notion_write_or_update_count=1",
-        "===== 2026-06-09 23:03:53 earnings-search done ====="
+        "两条记录均已完成写入后回读校验：标题、股票代码、日期、AI总结和四个正文小节均已落库，未发现重复记录。主要来源为 [WSJ](https://www.wsj.com/business/earnings/caseys-general-stores-results-helped-by-pizza-sales-bfa41ace)、[Barron's](https://www.barrons.com/articles/caseys-general-stores-earnings-stock-price-75d4b995) 和 [Investopedia](https://www.investopedia.com/cracker-barrel-stock-soars-as-surprise-profit-points-to-progress-in-its-turnaround-11994616)。",
+        "===== 2026-06-10 23:05:01 earnings-search validation start =====",
+        "validation passed: create_count=1 notion_read_count=13 notion_write_or_update_count=1",
+        "===== 2026-06-10 23:05:01 earnings-search done ====="
       ]
     },
     {
@@ -86,8 +86,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-10.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-11.done",
+      "done_today": false,
       "duration_seconds": 224,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -113,7 +113,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "1. **SJM**",
@@ -154,8 +154,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-10.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-11.done",
+      "done_today": false,
       "duration_seconds": 352,
       "hard_error": false,
       "job": "financial-news",
@@ -187,7 +187,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
@@ -228,8 +228,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-10.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-11.done",
+      "done_today": false,
       "duration_seconds": 710,
       "hard_error": false,
       "job": "sector-rotation",
@@ -262,7 +262,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_notion-update-page (failed)",
         "user cancelled MCP tool call",
@@ -303,8 +303,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-10.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-11.done",
+      "done_today": false,
       "duration_seconds": 493,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -335,7 +335,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "校验结果：标题、日期 `2026-06-09`、AI总结、正文结构、数据来源及 Mermaid 均已落库。",
         "",
@@ -376,8 +376,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-10.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-11.done",
+      "done_today": false,
       "duration_seconds": 170,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -405,7 +405,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion_fetch (failed)",
         "mcp: codex_apps/notion_notion-update-page started",
@@ -446,8 +446,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-10.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-11.done",
+      "done_today": false,
       "duration_seconds": 401,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -482,7 +482,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "四个市场均已写入。现在回读三份股票页面，核对研究日期、标的、评级、市值字段及完整正文是否落库；加密页面已完成回读校验。",
@@ -523,8 +523,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-10.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-11.done",
+      "done_today": false,
       "duration_seconds": 176,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -550,7 +550,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "连续性已确认：6月5日利率冲击后，6月8日科技修复未扩散，6月9日再次转向医疗、必需消费和公用事业。今天的核心不是追逐AI反弹，而是将市场标记为 `Risk Off（但非全面恐慌）`，重点跟踪医疗防御是否从轮动升级为短期主线，并把能源和半导体的单日波动降权。现在写入今日页面。",
@@ -585,6 +585,6 @@
       ]
     }
   ],
-  "now": "2026-06-10T20:05:01.560438",
+  "now": "2026-06-11T00:05:01.318001",
   "snapshot_source": "local-cron"
 }
