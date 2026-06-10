@@ -448,30 +448,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-10.done",
       "done_today": false,
-      "duration_seconds": 535,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-09T08:08:56",
-      "last_start": "2026-06-09T08:00:01",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=21 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-10T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-10T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-11T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -482,38 +469,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "codex",
-        "四份页面都已创建并回读。最后做一次排版清理：移除美股页中由数值对齐符触发的多余分隔行，并把 XRP 估值表与竞品表重新分开，不改动研究结论或属性。",
-        "mcp: codex_apps/notion_notion-update-page started",
-        "mcp: codex_apps/notion_notion-update-page (failed)",
-        "user cancelled MCP tool call",
-        "mcp: codex_apps/notion_notion-update-page started",
-        "mcp: codex_apps/notion_notion-update-page (failed)",
-        "user cancelled MCP tool call",
-        "codex",
-        "已完成 4 份报告并回读校验：",
-        "",
-        "- [AVGO - Broadcom](https://app.notion.com/p/37a040fc803381079a65dff053ebee0d)：推荐",
-        "- [6690 - 海尔智家](https://app.notion.com/p/37a040fc80338112954efec5efd9aecc)：推荐",
-        "- [000333 - 美的集团](https://app.notion.com/p/37a040fc803381f0bb99c27df67dc50f)：推荐",
-        "- [XRP - XRP Ledger](https://app.notion.com/p/37a040fc80338150a228d8464d98792a)：中性",
-        "",
-        "校验结果：四页日期、标的、市值、评级、分类、来源及完整正文均已落库；无市场跳过。未修改任何本地文件或自动化配置。",
-        "tokens used",
-        "248,930",
-        "已完成 4 份报告并回读校验：",
-        "",
-        "- [AVGO - Broadcom](https://app.notion.com/p/37a040fc803381079a65dff053ebee0d)：推荐",
-        "- [6690 - 海尔智家](https://app.notion.com/p/37a040fc80338112954efec5efd9aecc)：推荐",
-        "- [000333 - 美的集团](https://app.notion.com/p/37a040fc803381f0bb99c27df67dc50f)：推荐",
-        "- [XRP - XRP Ledger](https://app.notion.com/p/37a040fc80338150a228d8464d98792a)：中性",
-        "",
-        "校验结果：四页日期、标的、市值、评级、分类、来源及完整正文均已落库；无市场跳过。未修改任何本地文件或自动化配置。",
-        "===== 2026-06-09 08:08:56 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=21 notion_write_or_update_count=4",
-        "===== 2026-06-09 08:08:56 stock-crypto-fundamentals done ====="
+        "===== 2026-06-10 08:00:01 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -585,6 +543,6 @@
       ]
     }
   ],
-  "now": "2026-06-10T04:05:01.781397",
+  "now": "2026-06-10T08:05:01.645920",
   "snapshot_source": "local-cron"
 }
