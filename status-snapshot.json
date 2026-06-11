@@ -448,30 +448,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-11.done",
       "done_today": false,
-      "duration_seconds": 401,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-10T08:06:42",
-      "last_start": "2026-06-10T08:00:01",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=22 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-11T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-11T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-12T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -482,38 +469,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "codex",
-        "四个市场均已写入。现在回读三份股票页面，核对研究日期、标的、评级、市值字段及完整正文是否落库；加密页面已完成回读校验。",
-        "mcp: codex_apps/notion_fetch started",
-        "mcp: codex_apps/notion_fetch (completed)",
-        "mcp: codex_apps/notion_fetch started",
-        "mcp: codex_apps/notion_fetch (completed)",
-        "mcp: codex_apps/notion_fetch started",
-        "mcp: codex_apps/notion_fetch (completed)",
-        "codex",
-        "已完成 4 个市场报告并写入 Notion，页面属性、研究日期及完整正文均已回读校验：",
-        "",
-        "- [LLY - Eli Lilly](https://app.notion.com/p/37b040fc803381539317de4f8814a8a4)：推荐",
-        "- [0386 - 中国石油化工股份](https://app.notion.com/p/37b040fc803381abb8bee78498e75255)：中性",
-        "- [002594 - 比亚迪](https://app.notion.com/p/37b040fc8033814cbb46c8eb88521316)：中性",
-        "- [DOGE - Dogecoin](https://app.notion.com/p/37b040fc803381c9b9b0e64cf2cc2b6f)：中性",
-        "",
-        "四页校验全部通过。因近 90 天头部标的覆盖率较高，LLY、比亚迪及 DOGE 按距上次研究较久的回退规则选取；部分未能快速确认的数据已标注 `数据待确认`。",
-        "tokens used",
-        "420,308",
-        "已完成 4 个市场报告并写入 Notion，页面属性、研究日期及完整正文均已回读校验：",
-        "",
-        "- [LLY - Eli Lilly](https://app.notion.com/p/37b040fc803381539317de4f8814a8a4)：推荐",
-        "- [0386 - 中国石油化工股份](https://app.notion.com/p/37b040fc803381abb8bee78498e75255)：中性",
-        "- [002594 - 比亚迪](https://app.notion.com/p/37b040fc8033814cbb46c8eb88521316)：中性",
-        "- [DOGE - Dogecoin](https://app.notion.com/p/37b040fc803381c9b9b0e64cf2cc2b6f)：中性",
-        "",
-        "四页校验全部通过。因近 90 天头部标的覆盖率较高，LLY、比亚迪及 DOGE 按距上次研究较久的回退规则选取；部分未能快速确认的数据已标注 `数据待确认`。",
-        "===== 2026-06-10 08:06:42 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=22 notion_write_or_update_count=4",
-        "===== 2026-06-10 08:06:42 stock-crypto-fundamentals done ====="
+        "===== 2026-06-11 08:00:01 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -585,6 +543,6 @@
       ]
     }
   ],
-  "now": "2026-06-11T04:05:01.927436",
+  "now": "2026-06-11T08:05:01.716604",
   "snapshot_source": "local-cron"
 }
