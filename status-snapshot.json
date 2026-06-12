@@ -93,14 +93,14 @@
       "job": "earnings-vertical-compare",
       "label": "财报纵向对比",
       "last_done": "2026-06-11T12:05:04",
-      "last_start": "2026-06-12T12:00:01",
+      "last_start": "2026-06-12T14:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-vertical-compare.log",
       "next_run": "2026-06-13T12:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 2,
+      "retry_count": 18,
       "schedule": {
         "dow": "2-6",
         "hour": "12",
@@ -111,9 +111,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-12 12:00:01 earnings-vertical-compare start =====",
+        "===== 2026-06-12 14:50:01 earnings-vertical-compare start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-12 12:00:01 earnings-vertical-compare retry ====="
+        "===== 2026-06-12 14:50:01 earnings-vertical-compare retry ====="
       ]
     },
     {
@@ -204,14 +204,14 @@
       "job": "sector-rotation",
       "label": "板块轮动",
       "last_done": "2026-06-11T10:37:53",
-      "last_start": "2026-06-12T12:00:01",
+      "last_start": "2026-06-12T13:20:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-rotation.log",
       "next_run": "2026-06-13T10:30:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 10,
+      "retry_count": 18,
       "schedule": {
         "dow": "2-6",
         "hour": "10",
@@ -222,9 +222,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-12 12:00:01 sector-rotation start =====",
+        "===== 2026-06-12 13:20:01 sector-rotation start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-12 12:00:01 sector-rotation retry ====="
+        "===== 2026-06-12 13:20:01 sector-rotation retry ====="
       ]
     },
     {
@@ -278,14 +278,14 @@
       "job": "sector-trend-us-close-review",
       "label": "美股收盘复查",
       "last_done": "2026-06-11T10:02:02",
-      "last_start": "2026-06-12T12:00:01",
+      "last_start": "2026-06-12T12:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-trend-us-close-review.log",
       "next_run": "2026-06-13T10:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 13,
+      "retry_count": 18,
       "schedule": {
         "dow": "2-6",
         "hour": "10",
@@ -296,9 +296,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-12 12:00:01 sector-trend-us-close-review start =====",
+        "===== 2026-06-12 12:50:01 sector-trend-us-close-review start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-12 12:00:01 sector-trend-us-close-review retry ====="
+        "===== 2026-06-12 12:50:01 sector-trend-us-close-review retry ====="
       ]
     },
     {
@@ -347,23 +347,19 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-12.done",
       "done_today": false,
-      "duration_seconds": 263,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "us-sector-opportunity",
       "label": "美股机会洞察",
       "last_done": "2026-06-11T13:04:24",
-      "last_start": "2026-06-11T13:00:01",
-      "last_validation": {
-        "detail": "create_count=1 notion_read_count=13 notion_write_or_update_count=1",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-12T15:50:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/us-sector-opportunity.log",
-      "next_run": "2026-06-12T13:00:00",
+      "next_run": "2026-06-13T13:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 2,
+      "retry_count": 20,
       "schedule": {
         "dow": "2-6",
         "hour": "13",
@@ -372,41 +368,14 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "mcp: codex_apps/notion_fetch started",
-        "mcp: codex_apps/notion_fetch (completed)",
-        "codex",
-        "去重结果：目标库中未发现标题为 `2026-06-11` 的页面。基于 6 月 6、9、10、11 日分析，今天不会把能源升级成趋势主线；报告将把市场标记为 `Risk Off + Event Shock`，核心结论是“暂无高质量新主线”，仅保留能源事件观察、医疗防御延续和 AI 止跌观察。现在写入目标库。",
-        "mcp: codex_apps/notion_notion-create-pages started",
-        "mcp: codex_apps/notion_notion-create-pages (completed)",
-        "mcp: codex_apps/notion_fetch started",
-        "mcp: codex_apps/notion_fetch (completed)",
-        "mcp: codex_apps/notion_search started",
-        "mcp: codex_apps/notion_search (completed)",
-        "codex",
-        "已生成并写入 Notion「美股板块机会洞察」数据库：",
-        "",
-        "[2026-06-11](https://app.notion.com/p/37c040fc803381fba6d5e5bc87ef4a1e)",
-        "",
-        "核心判断：`Risk Off + Event Shock`，暂无高质量新主线；能源仅作事件观察，医疗与必需消费保持防御跟踪，AI链等待止跌确认。",
-        "",
-        "校验完成：标题、数据库归属及完整正文均已回读确认落库；写入前未发现同日页面。未修改任何本地文件或自动化配置。",
-        "tokens used",
-        "100,962",
-        "已生成并写入 Notion「美股板块机会洞察」数据库：",
-        "",
-        "[2026-06-11](https://app.notion.com/p/37c040fc803381fba6d5e5bc87ef4a1e)",
-        "",
-        "核心判断：`Risk Off + Event Shock`，暂无高质量新主线；能源仅作事件观察，医疗与必需消费保持防御跟踪，AI链等待止跌确认。",
-        "",
-        "校验完成：标题、数据库归属及完整正文均已回读确认落库；写入前未发现同日页面。未修改任何本地文件或自动化配置。",
-        "===== 2026-06-11 13:04:24 us-sector-opportunity validation start =====",
-        "validation passed: create_count=1 notion_read_count=13 notion_write_or_update_count=1",
-        "===== 2026-06-11 13:04:24 us-sector-opportunity done ====="
+        "===== 2026-06-12 15:50:01 us-sector-opportunity start =====",
+        "timeout: failed to run command ‘codex’: No such file or directory",
+        "===== 2026-06-12 15:50:01 us-sector-opportunity retry ====="
       ]
     }
   ],
-  "now": "2026-06-12T12:05:01.909239",
+  "now": "2026-06-12T16:05:02.163260",
   "snapshot_source": "local-cron"
 }
