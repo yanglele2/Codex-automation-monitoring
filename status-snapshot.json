@@ -9,34 +9,21 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-12.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-13.done",
       "done_today": false,
-      "duration_seconds": 359,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
       "last_done": "2026-06-11T23:06:00",
-      "last_start": "2026-06-11T23:00:01",
-      "last_validation": {
-        "detail": "create_count=1 notion_read_count=9 notion_write_or_update_count=1",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-12T23:50:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-12T23:00:00",
-      "notion_pages": [
-        "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
-        "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
-        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/88e139937bbe445eb54fd886e2e3fab9?db=4cf9dd08d838442d8a162046904a1904&pvs=21",
-        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/b4d9ec69be8844019efeaca55af18475?db=4c70b7be52b34f83844b1304dd7e635f&pvs=21",
-        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/bee18a9273a14bab81617050f7b7f529?db=78ea12adbf0a459f8a0b1a34b0abae0e&pvs=21",
-        "https://www.notion.so/78ea12adbf0a459f8a0b1a34b0abae0e?pvs=21",
-        "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21",
-        "https://www.notion.so/fbc627d633af442c961069c0006cbc2f?pvs=21"
-      ],
+      "next_run": "2026-06-13T23:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 0,
+      "retry_count": 6,
       "schedule": {
         "dow": "2-6",
         "hour": "23",
@@ -45,38 +32,11 @@
         "raw": "0 23 * * 2-6 /root/codex-automations/run.sh earnings-search"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "codex",
-        "记录已创建。最后执行双重落库校验：直接读取新页面确认属性与四个正文小节，再在目标数据源中按标题重新查询确认可检索。",
-        "mcp: codex_apps/notion_fetch started",
-        "mcp: codex_apps/notion_fetch (completed)",
-        "mcp: codex_apps/notion_search started",
-        "mcp: codex_apps/notion_search (completed)",
-        "codex",
-        "已完成 `2026-06-10 23:00` 至 `2026-06-11 23:00` 财报搜集。",
-        "",
-        "- 新增：[Oracle（ORCL）— 2026-06-10 财报](https://app.notion.com/p/37c040fc803381f7ab0dd2eed56fe3e1)",
-        "- 去重：已按标题、代码、日期检查，无重复记录。",
-        "- 校验：已重新读取页面，属性、AI 总结及四个正文小节均已落库。",
-        "- A股、港股：未发现满足完整核验标准的候选，因此跳过。",
-        "- 未修改任何本地文件或自动化配置。",
-        "",
-        "主要来源：[MarketWatch](https://www.marketwatch.com/story/oracles-stock-slides-after-earnings-as-the-steep-price-of-ai-spooks-investors-0653b309)、[WSJ](https://www.wsj.com/business/earnings/oracle-reports-higher-profit-on-surging-cloud-revenue-5f7d25eb)、[Investopedia](https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-june-11-2026-11995534)。",
-        "tokens used",
-        "92,083",
-        "已完成 `2026-06-10 23:00` 至 `2026-06-11 23:00` 财报搜集。",
-        "",
-        "- 新增：[Oracle（ORCL）— 2026-06-10 财报](https://app.notion.com/p/37c040fc803381f7ab0dd2eed56fe3e1)",
-        "- 去重：已按标题、代码、日期检查，无重复记录。",
-        "- 校验：已重新读取页面，属性、AI 总结及四个正文小节均已落库。",
-        "- A股、港股：未发现满足完整核验标准的候选，因此跳过。",
-        "- 未修改任何本地文件或自动化配置。",
-        "",
-        "主要来源：[MarketWatch](https://www.marketwatch.com/story/oracles-stock-slides-after-earnings-as-the-steep-price-of-ai-spooks-investors-0653b309)、[WSJ](https://www.wsj.com/business/earnings/oracle-reports-higher-profit-on-surging-cloud-revenue-5f7d25eb)、[Investopedia](https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-june-11-2026-11995534)。",
-        "===== 2026-06-11 23:05:59 earnings-search validation start =====",
-        "validation passed: create_count=1 notion_read_count=9 notion_write_or_update_count=1",
-        "===== 2026-06-11 23:06:00 earnings-search done ====="
+        "===== 2026-06-12 23:50:01 earnings-search start =====",
+        "timeout: failed to run command ‘codex’: No such file or directory",
+        "===== 2026-06-12 23:50:01 earnings-search retry ====="
       ]
     },
     {
@@ -86,7 +46,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-12.done",
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-13.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -123,21 +83,21 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-12.done",
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-13.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
       "job": "financial-news",
       "label": "金融消息",
       "last_done": "2026-06-11T19:05:27",
-      "last_start": "2026-06-12T20:00:01",
+      "last_start": "2026-06-12T21:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/financial-news.log",
       "next_run": "2026-06-13T19:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 7,
+      "retry_count": 18,
       "schedule": {
         "dow": "*",
         "hour": "19",
@@ -148,9 +108,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-12 20:00:01 financial-news start =====",
+        "===== 2026-06-12 21:50:01 financial-news start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-12 20:00:01 financial-news retry ====="
+        "===== 2026-06-12 21:50:01 financial-news retry ====="
       ]
     },
     {
@@ -160,7 +120,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-12.done",
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-13.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -197,7 +157,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-12.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-13.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -234,7 +194,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-12.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-13.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -271,7 +231,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-12.done",
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-13.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -308,7 +268,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-12.done",
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-13.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -339,6 +299,6 @@
       ]
     }
   ],
-  "now": "2026-06-12T20:05:01.951067",
+  "now": "2026-06-13T00:05:01.235138",
   "snapshot_source": "local-cron"
 }
