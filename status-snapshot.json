@@ -238,14 +238,14 @@
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-11T08:08:38",
-      "last_start": "2026-06-12T10:50:01",
+      "last_start": "2026-06-13T08:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-13T08:00:00",
+      "next_run": "2026-06-16T08:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 18,
+      "retry_count": 19,
       "schedule": {
         "dow": "2-6",
         "hour": "8",
@@ -256,9 +256,10 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-12 10:50:01 stock-crypto-fundamentals start =====",
+        "===== 2026-06-13 08:00:01 stock-crypto-fundamentals start =====",
+        "===== 2026-06-13 08:00:01 stock-crypto-fundamentals missed check triggered =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-12 10:50:01 stock-crypto-fundamentals retry ====="
+        "===== 2026-06-13 08:00:01 stock-crypto-fundamentals retry ====="
       ]
     },
     {
@@ -299,6 +300,6 @@
       ]
     }
   ],
-  "now": "2026-06-13T04:05:01.478233",
+  "now": "2026-06-13T08:05:01.750343",
   "snapshot_source": "local-cron"
 }
