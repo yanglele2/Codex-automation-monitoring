@@ -53,14 +53,14 @@
       "job": "earnings-vertical-compare",
       "label": "财报纵向对比",
       "last_done": "2026-06-11T12:05:04",
-      "last_start": "2026-06-12T14:50:01",
+      "last_start": "2026-06-13T12:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-vertical-compare.log",
-      "next_run": "2026-06-13T12:00:00",
+      "next_run": "2026-06-16T12:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 18,
+      "retry_count": 19,
       "schedule": {
         "dow": "2-6",
         "hour": "12",
@@ -71,9 +71,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-12 14:50:01 earnings-vertical-compare start =====",
+        "===== 2026-06-13 12:00:01 earnings-vertical-compare start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-12 14:50:01 earnings-vertical-compare retry ====="
+        "===== 2026-06-13 12:00:01 earnings-vertical-compare retry ====="
       ]
     },
     {
@@ -127,14 +127,14 @@
       "job": "sector-rotation",
       "label": "板块轮动",
       "last_done": "2026-06-11T10:37:53",
-      "last_start": "2026-06-12T13:20:01",
+      "last_start": "2026-06-13T12:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-rotation.log",
-      "next_run": "2026-06-13T10:30:00",
+      "next_run": "2026-06-16T10:30:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 18,
+      "retry_count": 28,
       "schedule": {
         "dow": "2-6",
         "hour": "10",
@@ -145,9 +145,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-12 13:20:01 sector-rotation start =====",
+        "===== 2026-06-13 12:00:01 sector-rotation start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-12 13:20:01 sector-rotation retry ====="
+        "===== 2026-06-13 12:00:01 sector-rotation retry ====="
       ]
     },
     {
@@ -164,14 +164,14 @@
       "job": "sector-trend-data",
       "label": "板块走势数据",
       "last_done": "2026-06-11T08:36:33",
-      "last_start": "2026-06-12T11:20:01",
+      "last_start": "2026-06-13T11:20:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-trend-data.log",
-      "next_run": "2026-06-13T08:30:00",
+      "next_run": "2026-06-14T08:30:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 19,
+      "retry_count": 37,
       "schedule": {
         "dow": "*",
         "hour": "8",
@@ -182,9 +182,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-12 11:20:01 sector-trend-data start =====",
+        "===== 2026-06-13 11:20:01 sector-trend-data start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-12 11:20:01 sector-trend-data retry ====="
+        "===== 2026-06-13 11:20:01 sector-trend-data retry ====="
       ]
     },
     {
@@ -201,14 +201,14 @@
       "job": "sector-trend-us-close-review",
       "label": "美股收盘复查",
       "last_done": "2026-06-11T10:02:02",
-      "last_start": "2026-06-12T12:50:01",
+      "last_start": "2026-06-13T12:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-trend-us-close-review.log",
-      "next_run": "2026-06-13T10:00:00",
+      "next_run": "2026-06-16T10:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 18,
+      "retry_count": 31,
       "schedule": {
         "dow": "2-6",
         "hour": "10",
@@ -219,9 +219,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-12 12:50:01 sector-trend-us-close-review start =====",
+        "===== 2026-06-13 12:00:01 sector-trend-us-close-review start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-12 12:50:01 sector-trend-us-close-review retry ====="
+        "===== 2026-06-13 12:00:01 sector-trend-us-close-review retry ====="
       ]
     },
     {
@@ -238,14 +238,14 @@
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-11T08:08:38",
-      "last_start": "2026-06-13T08:00:01",
+      "last_start": "2026-06-13T10:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
       "next_run": "2026-06-16T08:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 19,
+      "retry_count": 36,
       "schedule": {
         "dow": "2-6",
         "hour": "8",
@@ -256,10 +256,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-13 08:00:01 stock-crypto-fundamentals start =====",
-        "===== 2026-06-13 08:00:01 stock-crypto-fundamentals missed check triggered =====",
+        "===== 2026-06-13 10:50:01 stock-crypto-fundamentals start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-13 08:00:01 stock-crypto-fundamentals retry ====="
+        "===== 2026-06-13 10:50:01 stock-crypto-fundamentals retry ====="
       ]
     },
     {
@@ -300,6 +299,6 @@
       ]
     }
   ],
-  "now": "2026-06-13T08:05:01.750343",
+  "now": "2026-06-13T12:05:01.850812",
   "snapshot_source": "local-cron"
 }
