@@ -90,14 +90,14 @@
       "job": "financial-news",
       "label": "金融消息",
       "last_done": "2026-06-11T19:05:27",
-      "last_start": "2026-06-14T21:50:01",
+      "last_start": "2026-06-15T20:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/financial-news.log",
-      "next_run": "2026-06-15T19:00:00",
+      "next_run": "2026-06-16T19:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 54,
+      "retry_count": 61,
       "schedule": {
         "dow": "*",
         "hour": "19",
@@ -108,9 +108,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-14 21:50:01 financial-news start =====",
+        "===== 2026-06-15 20:00:01 financial-news start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-14 21:50:01 financial-news retry ====="
+        "===== 2026-06-15 20:00:01 financial-news retry ====="
       ]
     },
     {
@@ -299,6 +299,6 @@
       ]
     }
   ],
-  "now": "2026-06-15T16:05:01.680524",
+  "now": "2026-06-15T20:05:01.874261",
   "snapshot_source": "local-cron"
 }
