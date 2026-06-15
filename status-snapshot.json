@@ -9,7 +9,7 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-15.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -46,7 +46,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-15.done",
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -83,21 +83,21 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-15.done",
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
       "job": "financial-news",
       "label": "金融消息",
       "last_done": "2026-06-11T19:05:27",
-      "last_start": "2026-06-15T20:00:01",
+      "last_start": "2026-06-15T21:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/financial-news.log",
       "next_run": "2026-06-16T19:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 61,
+      "retry_count": 72,
       "schedule": {
         "dow": "*",
         "hour": "19",
@@ -108,9 +108,9 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-15 20:00:01 financial-news start =====",
+        "===== 2026-06-15 21:50:01 financial-news start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-15 20:00:01 financial-news retry ====="
+        "===== 2026-06-15 21:50:01 financial-news retry ====="
       ]
     },
     {
@@ -120,7 +120,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-15.done",
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -157,7 +157,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-15.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -194,7 +194,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-15.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -231,7 +231,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-15.done",
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -268,7 +268,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-15.done",
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
@@ -299,6 +299,6 @@
       ]
     }
   ],
-  "now": "2026-06-15T20:05:01.874261",
+  "now": "2026-06-16T00:05:01.226428",
   "snapshot_source": "local-cron"
 }
