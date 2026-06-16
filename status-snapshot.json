@@ -9,21 +9,30 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-16.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-17.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
       "job": "earnings-search",
       "label": "财报搜集",
       "last_done": "2026-06-11T23:06:00",
-      "last_start": "2026-06-13T23:50:01",
+      "last_start": "2026-06-16T23:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-16T23:00:00",
-      "notion_pages": [],
+      "next_run": "2026-06-17T23:00:00",
+      "notion_pages": [
+        "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
+        "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/88e139937bbe445eb54fd886e2e3fab9?db=4cf9dd08d838442d8a162046904a1904&pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/b4d9ec69be8844019efeaca55af18475?db=4c70b7be52b34f83844b1304dd7e635f&pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/bee18a9273a14bab81617050f7b7f529?db=78ea12adbf0a459f8a0b1a34b0abae0e&pvs=21",
+        "https://www.notion.so/78ea12adbf0a459f8a0b1a34b0abae0e?pvs=21",
+        "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21",
+        "https://www.notion.so/fbc627d633af442c961069c0006cbc2f?pvs=21"
+      ],
       "prompt_exists": true,
-      "retry_count": 12,
+      "retry_count": 18,
       "schedule": {
         "dow": "2-6",
         "hour": "23",
@@ -34,9 +43,36 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
-        "===== 2026-06-13 23:50:01 earnings-search start =====",
-        "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-13 23:50:01 earnings-search retry ====="
+        "        - `## 核心财报数据`",
+        "        - `## 电话会议要点`",
+        "        - `## 市场反应`",
+        "        - `## 技术面分析（Vegas EMA）`",
+        "    - 若某个部分资料不足，在对应小节明确写：`公开资料不足，已跳过`",
+        "",
+        "## 👀 跳过与失败规则",
+        "",
+        "- **跳过单家公司**：无法确认披露时间、缺少核心财报数据、或资料来源不可靠",
+        "- **跳过单个市场**：当日未检索到足够高置信度的财报结果",
+        "- **本次运行仍算成功**：即使只写入少量高质量记录，或三个市场中只有一个市场有结果",
+        "- **仅在以下情况下判定为失败**：",
+        "    - 无法访问目标数据库",
+        "    - 完全无法执行基础检索",
+        "    - 页面写入权限异常导致无法保存任何结果",
+        "",
+        "## 🧾 写作要求",
+        "",
+        "- 优先简洁、结构化、可回溯",
+        "- 财报数据以公司官方披露为准",
+        "- 电话会议和市场反应以公开报道为准",
+        "- 若存在信息冲突，采用更高等级来源，并在表述中保持保守",
+        "- 宁可少写，不要错写；宁可跳过，不要臆造。",
+        "- 写入 Notion 前，必须按标题、股票代码、财报日期查询目标库，避免重复创建同一家公司同一财报日记录；写入后，必须读取或重新查询刚创建的页面，确认页面属性和正文已落库；最终输出需明确写出校验结果。若本次无候选可写入，必须明确说明无候选原因。",
+        "- 本任务只允许检索财报信息并写入 Notion database。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
+        "",
+        "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
+        "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 17th, 2026 12:37 AM.",
+        "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 17th, 2026 12:37 AM.",
+        "===== 2026-06-16 23:50:14 earnings-search retry ====="
       ]
     },
     {
@@ -46,7 +82,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-16.done",
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-17.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -83,8 +119,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-16.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-17.done",
+      "done_today": false,
       "duration_seconds": 1410,
       "hard_error": false,
       "job": "financial-news",
@@ -116,7 +152,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "  属性和正文已落库；个股层面未找到窗口内多源验证的重大消息，已按“无重大已验证个股消息”处理。",
         "- 港股：[2026-06-16 每日消息](https://app.notion.com/p/381040fc8033819197b7c505333c3874)  ",
@@ -157,7 +193,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-16.done",
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-17.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -228,8 +264,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-16.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-17.done",
+      "done_today": false,
       "duration_seconds": 1282,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -260,7 +296,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 查重：写入前在四个目标库内未发现 `2026-06-15` 对应市场的精确重复记录。",
         "- 交易日判断：A股、港股、美股 `2026-06-15` 均按交易日处理；加密货币按 7×24 小时创建。",
@@ -301,7 +337,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-16.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-17.done",
       "done_today": false,
       "duration_seconds": 411,
       "hard_error": false,
@@ -371,8 +407,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-16.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-17.done",
+      "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -398,7 +434,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 加密货币：`ETH - Ethereum`，评级 `中性`  ",
         "  https://app.notion.com/p/381040fc80338172bea7ed26c3a34cf4",
@@ -439,7 +475,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-16.done",
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-17.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -470,6 +506,6 @@
       ]
     }
   ],
-  "now": "2026-06-16T20:50:18.175845",
+  "now": "2026-06-17T00:05:02.194974",
   "snapshot_source": "local-cron"
 }
