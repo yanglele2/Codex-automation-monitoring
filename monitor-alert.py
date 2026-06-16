@@ -5,6 +5,8 @@ import argparse
 import datetime as dt
 import hashlib
 import json
+import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -20,6 +22,21 @@ SNAPSHOT = BASE / "status-snapshot.json"
 DASHBOARD_URL = "http://127.0.0.1:8765/api/status"
 NOTION_PROJECT_URL = "https://www.notion.so/fbc627d633af442c961069c0006cbc2f?pvs=21"
 COOLDOWN_SECONDS = 4 * 60 * 60
+
+
+def resolve_codex_bin() -> str:
+    candidates = [
+        os.environ.get("CODEX_BIN"),
+        "/root/.local/bin/codex",
+        "/root/.codex/packages/standalone/current/bin/codex",
+        shutil.which("codex"),
+    ]
+    for candidate in candidates:
+        if candidate and os.access(candidate, os.X_OK):
+            return candidate
+    raise FileNotFoundError(
+        "Missing executable: codex. Set CODEX_BIN or install Codex CLI at /root/.local/bin/codex."
+    )
 
 
 def now() -> dt.datetime:
@@ -163,9 +180,10 @@ def send_notion_alert(issues: list[dict]) -> int:
         handle.write(prompt)
         prompt_path = Path(handle.name)
     try:
+        codex_bin = resolve_codex_bin()
         with prompt_path.open("r") as stdin:
             result = subprocess.run(
-                ["codex", "exec", "--full-auto", "--skip-git-repo-check"],
+                [codex_bin, "exec", "--full-auto", "--skip-git-repo-check"],
                 cwd=str(BASE),
                 stdin=stdin,
                 text=True,

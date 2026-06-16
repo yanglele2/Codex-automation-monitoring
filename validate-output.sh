@@ -21,6 +21,29 @@ has_pattern() {
   grep -E -q "$pattern" "$RUN_OUTPUT"
 }
 
+body_has_pattern() {
+  local pattern="$1"
+  awk -v pattern="$pattern" '
+    /^codex$/ { seen=1 }
+    !seen { next }
+    $0 ~ pattern { found=1 }
+    END { exit found ? 0 : 1 }
+  ' "$RUN_OUTPUT"
+}
+
+has_current_hard_failure() {
+  local pattern="$1"
+  awk -v pattern="$pattern" '
+    /^codex$/ { seen=1 }
+    !seen { next }
+    /^\/root\/\.codex\// { next }
+    /^\/root\/codex-automations\/logs\// { next }
+    /^\.\/logs\// { next }
+    $0 ~ pattern { found=1 }
+    END { exit found ? 0 : 1 }
+  ' "$RUN_OUTPUT"
+}
+
 CREATE_COUNT="$(count_pattern 'mcp: codex_apps/notion_notion-create-pages \(completed\)')"
 NOTION_READ_COUNT="$(count_pattern 'mcp: codex_apps/notion_(fetch|search|notion-query-data-sources) \(completed\)')"
 NOTION_WRITE_OR_UPDATE_COUNT="$(count_pattern 'mcp: codex_apps/notion_.*(create|update|patch|append|edit).* \(completed\)')"
@@ -31,7 +54,7 @@ if has_pattern '已落地到配置文件|更新定时模板|安装系统 crontab
   exit 1
 fi
 
-if has_pattern 'Traceback|UnhandledPromiseRejection|ValidationError|Permission denied|Error: failed to initialize|Mcp error: -32000'; then
+if has_current_hard_failure 'Traceback|UnhandledPromiseRejection|ValidationError|Permission denied|Error: failed to initialize|Mcp error: -32000|usage limit|You'\''ve hit your usage limit'; then
   echo "validation failed: run output contains hard failure keywords" >&2
   exit 1
 fi
@@ -62,7 +85,7 @@ require_post_write_readback() {
 }
 
 allow_explicit_noop() {
-  has_pattern '没有候选记录|没有找到.*候选|无.*候选|未检索到.*高置信度|按规则跳过|无需更新|数据一致|报告不存在|非.*交易日|暂无高质量机会|无重大消息'
+  body_has_pattern '没有候选记录|没有找到.*候选|无.*候选|未检索到.*高置信度|按规则跳过|无需更新|数据一致|报告不存在|非.*交易日|暂无高质量机会|无重大消息'
 }
 
 case "$JOB" in

@@ -126,6 +126,9 @@ def latest_events(job: str, log_text: str) -> dict:
     config_warning = False
     hard_error = False
 
+    def archival_log_line(line: str) -> bool:
+        return line.startswith(("/root/.codex/", "/root/codex-automations/logs/", "./logs/"))
+
     for line in segment:
         match = LINE_RE.match(line)
         if match and match.group("job") == job:
@@ -133,6 +136,9 @@ def latest_events(job: str, log_text: str) -> dict:
             event = match.group("event")
             if event == "validation start":
                 validations.append({"time": when.isoformat(), "status": "started", "detail": ""})
+
+        if archival_log_line(line):
+            continue
 
         validation = VALIDATION_RE.search(line)
         if validation:
@@ -145,7 +151,7 @@ def latest_events(job: str, log_text: str) -> dict:
         pages.extend(PAGE_RE.findall(line))
         if re.search(r"已落地到配置文件|更新定时模板|安装系统 crontab|diff --git|apply patch|patch: completed", line):
             config_warning = True
-        if re.search(r"Traceback|UnhandledPromiseRejection|ValidationError|Permission denied|Error: failed to initialize", line):
+        if re.search(r"Traceback|UnhandledPromiseRejection|ValidationError|Permission denied|Error: failed to initialize|failed to run command|No such file or directory|usage limit|You've hit your usage limit", line):
             hard_error = True
 
     last_start = starts[-1] if starts else None
