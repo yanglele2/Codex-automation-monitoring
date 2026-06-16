@@ -12,7 +12,7 @@
       "done_marker": "/root/codex-automations/state/earnings-search-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
-      "hard_error": false,
+      "hard_error": true,
       "job": "earnings-search",
       "label": "财报搜集",
       "last_done": "2026-06-11T23:06:00",
@@ -32,7 +32,7 @@
         "raw": "0 23 * * 2-6 /root/codex-automations/run.sh earnings-search"
       },
       "skipped_count": 0,
-      "status": "running",
+      "status": "failed",
       "tail": [
         "===== 2026-06-13 23:50:01 earnings-search start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
@@ -49,7 +49,7 @@
       "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
-      "hard_error": false,
+      "hard_error": true,
       "job": "earnings-vertical-compare",
       "label": "财报纵向对比",
       "last_done": "2026-06-11T12:05:04",
@@ -69,7 +69,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "running",
+      "status": "failed",
       "tail": [
         "===== 2026-06-16 14:50:02 earnings-vertical-compare start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
@@ -84,20 +84,30 @@
       },
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/financial-news-2026-06-16.done",
-      "done_today": false,
-      "duration_seconds": null,
+      "done_today": true,
+      "duration_seconds": 1410,
       "hard_error": false,
       "job": "financial-news",
       "label": "金融消息",
-      "last_done": "2026-06-11T19:05:27",
-      "last_start": "2026-06-15T21:50:01",
-      "last_validation": null,
+      "last_done": "2026-06-16T19:43:31",
+      "last_start": "2026-06-16T19:20:01",
+      "last_validation": {
+        "detail": "create_count=4 notion_read_count=17 notion_write_or_update_count=4",
+        "status": "passed",
+        "time": null
+      },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/financial-news.log",
-      "next_run": "2026-06-16T19:00:00",
-      "notion_pages": [],
+      "next_run": "2026-06-17T19:00:00",
+      "notion_pages": [
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/1039cee4dcaa48b0b7f9a9215c62797b?db=f4c798ded03b4545a343102c842e87d8&pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/54aefec491604d6fa657c46f77a25117?db=06266436dd554154be19a00475973012&pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/b393f5ce3ef7406a870ed529cbd1b0cf?db=e15cff47bdb14b8d8ba7d2a6ca03928b&pvs=21",
+        "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/cf611d1852494addadf09c6082007102?db=e2fe9e711c784180ba1241e091c1a50d&pvs=21",
+        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21"
+      ],
       "prompt_exists": true,
-      "retry_count": 72,
+      "retry_count": 74,
       "schedule": {
         "dow": "*",
         "hour": "19",
@@ -106,11 +116,38 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "running",
+      "status": "passed",
       "tail": [
-        "===== 2026-06-15 21:50:01 financial-news start =====",
-        "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-15 21:50:01 financial-news retry ====="
+        "  属性和正文已落库；个股层面未找到窗口内多源验证的重大消息，已按“无重大已验证个股消息”处理。",
+        "- 港股：[2026-06-16 每日消息](https://app.notion.com/p/381040fc8033819197b7c505333c3874)  ",
+        "  属性和正文已落库；单源机构观点已标注 `⚠️ 单源验证`，未写成确认公告。",
+        "- 加密货币：[2026-06-16 每日消息](https://app.notion.com/p/381040fc8033811fa503ef52cbdca7cd)  ",
+        "  属性和正文已落库；Strategy 买入数量与 CLARITY Act 进度因未充分多源确认，已标注或未作为确定事实。",
+        "",
+        "查重说明：已在四个目标数据源内分别搜索 `2026-06-16` 和 `2026-06-16 每日消息`，未发现同日页面。Notion SQL 查询工具在当前连接器中返回 `tool not found`，因此按 Notion 技能约束改用数据源内搜索查重且未重试 SQL 工具。",
+        "",
+        "主要来源链接已写入各页面正文，包括 WSJ、FT、AP、MarketWatch、Investopedia、Barron's、IBD、Axios 等。未修改本地文件、脚本、prompt、crontab 或自动化配置。",
+        "tokens used",
+        "310,983",
+        "已完成金融消息采集并写入 4 个 Notion 数据库，时间窗口为 `2026-06-15 18:00` 至 `2026-06-16 18:00`（Asia/Shanghai）。",
+        "",
+        "写入与回读校验结果：",
+        "",
+        "- 美股：[2026-06-16 每日消息](https://app.notion.com/p/381040fc803381b4af57c65427195b5f)  ",
+        "  属性 `标题`、`日期`、`AI总结` 已落库，正文已回读确认。",
+        "- A股：[2026-06-16 每日消息](https://app.notion.com/p/381040fc803381b8a083db32ccc80068)  ",
+        "  属性和正文已落库；个股层面未找到窗口内多源验证的重大消息，已按“无重大已验证个股消息”处理。",
+        "- 港股：[2026-06-16 每日消息](https://app.notion.com/p/381040fc8033819197b7c505333c3874)  ",
+        "  属性和正文已落库；单源机构观点已标注 `⚠️ 单源验证`，未写成确认公告。",
+        "- 加密货币：[2026-06-16 每日消息](https://app.notion.com/p/381040fc8033811fa503ef52cbdca7cd)  ",
+        "  属性和正文已落库；Strategy 买入数量与 CLARITY Act 进度因未充分多源确认，已标注或未作为确定事实。",
+        "",
+        "查重说明：已在四个目标数据源内分别搜索 `2026-06-16` 和 `2026-06-16 每日消息`，未发现同日页面。Notion SQL 查询工具在当前连接器中返回 `tool not found`，因此按 Notion 技能约束改用数据源内搜索查重且未重试 SQL 工具。",
+        "",
+        "主要来源链接已写入各页面正文，包括 WSJ、FT、AP、MarketWatch、Investopedia、Barron's、IBD、Axios 等。未修改本地文件、脚本、prompt、crontab 或自动化配置。",
+        "===== 2026-06-16 19:43:31 financial-news validation start =====",
+        "validation passed: create_count=4 notion_read_count=17 notion_write_or_update_count=4",
+        "===== 2026-06-16 19:43:31 financial-news done ====="
       ]
     },
     {
@@ -123,7 +160,7 @@
       "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
-      "hard_error": false,
+      "hard_error": true,
       "job": "sector-rotation",
       "label": "板块轮动",
       "last_done": "2026-06-11T10:37:53",
@@ -143,7 +180,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "running",
+      "status": "failed",
       "tail": [
         "===== 2026-06-16 13:20:01 sector-rotation start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
@@ -160,7 +197,7 @@
       "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
-      "hard_error": false,
+      "hard_error": true,
       "job": "sector-trend-data",
       "label": "板块走势数据",
       "last_done": "2026-06-11T08:36:33",
@@ -180,7 +217,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "running",
+      "status": "failed",
       "tail": [
         "===== 2026-06-16 11:20:01 sector-trend-data start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
@@ -197,7 +234,7 @@
       "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
-      "hard_error": false,
+      "hard_error": true,
       "job": "sector-trend-us-close-review",
       "label": "美股收盘复查",
       "last_done": "2026-06-11T10:02:02",
@@ -217,7 +254,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "running",
+      "status": "failed",
       "tail": [
         "===== 2026-06-16 12:50:01 sector-trend-us-close-review start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
@@ -238,7 +275,7 @@
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-11T08:08:38",
-      "last_start": "2026-06-16T10:50:01",
+      "last_start": "2026-06-16T19:43:09",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
@@ -256,9 +293,7 @@
       "skipped_count": 0,
       "status": "running",
       "tail": [
-        "===== 2026-06-16 10:50:01 stock-crypto-fundamentals start =====",
-        "timeout: failed to run command ‘codex’: No such file or directory",
-        "===== 2026-06-16 10:50:01 stock-crypto-fundamentals retry ====="
+        "===== 2026-06-16 19:43:09 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -271,7 +306,7 @@
       "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-16.done",
       "done_today": false,
       "duration_seconds": null,
-      "hard_error": false,
+      "hard_error": true,
       "job": "us-sector-opportunity",
       "label": "美股机会洞察",
       "last_done": "2026-06-11T13:04:24",
@@ -291,7 +326,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "running",
+      "status": "failed",
       "tail": [
         "===== 2026-06-16 15:50:01 us-sector-opportunity start =====",
         "timeout: failed to run command ‘codex’: No such file or directory",
@@ -299,6 +334,6 @@
       ]
     }
   ],
-  "now": "2026-06-16T16:05:01.571204",
+  "now": "2026-06-16T20:05:01.244783",
   "snapshot_source": "local-cron"
 }
