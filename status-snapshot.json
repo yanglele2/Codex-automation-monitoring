@@ -547,7 +547,7 @@
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/us-sector-opportunity.log",
-      "next_run": "2026-06-17T13:00:00",
+      "next_run": "2026-06-18T13:00:00",
       "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 56,
@@ -558,10 +558,9 @@
         "minute": "0",
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
-      "skipped_count": 0,
+      "skipped_count": 1,
       "status": "passed",
       "tail": [
-        "mcp: codex_apps/notion_notion-create-pages started",
         "mcp: codex_apps/notion_notion-create-pages (completed)",
         "codex",
         "页面已创建。我现在回读刚创建的页面，确认标题属性和正文结构已经落库。",
@@ -590,10 +589,11 @@
         "本次结论核心是：市场处于 `Transition / 局部 Risk On 修复`，AI/半导体/存储回到主线观察位，但广度不足；能源和防御板块暂按事件扰动降权处理。",
         "===== 2026-06-17 04:58:16 us-sector-opportunity validation start =====",
         "validation passed: create_count=1 notion_read_count=15 notion_write_or_update_count=1",
-        "===== 2026-06-17 04:58:16 us-sector-opportunity done ====="
+        "===== 2026-06-17 04:58:16 us-sector-opportunity done =====",
+        "===== 2026-06-17 13:00:01 us-sector-opportunity skipped: already done today ====="
       ]
     }
   ],
-  "now": "2026-06-17T12:05:01.925967",
+  "now": "2026-06-17T16:05:01.656084",
   "snapshot_source": "local-cron"
 }
