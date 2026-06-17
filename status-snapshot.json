@@ -102,7 +102,7 @@
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-vertical-compare.log",
-      "next_run": "2026-06-17T12:00:00",
+      "next_run": "2026-06-18T12:00:00",
       "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 54,
@@ -113,10 +113,9 @@
         "minute": "0",
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
-      "skipped_count": 0,
+      "skipped_count": 1,
       "status": "passed",
       "tail": [
-        "mcp: codex_apps/notion_fetch started",
         "mcp: codex_apps/notion_fetch (completed)",
         "codex",
         "候选公司排名：空。",
@@ -145,7 +144,8 @@
         "验证结果：因无候选 ticker，本轮没有创建或更新 `财报纵向比对` 行，也无需做写后 re-fetch 校验。",
         "===== 2026-06-17 04:30:23 earnings-vertical-compare validation start =====",
         "validation passed: create_count=0 notion_read_count=12 notion_write_or_update_count=0",
-        "===== 2026-06-17 04:30:23 earnings-vertical-compare done ====="
+        "===== 2026-06-17 04:30:23 earnings-vertical-compare done =====",
+        "===== 2026-06-17 12:00:01 earnings-vertical-compare skipped: already done today ====="
       ]
     },
     {
@@ -244,7 +244,7 @@
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-rotation.log",
-      "next_run": "2026-06-17T10:30:00",
+      "next_run": "2026-06-18T10:30:00",
       "notion_pages": [
         "https://www.notion.so/1d677e56853444fc8cca13610b453241?pvs=21",
         "https://www.notion.so/25775632b20f4af2940d40767f1120a3?pvs=21",
@@ -262,10 +262,9 @@
         "minute": "30",
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
-      "skipped_count": 0,
+      "skipped_count": 1,
       "status": "passed",
       "tail": [
-        "  https://app.notion.com/p/381040fc803381a9bf93c74ce374d871",
         "",
         "校验结果：",
         "",
@@ -294,7 +293,8 @@
         "- Notion SQL 查询工具当前不可用，因此本次用 Notion 搜索 + 页面 fetch 读取来源记录。A股和港股的最新记录本身存在“未返回可复核全量板块/资金行”的数据缺口，报告中已明确标注，未补造精确数值。",
         "===== 2026-06-17 04:48:26 sector-rotation validation start =====",
         "validation passed: create_count=3 notion_read_count=42 notion_write_or_update_count=3",
-        "===== 2026-06-17 04:48:26 sector-rotation done ====="
+        "===== 2026-06-17 04:48:26 sector-rotation done =====",
+        "===== 2026-06-17 10:30:01 sector-rotation skipped: already done today ====="
       ]
     },
     {
@@ -305,26 +305,34 @@
       },
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-17.done",
-      "done_today": false,
-      "duration_seconds": 1282,
-      "hard_error": false,
+      "done_today": true,
+      "duration_seconds": 1011,
+      "hard_error": true,
       "job": "sector-trend-data",
       "label": "板块走势数据",
-      "last_done": "2026-06-16T20:33:37",
-      "last_start": "2026-06-16T20:12:15",
+      "last_done": "2026-06-17T08:46:52",
+      "last_start": "2026-06-17T08:30:01",
       "last_validation": {
-        "detail": "create_count=4 notion_read_count=16 notion_write_or_update_count=4",
+        "detail": "create_count=4 notion_read_count=32 notion_write_or_update_count=4",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-trend-data.log",
-      "next_run": "2026-06-17T08:30:00",
+      "next_run": "2026-06-18T08:30:00",
       "notion_pages": [
-        "https://www.notion.so/25775632b20f4af2940d40767f1120a3?pvs=21",
         "https://www.notion.so/2ccb130d13e147579319a9905a271d46?pvs=21",
+        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
+        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
+        "https://www.notion.so/666618ff303f4f18beeeae88a4cd0922?pvs=21",
+        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
         "https://www.notion.so/88e2641094754371a9a44b368b75f5b6?pvs=21",
-        "https://www.notion.so/b4f850b429ce4a489f3919fd2d8028a1?pvs=21"
+        "https://www.notion.so/8d6431c1921e4d16aca33181c7080379?pvs=21",
+        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
+        "https://www.notion.so/b4f850b429ce4a489f3919fd2d8028a1?pvs=21",
+        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
+        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
+        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
       ],
       "prompt_exists": true,
       "retry_count": 91,
@@ -336,38 +344,38 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "warning",
       "tail": [
-        "- 查重：写入前在四个目标库内未发现 `2026-06-15` 对应市场的精确重复记录。",
-        "- 交易日判断：A股、港股、美股 `2026-06-15` 均按交易日处理；加密货币按 7×24 小时创建。",
-        "- 标题日期：美股使用美东交易日 `2026-06-15`；加密货币使用北京时间窗口起始日 `2026-06-15`。",
-        "- 回读校验：四个页面的 `标题`、`日期`、`AI总结` 和正文均已落库。",
-        "- 数据限制：A股、港股的东方财富动态榜单 rows 当前未从可访问页面返回，因此页面内已明确标注“待补抓”，未写入未经核验的涨跌幅或资金净额。",
+        "## Data Analytics Setup Required",
         "",
-        "主要来源已写入各页面正文，包括 AP、MarketWatch、Barron's、IBD、Investopedia、Guardian、东方财富、Binance 行情工具与 Binance API 文档。未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
+        "This is required before Data Analytics can reliably use your configured sources and any authoritative semantic-layer context you choose to set up. It also gives you a useful overview of the plugin's key functionality.",
+        "",
+        "Reply `start` to continue.",
         "tokens used",
-        "427,150",
-        "已完成本次日报写入，并已逐页回读校验。",
+        "329,990",
+        "已完成并写入 Notion，未修改本地文件、脚本、prompt 或自动化配置。",
         "",
-        "创建页面：",
+        "创建并回读校验通过的页面：",
         "",
-        "- A股：[2026-06-15 · A股板块走势日报](https://app.notion.com/p/381040fc803381ed89a7e22967cb3ff4)",
-        "- 港股：[2026-06-15 · 港股板块走势日报](https://app.notion.com/p/381040fc8033813c8046f868befb93d4)",
-        "- 美股：[2026-06-15 · 美股板块走势日报](https://app.notion.com/p/381040fc803381489e83c6e24895829f)",
-        "- 加密货币：[2026-06-15 · 加密货币板块走势日报](https://app.notion.com/p/381040fc803381edb2c7cf5f14281391)",
+        "- A股：[2026-06-16 · A股 板块走势日报](https://app.notion.com/p/382040fc803381d6bc0cfd0d4a71d6cb)",
+        "- 港股：[2026-06-16 · 港股 板块走势日报](https://app.notion.com/p/382040fc8033812e9118d78687db7795)",
+        "- 美股：[2026-06-16 · 美股 板块走势日报](https://app.notion.com/p/382040fc8033813d93bdc63a7511f1fd)",
+        "- 加密货币：[2026-06-16 · 加密货币 板块走势日报](https://app.notion.com/p/382040fc803381018a42d24f1d0e0830)",
         "",
-        "校验结果：",
+        "校验结果：写入后已逐页 fetch 回读，四个页面的 `标题`、`日期=2026-06-16`、`AI总结` 和正文均已落库。写入前已按标题/日期在四个库搜索去重，未发现 2026-06-16 的既有记录；Notion SQL 查询工具当前不可用，因此使用库内搜索完成去重。",
         "",
-        "- 查重：写入前在四个目标库内未发现 `2026-06-15` 对应市场的精确重复记录。",
-        "- 交易日判断：A股、港股、美股 `2026-06-15` 均按交易日处理；加密货币按 7×24 小时创建。",
-        "- 标题日期：美股使用美东交易日 `2026-06-15`；加密货币使用北京时间窗口起始日 `2026-06-15`。",
-        "- 回读校验：四个页面的 `标题`、`日期`、`AI总结` 和正文均已落库。",
-        "- 数据限制：A股、港股的东方财富动态榜单 rows 当前未从可访问页面返回，因此页面内已明确标注“待补抓”，未写入未经核验的涨跌幅或资金净额。",
+        "交易日判断：A股、港股、美股 `2026-06-16` 均按正常交易日处理；加密货币 7×24 小时创建。A股和港股的动态板块榜/资金榜当前未返回可核验 rows，页面中已明确标注数据缺口，没有填未经核验的精确排行。美股使用 AP/Barron’s/IBD 等收盘或收盘后来源；加密使用 Binance 分类快照和 Spot K 线窗口数据。",
         "",
-        "主要来源已写入各页面正文，包括 AP、MarketWatch、Barron's、IBD、Investopedia、Guardian、东方财富、Binance 行情工具与 Binance API 文档。未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
-        "===== 2026-06-16 20:33:37 sector-trend-data validation start =====",
-        "validation passed: create_count=4 notion_read_count=16 notion_write_or_update_count=4",
-        "===== 2026-06-16 20:33:37 sector-trend-data done ====="
+        "---",
+        "",
+        "## Data Analytics Setup Required",
+        "",
+        "This is required before Data Analytics can reliably use your configured sources and any authoritative semantic-layer context you choose to set up. It also gives you a useful overview of the plugin's key functionality.",
+        "",
+        "Reply `start` to continue.",
+        "===== 2026-06-17 08:46:52 sector-trend-data validation start =====",
+        "validation passed: create_count=4 notion_read_count=32 notion_write_or_update_count=4",
+        "===== 2026-06-17 08:46:52 sector-trend-data done ====="
       ]
     },
     {
@@ -392,7 +400,7 @@
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-trend-us-close-review.log",
-      "next_run": "2026-06-17T10:00:00",
+      "next_run": "2026-06-18T10:00:00",
       "notion_pages": [
         "https://www.notion.so/2ccb130d13e147579319a9905a271d46?pvs=21"
       ],
@@ -405,10 +413,9 @@
         "minute": "0",
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
-      "skipped_count": 0,
+      "skipped_count": 1,
       "status": "passed",
       "tail": [
-        "web search: https://www.nyse.com/markets/hours-calendars",
         "codex",
         "目标页确认不存在，因此不进入收盘数据交叉校验，也不会更新 Notion。最后我会把检索路径、跳过原因和交易日判断说明清楚。",
         "exec",
@@ -437,7 +444,8 @@
         "因此未更新 Notion，未创建新页面，也未修改任何本地文件或自动化配置。",
         "===== 2026-06-17 04:53:27 sector-trend-us-close-review validation start =====",
         "validation passed: create_count=0 notion_read_count=6 notion_write_or_update_count=0",
-        "===== 2026-06-17 04:53:27 sector-trend-us-close-review done ====="
+        "===== 2026-06-17 04:53:27 sector-trend-us-close-review done =====",
+        "===== 2026-06-17 10:00:01 sector-trend-us-close-review skipped: already done today ====="
       ]
     },
     {
@@ -448,18 +456,31 @@
       },
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-17.done",
-      "done_today": false,
-      "duration_seconds": null,
-      "hard_error": false,
+      "done_today": true,
+      "duration_seconds": 944,
+      "hard_error": true,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
-      "last_done": "2026-06-16T20:11:37",
+      "last_done": "2026-06-17T08:15:45",
       "last_start": "2026-06-17T08:00:01",
-      "last_validation": null,
+      "last_validation": {
+        "detail": "create_count=3 notion_read_count=27 notion_write_or_update_count=3",
+        "status": "passed",
+        "time": null
+      },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
       "next_run": "2026-06-18T08:00:00",
-      "notion_pages": [],
+      "notion_pages": [
+        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
+        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
+        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
+        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
+        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
+        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
+        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
+        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
+      ],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -470,10 +491,38 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "running",
+      "status": "warning",
       "tail": [
-        "===== 2026-06-17 08:00:01 stock-crypto-fundamentals start =====",
-        "===== 2026-06-17 08:00:01 stock-crypto-fundamentals missed check triggered ====="
+        "codex",
+        "已完成本次运行，落库 3 份，跳过 1 份。",
+        "",
+        "- 美股：`JPM - JPMorgan Chase` 已创建并回读确认  ",
+        "  https://app.notion.com/p/382040fc803381a1a303f90f5973a7f6",
+        "- 港股：`0883 - 中国海洋石油` 已创建并回读确认  ",
+        "  https://app.notion.com/p/382040fc8033813d9529f3b7926f06c4",
+        "- A股：`600519 - 贵州茅台` 已创建并回读确认  ",
+        "  https://app.notion.com/p/382040fc803381e7ac29fa6e46c9f415",
+        "",
+        "加密货币跳过：当前环境没有暴露 `crypto-price` worker；我用 Binance 做候选实时报价补查，`LINK`、`TON`、`TAO` 均无法确认满足 USD 10B 市值门槛，`HYPE` 又不在 Binance 现货报价中且 90 天内已有记录。按你的规则停止扩展搜索，未创建低质量重复页。",
+        "",
+        "校验结果：3 个已完成市场均已在写入前做当天同名搜索，写入后均通过 `fetch` 回读确认页面属性和正文已落库。主要来源已写入各页面正文，包括 JPMorgan IR、WSJ、MarketWatch、CNOOC 官网、贵州茅台官网等。",
+        "tokens used",
+        "385,815",
+        "已完成本次运行，落库 3 份，跳过 1 份。",
+        "",
+        "- 美股：`JPM - JPMorgan Chase` 已创建并回读确认  ",
+        "  https://app.notion.com/p/382040fc803381a1a303f90f5973a7f6",
+        "- 港股：`0883 - 中国海洋石油` 已创建并回读确认  ",
+        "  https://app.notion.com/p/382040fc8033813d9529f3b7926f06c4",
+        "- A股：`600519 - 贵州茅台` 已创建并回读确认  ",
+        "  https://app.notion.com/p/382040fc803381e7ac29fa6e46c9f415",
+        "",
+        "加密货币跳过：当前环境没有暴露 `crypto-price` worker；我用 Binance 做候选实时报价补查，`LINK`、`TON`、`TAO` 均无法确认满足 USD 10B 市值门槛，`HYPE` 又不在 Binance 现货报价中且 90 天内已有记录。按你的规则停止扩展搜索，未创建低质量重复页。",
+        "",
+        "校验结果：3 个已完成市场均已在写入前做当天同名搜索，写入后均通过 `fetch` 回读确认页面属性和正文已落库。主要来源已写入各页面正文，包括 JPMorgan IR、WSJ、MarketWatch、CNOOC 官网、贵州茅台官网等。",
+        "===== 2026-06-17 08:15:45 stock-crypto-fundamentals validation start =====",
+        "validation passed: create_count=3 notion_read_count=27 notion_write_or_update_count=3",
+        "===== 2026-06-17 08:15:45 stock-crypto-fundamentals done ====="
       ]
     },
     {
@@ -545,6 +594,6 @@
       ]
     }
   ],
-  "now": "2026-06-17T08:05:02.177868",
+  "now": "2026-06-17T12:05:01.925967",
   "snapshot_source": "local-cron"
 }
