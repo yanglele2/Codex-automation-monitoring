@@ -457,30 +457,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-18.done",
       "done_today": false,
-      "duration_seconds": 944,
-      "hard_error": true,
+      "duration_seconds": null,
+      "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-17T08:15:45",
-      "last_start": "2026-06-17T08:00:01",
-      "last_validation": {
-        "detail": "create_count=3 notion_read_count=27 notion_write_or_update_count=3",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-18T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-18T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-19T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 0,
       "schedule": {
@@ -491,38 +478,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "failed",
+      "status": "running",
       "tail": [
-        "codex",
-        "已完成本次运行，落库 3 份，跳过 1 份。",
-        "",
-        "- 美股：`JPM - JPMorgan Chase` 已创建并回读确认  ",
-        "  https://app.notion.com/p/382040fc803381a1a303f90f5973a7f6",
-        "- 港股：`0883 - 中国海洋石油` 已创建并回读确认  ",
-        "  https://app.notion.com/p/382040fc8033813d9529f3b7926f06c4",
-        "- A股：`600519 - 贵州茅台` 已创建并回读确认  ",
-        "  https://app.notion.com/p/382040fc803381e7ac29fa6e46c9f415",
-        "",
-        "加密货币跳过：当前环境没有暴露 `crypto-price` worker；我用 Binance 做候选实时报价补查，`LINK`、`TON`、`TAO` 均无法确认满足 USD 10B 市值门槛，`HYPE` 又不在 Binance 现货报价中且 90 天内已有记录。按你的规则停止扩展搜索，未创建低质量重复页。",
-        "",
-        "校验结果：3 个已完成市场均已在写入前做当天同名搜索，写入后均通过 `fetch` 回读确认页面属性和正文已落库。主要来源已写入各页面正文，包括 JPMorgan IR、WSJ、MarketWatch、CNOOC 官网、贵州茅台官网等。",
-        "tokens used",
-        "385,815",
-        "已完成本次运行，落库 3 份，跳过 1 份。",
-        "",
-        "- 美股：`JPM - JPMorgan Chase` 已创建并回读确认  ",
-        "  https://app.notion.com/p/382040fc803381a1a303f90f5973a7f6",
-        "- 港股：`0883 - 中国海洋石油` 已创建并回读确认  ",
-        "  https://app.notion.com/p/382040fc8033813d9529f3b7926f06c4",
-        "- A股：`600519 - 贵州茅台` 已创建并回读确认  ",
-        "  https://app.notion.com/p/382040fc803381e7ac29fa6e46c9f415",
-        "",
-        "加密货币跳过：当前环境没有暴露 `crypto-price` worker；我用 Binance 做候选实时报价补查，`LINK`、`TON`、`TAO` 均无法确认满足 USD 10B 市值门槛，`HYPE` 又不在 Binance 现货报价中且 90 天内已有记录。按你的规则停止扩展搜索，未创建低质量重复页。",
-        "",
-        "校验结果：3 个已完成市场均已在写入前做当天同名搜索，写入后均通过 `fetch` 回读确认页面属性和正文已落库。主要来源已写入各页面正文，包括 JPMorgan IR、WSJ、MarketWatch、CNOOC 官网、贵州茅台官网等。",
-        "===== 2026-06-17 08:15:45 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=3 notion_read_count=27 notion_write_or_update_count=3",
-        "===== 2026-06-17 08:15:45 stock-crypto-fundamentals done ====="
+        "===== 2026-06-18 08:00:01 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -594,6 +552,6 @@
       ]
     }
   ],
-  "now": "2026-06-18T04:05:02.100817",
+  "now": "2026-06-18T08:05:01.550765",
   "snapshot_source": "local-cron"
 }
