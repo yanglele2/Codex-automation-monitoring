@@ -159,7 +159,7 @@
       },
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/financial-news-2026-06-19.done",
-      "done_today": false,
+      "done_today": true,
       "duration_seconds": 32383,
       "hard_error": false,
       "job": "financial-news",
@@ -173,7 +173,7 @@
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/financial-news.log",
-      "next_run": "2026-06-19T19:00:00",
+      "next_run": "2026-06-20T19:00:00",
       "notion_pages": [
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/1039cee4dcaa48b0b7f9a9215c62797b?db=f4c798ded03b4545a343102c842e87d8&pvs=21",
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/54aefec491604d6fa657c46f77a25117?db=06266436dd554154be19a00475973012&pvs=21",
@@ -190,10 +190,9 @@
         "minute": "0",
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
-      "skipped_count": 0,
-      "status": "idle",
+      "skipped_count": 1,
+      "status": "passed",
       "tail": [
-        "- 未修改任何本地文件、脚本或自动化配置",
         "",
         "补充说明：",
         "我尝试将美股页进一步替换为更严格的三条已验证消息版本，但 Notion 更新调用两次都被服务端取消；当前库中已有页面内容仍保持可读和合规状态。",
@@ -222,7 +221,8 @@
         "validation failed: expected at least 4 Notion page create(s), got 0",
         "===== 2026-06-19 06:49:44 financial-news validation start =====",
         "validation passed: create_count=0 notion_read_count=13 notion_write_or_update_count=0",
-        "===== 2026-06-19 06:49:44 financial-news done ====="
+        "===== 2026-06-19 06:49:44 financial-news done =====",
+        "===== 2026-06-19 19:00:03 financial-news skipped: already done today ====="
       ]
     },
     {
@@ -589,6 +589,6 @@
       ]
     }
   ],
-  "now": "2026-06-19T16:05:01.919068",
+  "now": "2026-06-19T20:05:01.273898",
   "snapshot_source": "local-cron"
 }
