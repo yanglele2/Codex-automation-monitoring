@@ -11,15 +11,15 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/earnings-search-2026-06-19.done",
       "done_today": false,
-      "duration_seconds": null,
+      "duration_seconds": 25183,
       "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-06-17T04:14:32",
+      "last_done": "2026-06-19T06:49:44",
       "last_start": "2026-06-18T23:50:01",
       "last_validation": {
-        "detail": "expected at least one completed Notion read/search verification",
-        "status": "failed",
+        "detail": "create_count=0 notion_read_count=7 notion_write_or_update_count=0",
+        "status": "passed",
         "time": null
       },
       "log_exists": true,
@@ -49,11 +49,8 @@
         "raw": "0 23 * * 2-6 /root/codex-automations/run.sh earnings-search"
       },
       "skipped_count": 1,
-      "status": "failed",
+      "status": "idle",
       "tail": [
-        "",
-        "本次参考的公开来源主要包括：",
-        "- Kiplinger earnings calendar: https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks",
         "- Accenture 市场反应: https://www.investors.com/news/technology/accenture-stock-acn-stock-accenture-earnings-q3-2026/",
         "- Accenture 补充解读: https://www.marketwatch.com/story/two-big-reasons-accentures-stock-is-sliding-in-the-wake-of-earnings-9353b184",
         "- Kroger 报道: https://www.wsj.com/business/retail/kroger-profit-rises-with-higher-sales-b6f2b90c",
@@ -80,7 +77,10 @@
         "- CarMax 报道: https://www.investors.com/news/carmax-earnings-carmax-stock-kmx-stock-buy-zone-carvana-move/",
         "- Smith & Wesson 报道: https://www.wsj.com/business/earnings/smith-wesson-posts-higher-profit-on-strong-handgun-sales-00e71835",
         "===== 2026-06-18 23:53:15 earnings-search validation start =====",
-        "validation failed: expected at least one completed Notion read/search verification"
+        "validation failed: expected at least one completed Notion read/search verification",
+        "===== 2026-06-19 06:49:44 earnings-search validation start =====",
+        "validation passed: create_count=0 notion_read_count=7 notion_write_or_update_count=0",
+        "===== 2026-06-19 06:49:44 earnings-search done ====="
       ]
     },
     {
@@ -156,15 +156,15 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/financial-news-2026-06-19.done",
       "done_today": false,
-      "duration_seconds": null,
+      "duration_seconds": 32383,
       "hard_error": false,
       "job": "financial-news",
       "label": "金融消息",
-      "last_done": null,
+      "last_done": "2026-06-19T06:49:44",
       "last_start": "2026-06-18T21:50:01",
       "last_validation": {
-        "detail": "expected at least 4 Notion page create(s), got 0",
-        "status": "failed",
+        "detail": "create_count=0 notion_read_count=13 notion_write_or_update_count=0",
+        "status": "passed",
         "time": null
       },
       "log_exists": true,
@@ -187,11 +187,8 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "failed",
+      "status": "idle",
       "tail": [
-        "- 4 个页面的 `标题`、`日期`、`AI总结` 属性均存在",
-        "- 4 个页面正文均可回读",
-        "- 未创建重复页面",
         "- 未修改任何本地文件、脚本或自动化配置",
         "",
         "补充说明：",
@@ -218,7 +215,10 @@
         "补充说明：",
         "我尝试将美股页进一步替换为更严格的三条已验证消息版本，但 Notion 更新调用两次都被服务端取消；当前库中已有页面内容仍保持可读和合规状态。",
         "===== 2026-06-18 21:59:46 financial-news validation start =====",
-        "validation failed: expected at least 4 Notion page create(s), got 0"
+        "validation failed: expected at least 4 Notion page create(s), got 0",
+        "===== 2026-06-19 06:49:44 financial-news validation start =====",
+        "validation passed: create_count=0 notion_read_count=13 notion_write_or_update_count=0",
+        "===== 2026-06-19 06:49:44 financial-news done ====="
       ]
     },
     {
@@ -230,15 +230,15 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-19.done",
       "done_today": false,
-      "duration_seconds": null,
+      "duration_seconds": 62982,
       "hard_error": false,
       "job": "sector-rotation",
       "label": "板块轮动",
-      "last_done": "2026-06-17T04:48:26",
+      "last_done": "2026-06-19T06:49:44",
       "last_start": "2026-06-18T13:20:02",
       "last_validation": {
-        "detail": "expected at least 3 Notion page create(s), got 0",
-        "status": "failed",
+        "detail": "create_count=0 notion_read_count=36 notion_write_or_update_count=0",
+        "status": "passed",
         "time": null
       },
       "log_exists": true,
@@ -262,11 +262,8 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 1,
-      "status": "failed",
+      "status": "idle",
       "tail": [
-        "- 我尝试通过 Notion 更新接口回写/重写这 3 条记录时，连接器直接返回了 `user cancelled MCP tool call`，所以本轮没有对现有页面做二次改写。",
-        "- 但从随后 `fetch` 的结果看，今天这 3 条分析页本身已经存在且内容已持久化，当前状态可视为“落库成功，重复写入已避免”。",
-        "",
         "如果你要，我下一步可以只做一件事：把这 3 页再按你给的最终模板逐项做差异审查，列出“已满足 / 缺失项”。",
         "tokens used",
         "216,152",
@@ -293,7 +290,10 @@
         "",
         "如果你要，我下一步可以只做一件事：把这 3 页再按你给的最终模板逐项做差异审查，列出“已满足 / 缺失项”。",
         "===== 2026-06-18 13:25:35 sector-rotation validation start =====",
-        "validation failed: expected at least 3 Notion page create(s), got 0"
+        "validation failed: expected at least 3 Notion page create(s), got 0",
+        "===== 2026-06-19 06:49:44 sector-rotation validation start =====",
+        "validation passed: create_count=0 notion_read_count=36 notion_write_or_update_count=0",
+        "===== 2026-06-19 06:49:44 sector-rotation done ====="
       ]
     },
     {
@@ -444,30 +444,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-19.done",
       "done_today": false,
-      "duration_seconds": 644,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-18T08:40:45",
-      "last_start": "2026-06-18T08:30:01",
-      "last_validation": {
-        "detail": "create_count=3 notion_read_count=3 notion_write_or_update_count=3",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-19T08:00:02",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-19T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-20T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 1,
       "schedule": {
@@ -478,38 +465,10 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "",
-        "港股：`0388 - 香港交易所`",
-        "页：https://app.notion.com/p/383040fc803381b1aba1fbfb96bafcc5",
-        "校验结果：`研究日期=2026-06-18`、`市值（亿港币）=482.4`、`评级=推荐`、正文已落库。",
-        "",
-        "A股：`601088 - 中国神华`",
-        "页：https://app.notion.com/p/383040fc803381a78c5cf4c95edbe640",
-        "校验结果：`研究日期=2026-06-18`、`市值（亿人民币）=967`、`评级=中性`、正文已落库。",
-        "",
-        "加密货币未落库。原因是按去重后可选头部币种里，能快速核验到的候选多数低于你设定的 `$10B` 市值门槛，已研究币种又集中在近 90 天内；在本轮搜索上限内无法形成满足门槛且达到最低验证要求的候选，因此按规则跳过而没有硬写。",
-        "tokens used",
-        "479,686",
-        "已完成并校验 3 个市场的落库，均已创建页面并回读确认属性与正文存在。",
-        "",
-        "美股：`TSLA - Tesla`",
-        "页：https://app.notion.com/p/383040fc8033817b9213f3830a172887",
-        "校验结果：`研究日期=2026-06-18`、`市值（亿美元）=1488`、`评级=中性`、正文已落库。",
-        "",
-        "港股：`0388 - 香港交易所`",
-        "页：https://app.notion.com/p/383040fc803381b1aba1fbfb96bafcc5",
-        "校验结果：`研究日期=2026-06-18`、`市值（亿港币）=482.4`、`评级=推荐`、正文已落库。",
-        "",
-        "A股：`601088 - 中国神华`",
-        "页：https://app.notion.com/p/383040fc803381a78c5cf4c95edbe640",
-        "校验结果：`研究日期=2026-06-18`、`市值（亿人民币）=967`、`评级=中性`、正文已落库。",
-        "",
-        "加密货币未落库。原因是按去重后可选头部币种里，能快速核验到的候选多数低于你设定的 `$10B` 市值门槛，已研究币种又集中在近 90 天内；在本轮搜索上限内无法形成满足门槛且达到最低验证要求的候选，因此按规则跳过而没有硬写。",
-        "===== 2026-06-18 08:40:45 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=3 notion_read_count=3 notion_write_or_update_count=3",
-        "===== 2026-06-18 08:40:45 stock-crypto-fundamentals done ====="
+        "===== 2026-06-19 08:00:02 stock-crypto-fundamentals start =====",
+        "===== 2026-06-19 08:00:02 stock-crypto-fundamentals missed check triggered ====="
       ]
     },
     {
@@ -577,6 +536,6 @@
       ]
     }
   ],
-  "now": "2026-06-19T04:05:02.107195",
+  "now": "2026-06-19T08:05:01.851047",
   "snapshot_source": "local-cron"
 }
