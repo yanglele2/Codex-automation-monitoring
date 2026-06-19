@@ -9,7 +9,7 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-19.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-20.done",
       "done_today": false,
       "duration_seconds": 25183,
       "hard_error": false,
@@ -24,7 +24,7 @@
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-19T23:00:00",
+      "next_run": "2026-06-20T23:00:00",
       "notion_pages": [
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21\",",
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/88e139937bbe445eb54fd886e2e3fab9?db=4cf9dd08d838442d8a162046904a1904&pvs=21",
@@ -48,10 +48,9 @@
         "minute": "0",
         "raw": "0 23 * * 2-6 /root/codex-automations/run.sh earnings-search"
       },
-      "skipped_count": 1,
+      "skipped_count": 2,
       "status": "idle",
       "tail": [
-        "- Accenture 市场反应: https://www.investors.com/news/technology/accenture-stock-acn-stock-accenture-earnings-q3-2026/",
         "- Accenture 补充解读: https://www.marketwatch.com/story/two-big-reasons-accentures-stock-is-sliding-in-the-wake-of-earnings-9353b184",
         "- Kroger 报道: https://www.wsj.com/business/retail/kroger-profit-rises-with-higher-sales-b6f2b90c",
         "- CarMax 报道: https://www.investors.com/news/carmax-earnings-carmax-stock-kmx-stock-buy-zone-carvana-move/",
@@ -80,7 +79,8 @@
         "validation failed: expected at least one completed Notion read/search verification",
         "===== 2026-06-19 06:49:44 earnings-search validation start =====",
         "validation passed: create_count=0 notion_read_count=7 notion_write_or_update_count=0",
-        "===== 2026-06-19 06:49:44 earnings-search done ====="
+        "===== 2026-06-19 06:49:44 earnings-search done =====",
+        "===== 2026-06-19 23:00:01 earnings-search skipped: already done today ====="
       ]
     },
     {
@@ -90,8 +90,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-19.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-20.done",
+      "done_today": false,
       "duration_seconds": 451,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -117,7 +117,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "tokens used",
         "191,724",
@@ -158,8 +158,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-19.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-20.done",
+      "done_today": false,
       "duration_seconds": 32383,
       "hard_error": false,
       "job": "financial-news",
@@ -191,7 +191,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 1,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "补充说明：",
@@ -232,8 +232,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-19.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-20.done",
+      "done_today": false,
       "duration_seconds": 62982,
       "hard_error": false,
       "job": "sector-rotation",
@@ -266,7 +266,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 2,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "tokens used",
         "216,152",
@@ -307,8 +307,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-19.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-20.done",
+      "done_today": false,
       "duration_seconds": 356,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -339,7 +339,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "未创建：",
@@ -380,8 +380,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-19.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-20.done",
+      "done_today": false,
       "duration_seconds": 160,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -409,7 +409,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 1,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "更新状态：未完成。Notion 更新工具返回 `user cancelled MCP tool call`，因此页面正文和 AI总结没有保存修改，也无法执行更新后复查确认。",
@@ -450,8 +450,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-19.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-20.done",
+      "done_today": false,
       "duration_seconds": 388,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -486,7 +486,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 港股：`0939 - 中国建设银行`，评级：推荐  ",
         "  校验页：https://app.notion.com/p/384040fc8033818bb580ccaf91ef844f",
@@ -527,8 +527,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-19.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-20.done",
+      "done_today": false,
       "duration_seconds": 181,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -554,7 +554,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion.notion-update-page (failed)",
         "user cancelled MCP tool call",
@@ -589,6 +589,6 @@
       ]
     }
   ],
-  "now": "2026-06-19T20:05:01.273898",
+  "now": "2026-06-20T00:05:01.424035",
   "snapshot_source": "local-cron"
 }
