@@ -452,30 +452,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-20.done",
       "done_today": false,
-      "duration_seconds": 388,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-19T08:16:29",
-      "last_start": "2026-06-19T08:10:01",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=17 notion_write_or_update_count=4",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-20T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-20T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-23T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 1,
       "schedule": {
@@ -486,38 +473,9 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "- 港股：`0939 - 中国建设银行`，评级：推荐  ",
-        "  校验页：https://app.notion.com/p/384040fc8033818bb580ccaf91ef844f",
-        "",
-        "- A股：`601857 - 中国石油`，评级：推荐  ",
-        "  校验页：https://app.notion.com/p/384040fc803381d1b97efff7b7e7bc31",
-        "",
-        "- 加密：`HYPE - Hyperliquid`，评级：推荐  ",
-        "  校验页：https://app.notion.com/p/384040fc803381b09ec3e2857ebe0610",
-        "",
-        "说明：`LLY` 写入前查到 6 月 10 日已研究，所以改选 `UNH`。加密候选中 `ADA/LINK/BCH/SUI` 等低于 USD 10B 门槛；`HYPE` 满足门槛但 90 天内研究过，本次按“符合门槛标的基本覆盖后回退选择”处理。`crypto-price` worker 当前不可调用，且 Binance 不支持 `HYPEUSDT`，报告已注明使用 CoinGecko + DefiLlama 替代。",
-        "tokens used",
-        "238,090",
-        "已完成 4 份报告并写入 Notion，均已回读校验属性和正文已落库。",
-        "",
-        "- 美股：`UNH - UnitedHealth Group`，评级：中性  ",
-        "  校验页：https://app.notion.com/p/384040fc803381469ea2cbdfdd8db5f3",
-        "",
-        "- 港股：`0939 - 中国建设银行`，评级：推荐  ",
-        "  校验页：https://app.notion.com/p/384040fc8033818bb580ccaf91ef844f",
-        "",
-        "- A股：`601857 - 中国石油`，评级：推荐  ",
-        "  校验页：https://app.notion.com/p/384040fc803381d1b97efff7b7e7bc31",
-        "",
-        "- 加密：`HYPE - Hyperliquid`，评级：推荐  ",
-        "  校验页：https://app.notion.com/p/384040fc803381b09ec3e2857ebe0610",
-        "",
-        "说明：`LLY` 写入前查到 6 月 10 日已研究，所以改选 `UNH`。加密候选中 `ADA/LINK/BCH/SUI` 等低于 USD 10B 门槛；`HYPE` 满足门槛但 90 天内研究过，本次按“符合门槛标的基本覆盖后回退选择”处理。`crypto-price` worker 当前不可调用，且 Binance 不支持 `HYPEUSDT`，报告已注明使用 CoinGecko + DefiLlama 替代。",
-        "===== 2026-06-19 08:16:29 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=17 notion_write_or_update_count=4",
-        "===== 2026-06-19 08:16:29 stock-crypto-fundamentals done ====="
+        "===== 2026-06-20 08:00:01 stock-crypto-fundamentals start ====="
       ]
     },
     {
@@ -587,8 +545,41 @@
         "validation passed: create_count=1 notion_read_count=14 notion_write_or_update_count=1",
         "===== 2026-06-19 13:03:02 us-sector-opportunity done ====="
       ]
+    },
+    {
+      "catchup": {
+        "label": "15:00 后 180 分钟内每 10 分钟补跑",
+        "raw": "*/10 15-17 * * * /root/codex-automations/run-if-missed.sh worldcup-over25-daily 15:00 '*' 180",
+        "window_minutes": 180
+      },
+      "config_warning": false,
+      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-06-20.done",
+      "done_today": false,
+      "duration_seconds": null,
+      "hard_error": false,
+      "job": "worldcup-over25-daily",
+      "label": "世界杯总进球数",
+      "last_done": null,
+      "last_start": null,
+      "last_validation": null,
+      "log_exists": false,
+      "log_path": "/root/codex-automations/logs/worldcup-over25-daily.log",
+      "next_run": "2026-06-20T15:00:00",
+      "notion_pages": [],
+      "prompt_exists": true,
+      "retry_count": 0,
+      "schedule": {
+        "dow": "*",
+        "hour": "15",
+        "label": "每天 15:00",
+        "minute": "0",
+        "raw": "0 15 * * * /root/codex-automations/run.sh worldcup-over25-daily"
+      },
+      "skipped_count": 0,
+      "status": "idle",
+      "tail": []
     }
   ],
-  "now": "2026-06-20T04:05:01.919155",
+  "now": "2026-06-20T08:05:02.156389",
   "snapshot_source": "local-cron"
 }
