@@ -9,7 +9,7 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-21.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-22.done",
       "done_today": false,
       "duration_seconds": 154,
       "hard_error": false,
@@ -86,7 +86,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-21.done",
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-22.done",
       "done_today": false,
       "duration_seconds": 257,
       "hard_error": false,
@@ -154,8 +154,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-21.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-22.done",
+      "done_today": false,
       "duration_seconds": 196,
       "hard_error": false,
       "job": "financial-news",
@@ -187,7 +187,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 1,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- A股：`2026-06-21 每日消息`，属性和正文已落库",
         "- 港股：`2026-06-21 每日消息`，属性和正文已落库",
@@ -228,7 +228,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-21.done",
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-22.done",
       "done_today": false,
       "duration_seconds": 524,
       "hard_error": false,
@@ -303,8 +303,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-21.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-22.done",
+      "done_today": false,
       "duration_seconds": 249,
       "hard_error": true,
       "job": "sector-trend-data",
@@ -335,7 +335,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 落库校验：已回读页面，确认 `标题`、`日期`、`AI总结` 和正文内容均已保存。",
         "",
@@ -376,7 +376,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-21.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-22.done",
       "done_today": false,
       "duration_seconds": 42,
       "hard_error": false,
@@ -446,7 +446,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-21.done",
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-22.done",
       "done_today": false,
       "duration_seconds": 471,
       "hard_error": false,
@@ -523,7 +523,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-21.done",
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-22.done",
       "done_today": false,
       "duration_seconds": 162,
       "hard_error": false,
@@ -591,8 +591,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-06-21.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-06-22.done",
+      "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
       "job": "worldcup-over25-daily",
@@ -618,7 +618,7 @@
         "raw": "0 15 * * * /root/codex-automations/run.sh worldcup-over25-daily"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- `rows added=0`",
         "- `rows updated=0`",
@@ -653,6 +653,6 @@
       ]
     }
   ],
-  "now": "2026-06-21T20:05:01.857459",
+  "now": "2026-06-22T00:05:01.702448",
   "snapshot_source": "local-cron"
 }
