@@ -9,22 +9,22 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-23.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-24.done",
       "done_today": false,
-      "duration_seconds": 154,
-      "hard_error": false,
+      "duration_seconds": 169,
+      "hard_error": true,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-06-20T23:02:35",
-      "last_start": "2026-06-20T23:00:01",
+      "last_done": "2026-06-23T23:02:50",
+      "last_start": "2026-06-23T23:00:01",
       "last_validation": {
-        "detail": "create_count=0 notion_read_count=11 notion_write_or_update_count=0",
+        "detail": "create_count=1 notion_read_count=7 notion_write_or_update_count=1 google_drive_read_count=0 google_drive_write_or_update_count=0",
         "status": "passed",
         "time": null
       },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-23T23:00:00",
+      "next_run": "2026-06-24T23:00:00",
       "notion_pages": [
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
@@ -47,36 +47,36 @@
       "skipped_count": 1,
       "status": "idle",
       "tail": [
-        "- 公开检索：美股 2026-06-19 为 Juneteenth 休市日，NYSE 官方日历列明该日休市；公开结果未找到窗口内可核验的美股财报发布。A股/港股检索也未找到同时满足披露时间、核心财报数据和市场/管理层信息要求的公司。",
-        "- Notion 6 月 20 港股消息页也记录：窗口内未发现可多源确认的港股本地重大公告或个股消息。",
+        "- WSJ：https://www.wsj.com/business/earnings/carnival-says-iran-war-disrupted-bookings-issues-soft-outlook-ebb24c52",
         "",
-        "主要参考来源：",
-        "",
-        "- NYSE 2026 假日日历：https://www.nyse.com/trade/hours-calendars",
-        "- MarketWatch Juneteenth 休市报道：https://www.marketwatch.com/story/is-the-stock-market-open-on-juneteenth-will-the-post-office-deliver-mail-0569e453",
-        "",
-        "由于本次没有候选公司达到标准，未创建页面，也不存在写入后读回校验项。本次运行按规则视为成功的空结果运行。",
+        "未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
         "tokens used",
-        "114,622",
-        "本次运行未写入 Notion，原因是没有找到符合写入标准的候选公司。",
+        "100,018",
+        "已完成本次财报搜集运行。",
         "",
-        "执行窗口：北京时间 `2026-06-19 23:00` 到 `2026-06-20 23:00`。  ",
-        "校验结果：",
+        "窗口：北京时间 `2026-06-22 23:00` 至 `2026-06-23 23:00`",
         "",
-        "- 目标数据库可访问：美股、A股、港股三个财报记录库 schema 均已读取成功。",
-        "- 工作区检索：未发现本窗口内可用财报候选；三库内 `2026-06-20 / 2026-06-19` 相关命中均为 6 月 18 及更早历史记录。",
-        "- 公开检索：美股 2026-06-19 为 Juneteenth 休市日，NYSE 官方日历列明该日休市；公开结果未找到窗口内可核验的美股财报发布。A股/港股检索也未找到同时满足披露时间、核心财报数据和市场/管理层信息要求的公司。",
-        "- Notion 6 月 20 港股消息页也记录：窗口内未发现可多源确认的港股本地重大公告或个股消息。",
+        "写入结果：新增 1 条美股财报记录  ",
+        "- `Carnival Corporation（CCL）— 2026-06-23 财报`",
+        "- Notion 页面：https://app.notion.com/388040fc80338171ad46e6112aefc17e",
+        "- 数据库：`🇺🇸 美股财报记录`",
+        "- 写入前已按标题、股票代码、日期查重，未发现重复。",
+        "- 写入后已重新读取页面，并再次按标题 + 股票代码 + 日期查询，确认属性与正文均已落库。",
         "",
-        "主要参考来源：",
+        "跳过说明：",
+        "- `Korn Ferry（KFY）`：只在财报日历中出现，未能可靠核验到 2026-06-23 正式业绩正文，跳过。",
+        "- A股、港股：本轮公开检索未找到同时满足披露时间、核心财报数据、管理层/市场反应信息的高置信候选，跳过。",
         "",
-        "- NYSE 2026 假日日历：https://www.nyse.com/trade/hours-calendars",
-        "- MarketWatch Juneteenth 休市报道：https://www.marketwatch.com/story/is-the-stock-market-open-on-juneteenth-will-the-post-office-deliver-mail-0569e453",
+        "主要来源：",
+        "- Kiplinger 财报日历：https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks",
+        "- Investors.com：https://www.investors.com/news/carnival-earnings-ccl-stock-oil-prices-fuel-costs-booking-trends/",
+        "- Barron’s：https://www.barrons.com/articles/carnival-earnings-stock-price-61656696",
+        "- WSJ：https://www.wsj.com/business/earnings/carnival-says-iran-war-disrupted-bookings-issues-soft-outlook-ebb24c52",
         "",
-        "由于本次没有候选公司达到标准，未创建页面，也不存在写入后读回校验项。本次运行按规则视为成功的空结果运行。",
-        "===== 2026-06-20 23:02:34 earnings-search validation start =====",
-        "validation passed: create_count=0 notion_read_count=11 notion_write_or_update_count=0",
-        "===== 2026-06-20 23:02:35 earnings-search done ====="
+        "未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
+        "===== 2026-06-23 23:02:50 earnings-search validation start =====",
+        "validation passed: create_count=1 notion_read_count=7 notion_write_or_update_count=1 google_drive_read_count=0 google_drive_write_or_update_count=0",
+        "===== 2026-06-23 23:02:50 earnings-search done ====="
       ]
     },
     {
@@ -86,8 +86,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-23.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-24.done",
+      "done_today": false,
       "duration_seconds": 108,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -113,7 +113,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "按 Asia/Shanghai 日期执行完成。昨天是 `2026-06-22`。",
@@ -154,8 +154,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-23.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-24.done",
+      "done_today": false,
       "duration_seconds": 291,
       "hard_error": true,
       "job": "financial-news",
@@ -187,7 +187,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 1,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成金融消息采集并写入 Notion。时间窗口按 `2026-06-22 18:00` 至 `2026-06-23 18:00`（Asia/Shanghai）执行。",
@@ -228,8 +228,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-23.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-24.done",
+      "done_today": false,
       "duration_seconds": 160,
       "hard_error": false,
       "job": "sector-rotation",
@@ -262,7 +262,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 1,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion.search started",
         "mcp: codex_apps/notion.search (completed)",
@@ -303,8 +303,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-23.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-24.done",
+      "done_today": false,
       "duration_seconds": 461,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -335,7 +335,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "  https://app.notion.com/p/388040fc803381d9a06af5d25f2d69d7  ",
         "  校验结果：标题、日期、AI总结、正文均已落库。使用 Binance Hot Category + CoinGecko 24h 分类榜。",
@@ -376,8 +376,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-23.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-24.done",
+      "done_today": false,
       "duration_seconds": 186,
       "hard_error": true,
       "job": "sector-trend-us-close-review",
@@ -405,7 +405,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 1,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "我尝试更新现有 Notion 页面，但 MCP 返回：`user cancelled MCP tool call`。随后已重新读取页面校验，页面内容和 `AI总结` 仍未变更。",
@@ -446,8 +446,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-23.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-24.done",
+      "done_today": false,
       "duration_seconds": 365,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -482,7 +482,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- `601138 - 工业富联`",
         "- 页面：https://app.notion.com/p/388040fc8033818d816dc6366aedb8dd",
@@ -523,8 +523,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-23.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-24.done",
+      "done_today": false,
       "duration_seconds": 172,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -550,7 +550,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成并写入 Notion。",
@@ -591,7 +591,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-06-23.done",
+      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-06-24.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -649,6 +649,6 @@
       ]
     }
   ],
-  "now": "2026-06-23T20:05:01.798840",
+  "now": "2026-06-24T00:05:01.789864",
   "snapshot_source": "local-cron"
 }
