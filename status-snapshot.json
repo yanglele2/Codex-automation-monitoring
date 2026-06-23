@@ -448,30 +448,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-23.done",
       "done_today": false,
-      "duration_seconds": 471,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-20T08:07:52",
-      "last_start": "2026-06-20T08:00:01",
-      "last_validation": {
-        "detail": "create_count=2 notion_read_count=20 notion_write_or_update_count=2",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-23T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-23T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-06-24T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 1,
       "schedule": {
@@ -482,38 +469,10 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "codex",
-        "已完成本次运行，未修改任何本地文件或自动化配置。",
-        "",
-        "落库结果：",
-        "",
-        "| 市场 | 结果 | 校验 |",
-        "| --- | --- | --- |",
-        "| 港股 | 已写入 `0001 - 长和` | 已回读确认属性和正文均落库：`https://app.notion.com/p/385040fc803381a7b8b3eaf616cfdf74` |",
-        "| 加密货币 | 已写入 `BTC - Bitcoin` | 已回读确认属性和正文均落库：`https://app.notion.com/p/385040fc80338187a508cca23b0fe3fb` |",
-        "| 美股 | 跳过 | `ORCL`、`WMT`、`GE` 均在 90 天内已有记录，达到候选更换上限后停止 |",
-        "| A股 | 跳过 | `002594`、`600030` 命中 90 天内历史；最终候选 `600887` 未在限定搜索内形成足够可靠数据源，按规则跳过 |",
-        "",
-        "补充说明：Notion 的 SQL 数据库查询工具被当前 workspace 计划限制拦截，我改用 data source workspace search 做 90 天去重近似校验；写入后均已用页面 fetch 回读确认。加密环境未暴露 `crypto-price` worker，因此 BTC 使用 CoinGecko 实时页作为主要价格/市值来源，并在报告中标明降级口径。",
-        "tokens used",
-        "203,421",
-        "已完成本次运行，未修改任何本地文件或自动化配置。",
-        "",
-        "落库结果：",
-        "",
-        "| 市场 | 结果 | 校验 |",
-        "| --- | --- | --- |",
-        "| 港股 | 已写入 `0001 - 长和` | 已回读确认属性和正文均落库：`https://app.notion.com/p/385040fc803381a7b8b3eaf616cfdf74` |",
-        "| 加密货币 | 已写入 `BTC - Bitcoin` | 已回读确认属性和正文均落库：`https://app.notion.com/p/385040fc80338187a508cca23b0fe3fb` |",
-        "| 美股 | 跳过 | `ORCL`、`WMT`、`GE` 均在 90 天内已有记录，达到候选更换上限后停止 |",
-        "| A股 | 跳过 | `002594`、`600030` 命中 90 天内历史；最终候选 `600887` 未在限定搜索内形成足够可靠数据源，按规则跳过 |",
-        "",
-        "补充说明：Notion 的 SQL 数据库查询工具被当前 workspace 计划限制拦截，我改用 data source workspace search 做 90 天去重近似校验；写入后均已用页面 fetch 回读确认。加密环境未暴露 `crypto-price` worker，因此 BTC 使用 CoinGecko 实时页作为主要价格/市值来源，并在报告中标明降级口径。",
-        "===== 2026-06-20 08:07:52 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=2 notion_read_count=20 notion_write_or_update_count=2",
-        "===== 2026-06-20 08:07:52 stock-crypto-fundamentals done ====="
+        "===== 2026-06-23 08:00:01 stock-crypto-fundamentals start =====",
+        "===== 2026-06-23 08:00:01 stock-crypto-fundamentals missed check triggered ====="
       ]
     },
     {
@@ -649,6 +608,6 @@
       ]
     }
   ],
-  "now": "2026-06-23T04:05:01.212232",
+  "now": "2026-06-23T08:05:01.796422",
   "snapshot_source": "local-cron"
 }
