@@ -9,22 +9,18 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-24.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-25.done",
       "done_today": false,
-      "duration_seconds": 169,
+      "duration_seconds": null,
       "hard_error": true,
       "job": "earnings-search",
       "label": "财报搜集",
       "last_done": "2026-06-23T23:02:50",
-      "last_start": "2026-06-23T23:00:01",
-      "last_validation": {
-        "detail": "create_count=1 notion_read_count=7 notion_write_or_update_count=1 google_drive_read_count=0 google_drive_write_or_update_count=0",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-06-24T23:50:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-24T23:00:00",
+      "next_run": "2026-06-25T23:00:00",
       "notion_pages": [
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
@@ -36,7 +32,7 @@
         "https://www.notion.so/fbc627d633af442c961069c0006cbc2f?pvs=21"
       ],
       "prompt_exists": true,
-      "retry_count": 0,
+      "retry_count": 6,
       "schedule": {
         "dow": "2-6",
         "hour": "23",
@@ -45,38 +41,38 @@
         "raw": "0 23 * * 2-6 /root/codex-automations/run.sh earnings-search"
       },
       "skipped_count": 1,
-      "status": "idle",
+      "status": "failed",
       "tail": [
-        "- WSJ：https://www.wsj.com/business/earnings/carnival-says-iran-war-disrupted-bookings-issues-soft-outlook-ebb24c52",
+        "        - `## 电话会议要点`",
+        "        - `## 市场反应`",
+        "        - `## 技术面分析（Vegas EMA）`",
+        "    - 若某个部分资料不足，在对应小节明确写：`公开资料不足，已跳过`",
         "",
-        "未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
-        "tokens used",
-        "100,018",
-        "已完成本次财报搜集运行。",
+        "## 👀 跳过与失败规则",
         "",
-        "窗口：北京时间 `2026-06-22 23:00` 至 `2026-06-23 23:00`",
+        "- **跳过单家公司**：无法确认披露时间、缺少核心财报数据、或资料来源不可靠",
+        "- **跳过单个市场**：当日未检索到足够高置信度的财报结果",
+        "- **本次运行仍算成功**：即使只写入少量高质量记录，或三个市场中只有一个市场有结果",
+        "- **仅在以下情况下判定为失败**：",
+        "    - 无法访问目标数据库",
+        "    - 完全无法执行基础检索",
+        "    - 页面写入权限异常导致无法保存任何结果",
         "",
-        "写入结果：新增 1 条美股财报记录  ",
-        "- `Carnival Corporation（CCL）— 2026-06-23 财报`",
-        "- Notion 页面：https://app.notion.com/388040fc80338171ad46e6112aefc17e",
-        "- 数据库：`🇺🇸 美股财报记录`",
-        "- 写入前已按标题、股票代码、日期查重，未发现重复。",
-        "- 写入后已重新读取页面，并再次按标题 + 股票代码 + 日期查询，确认属性与正文均已落库。",
+        "## 🧾 写作要求",
         "",
-        "跳过说明：",
-        "- `Korn Ferry（KFY）`：只在财报日历中出现，未能可靠核验到 2026-06-23 正式业绩正文，跳过。",
-        "- A股、港股：本轮公开检索未找到同时满足披露时间、核心财报数据、管理层/市场反应信息的高置信候选，跳过。",
+        "- 优先简洁、结构化、可回溯",
+        "- 财报数据以公司官方披露为准",
+        "- 电话会议和市场反应以公开报道为准",
+        "- 若存在信息冲突，采用更高等级来源，并在表述中保持保守",
+        "- 宁可少写，不要错写；宁可跳过，不要臆造。",
+        "- 写入 Notion 前，必须按标题、股票代码、财报日期查询目标库，避免重复创建同一家公司同一财报日记录；写入后，必须读取或重新查询刚创建的页面，确认页面属性和正文已落库；最终输出需明确写出校验结果。若本次无候选可写入，必须明确说明无候选原因。",
+        "- 本任务只允许检索财报信息并写入 Notion database。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
-        "主要来源：",
-        "- Kiplinger 财报日历：https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks",
-        "- Investors.com：https://www.investors.com/news/carnival-earnings-ccl-stock-oil-prices-fuel-costs-booking-trends/",
-        "- Barron’s：https://www.barrons.com/articles/carnival-earnings-stock-price-61656696",
-        "- WSJ：https://www.wsj.com/business/earnings/carnival-says-iran-war-disrupted-bookings-issues-soft-outlook-ebb24c52",
-        "",
-        "未修改任何本地文件、脚本、prompt、crontab 或自动化配置。",
-        "===== 2026-06-23 23:02:50 earnings-search validation start =====",
-        "validation passed: create_count=1 notion_read_count=7 notion_write_or_update_count=1 google_drive_read_count=0 google_drive_write_or_update_count=0",
-        "===== 2026-06-23 23:02:50 earnings-search done ====="
+        "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
+        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
+        "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
+        "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
+        "===== 2026-06-24 23:50:09 earnings-search retry ====="
       ]
     },
     {
@@ -86,8 +82,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-24.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-25.done",
+      "done_today": false,
       "duration_seconds": 244,
       "hard_error": true,
       "job": "earnings-vertical-compare",
@@ -113,7 +109,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 判断：不能确认“连续改善”。目前更像需求仍强但利润和指引质量转弱，且四季度数据链不完整。",
         "",
@@ -154,14 +150,14 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-24.done",
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-25.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
       "job": "financial-news",
       "label": "金融消息",
       "last_done": "2026-06-23T19:04:52",
-      "last_start": "2026-06-24T20:00:02",
+      "last_start": "2026-06-24T21:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/financial-news.log",
@@ -174,7 +170,7 @@
         "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21"
       ],
       "prompt_exists": true,
-      "retry_count": 14,
+      "retry_count": 25,
       "schedule": {
         "dow": "*",
         "hour": "19",
@@ -214,7 +210,7 @@
         "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-24 20:00:11 financial-news retry ====="
+        "===== 2026-06-24 21:50:09 financial-news retry ====="
       ]
     },
     {
@@ -224,8 +220,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-24.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-25.done",
+      "done_today": false,
       "duration_seconds": 688,
       "hard_error": false,
       "job": "sector-rotation",
@@ -258,7 +254,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 1,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "user cancelled MCP tool call",
         "codex",
@@ -299,8 +295,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-24.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-25.done",
+      "done_today": false,
       "duration_seconds": 886,
       "hard_error": false,
       "job": "sector-trend-data",
@@ -331,7 +327,7 @@
         "raw": "30 8 * * * /root/codex-automations/run.sh sector-trend-data"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "216,615",
         "已完成本次运行。",
@@ -372,8 +368,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-24.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-25.done",
+      "done_today": false,
       "duration_seconds": 151,
       "hard_error": false,
       "job": "sector-trend-us-close-review",
@@ -401,7 +397,7 @@
         "raw": "0 10 * * 2-6 /root/codex-automations/run.sh sector-trend-us-close-review"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- MarketWatch/FactSet 板块数据：https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-tech-sell-off-oil-prices-us-waiving-oil-sanctions-iran/card/consumer-staples-and-healthcare-sectors-hold-the-line-as-tech-weakness-weighs-on-s-p-500-73fjCE9qqpApjJMBNMEz",
         "- MarketWatch 收盘后 live coverage：https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-tech-sell-off-oil-prices-us-waiving-oil-sanctions-iran",
@@ -442,8 +438,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-24.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-25.done",
+      "done_today": false,
       "duration_seconds": 718,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -478,7 +474,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "最后一次 Notion 批量查询校验出现 Notion 服务端 HTTP 500，但此前两份已创建页面均已通过 `fetch` 回读确认；港股还额外完成了同日同标的查询确认。",
@@ -519,8 +515,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-24.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-25.done",
+      "done_today": false,
       "duration_seconds": 154,
       "hard_error": false,
       "job": "us-sector-opportunity",
@@ -546,7 +542,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "mcp: codex_apps/notion.fetch (completed)",
         "mcp: codex_apps/notion.notion-query-data-sources (completed)",
@@ -587,7 +583,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-06-24.done",
+      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-06-25.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -645,6 +641,6 @@
       ]
     }
   ],
-  "now": "2026-06-24T20:05:01.714759",
+  "now": "2026-06-25T00:05:01.333590",
   "snapshot_source": "local-cron"
 }
