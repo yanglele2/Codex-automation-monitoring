@@ -153,11 +153,11 @@
       "job": "financial-news",
       "label": "金融消息",
       "last_done": "2026-06-23T19:04:52",
-      "last_start": "2026-06-24T21:50:01",
+      "last_start": "2026-06-25T20:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/financial-news.log",
-      "next_run": "2026-06-25T19:00:00",
+      "next_run": "2026-06-26T19:00:00",
       "notion_pages": [
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/1039cee4dcaa48b0b7f9a9215c62797b?db=f4c798ded03b4545a343102c842e87d8&pvs=21",
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/54aefec491604d6fa657c46f77a25117?db=06266436dd554154be19a00475973012&pvs=21",
@@ -166,7 +166,7 @@
         "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21"
       ],
       "prompt_exists": true,
-      "retry_count": 25,
+      "retry_count": 32,
       "schedule": {
         "dow": "*",
         "hour": "19",
@@ -174,9 +174,10 @@
         "minute": "0",
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
-      "skipped_count": 1,
+      "skipped_count": 0,
       "status": "failed",
       "tail": [
+        "### 板块消息",
         "",
         "- 按板块归类消息面事件，重点写 **驱动板块异动的具体催化剂**",
         "- 避免仅罗列「某板块涨X%」，而应写明「因XX事件/政策，某板块受到提振/承压」",
@@ -203,10 +204,9 @@
         "- 本任务只允许采集金融消息并写入 Notion database。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
-        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-24 21:50:09 financial-news retry ====="
+        "===== 2026-06-25 20:00:08 financial-news retry ====="
       ]
     },
     {
@@ -566,14 +566,14 @@
       "job": "worldcup-over25-daily",
       "label": "世界杯总进球数",
       "last_done": null,
-      "last_start": "2026-06-25T16:00:02",
+      "last_start": "2026-06-25T17:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/worldcup-over25-daily.log",
       "next_run": "2026-06-26T15:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 17,
+      "retry_count": 28,
       "schedule": {
         "dow": "*",
         "hour": "15",
@@ -613,10 +613,10 @@
         "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-25 16:00:12 worldcup-over25-daily retry ====="
+        "===== 2026-06-25 17:50:22 worldcup-over25-daily retry ====="
       ]
     }
   ],
-  "now": "2026-06-25T16:05:02.067909",
+  "now": "2026-06-25T20:05:01.841435",
   "snapshot_source": "local-cron"
 }
