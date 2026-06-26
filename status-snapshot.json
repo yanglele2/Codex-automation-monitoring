@@ -9,18 +9,18 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-26.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-06-27.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
       "job": "earnings-search",
       "label": "财报搜集",
       "last_done": "2026-06-23T23:02:50",
-      "last_start": "2026-06-25T23:50:01",
+      "last_start": "2026-06-26T23:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-06-26T23:00:00",
+      "next_run": "2026-06-27T23:00:00",
       "notion_pages": [
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
@@ -32,7 +32,7 @@
         "https://www.notion.so/fbc627d633af442c961069c0006cbc2f?pvs=21"
       ],
       "prompt_exists": true,
-      "retry_count": 12,
+      "retry_count": 18,
       "schedule": {
         "dow": "2-6",
         "hour": "23",
@@ -43,6 +43,7 @@
       "skipped_count": 1,
       "status": "failed",
       "tail": [
+        "        - `## 核心财报数据`",
         "        - `## 电话会议要点`",
         "        - `## 市场反应`",
         "        - `## 技术面分析（Vegas EMA）`",
@@ -69,10 +70,9 @@
         "- 本任务只允许检索财报信息并写入 Notion database。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
-        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-25 23:50:11 earnings-search retry ====="
+        "===== 2026-06-26 23:50:09 earnings-search retry ====="
       ]
     },
     {
@@ -82,7 +82,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-26.done",
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-06-27.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -146,14 +146,14 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-06-26.done",
+      "done_marker": "/root/codex-automations/state/financial-news-2026-06-27.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
       "job": "financial-news",
       "label": "金融消息",
       "last_done": null,
-      "last_start": "2026-06-26T20:00:01",
+      "last_start": "2026-06-26T21:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/financial-news.log",
@@ -177,7 +177,6 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
-        "### 板块消息",
         "",
         "- 按板块归类消息面事件，重点写 **驱动板块异动的具体催化剂**",
         "- 避免仅罗列「某板块涨X%」，而应写明「因XX事件/政策，某板块受到提振/承压」",
@@ -204,9 +203,10 @@
         "- 本任务只允许采集金融消息并写入 Notion database。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
+        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 20:00:08 financial-news retry ====="
+        "===== 2026-06-26 21:50:09 financial-news retry ====="
       ]
     },
     {
@@ -216,7 +216,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-26.done",
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-06-27.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -287,7 +287,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-26.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-06-27.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -356,7 +356,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-26.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-06-27.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -422,7 +422,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-26.done",
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-06-27.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -495,7 +495,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-26.done",
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-06-27.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -559,7 +559,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-06-26.done",
+      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-06-27.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -617,6 +617,6 @@
       ]
     }
   ],
-  "now": "2026-06-26T20:05:01.738974",
+  "now": "2026-06-27T00:05:01.753590",
   "snapshot_source": "local-cron"
 }
