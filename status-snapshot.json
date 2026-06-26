@@ -89,14 +89,14 @@
       "job": "earnings-vertical-compare",
       "label": "财报纵向对比",
       "last_done": "2026-06-24T12:04:05",
-      "last_start": "2026-06-25T14:50:01",
+      "last_start": "2026-06-26T12:00:02",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-vertical-compare.log",
-      "next_run": "2026-06-26T12:00:00",
+      "next_run": "2026-06-27T12:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 18,
+      "retry_count": 19,
       "schedule": {
         "dow": "2-6",
         "hour": "12",
@@ -107,7 +107,6 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
-        "",
         "- Use: **Base weights 70% + Industry/type adjustment 20% + Stage/risk adjustment 10%**.",
         "- Keep the total at **100**.",
         "- Briefly explain the adjustments in 1–2 lines (“Why weights changed”).",
@@ -134,9 +133,10 @@
         "Default to Chinese output unless the user asks for English。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
+        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-25 14:50:11 earnings-vertical-compare retry ====="
+        "===== 2026-06-26 12:00:14 earnings-vertical-compare retry ====="
       ]
     },
     {
@@ -222,12 +222,12 @@
       "hard_error": true,
       "job": "sector-rotation",
       "label": "板块轮动",
-      "last_done": "2026-06-24T10:41:29",
-      "last_start": "2026-06-25T13:20:01",
+      "last_done": null,
+      "last_start": "2026-06-26T12:00:02",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-rotation.log",
-      "next_run": "2026-06-26T10:30:00",
+      "next_run": "2026-06-27T10:30:00",
       "notion_pages": [
         "https://www.notion.so/1d677e56853444fc8cca13610b453241?pvs=21",
         "https://www.notion.so/25775632b20f4af2940d40767f1120a3?pvs=21",
@@ -237,7 +237,7 @@
         "https://www.notion.so/8d6431c1921e4d16aca33181c7080379?pvs=21"
       ],
       "prompt_exists": true,
-      "retry_count": 21,
+      "retry_count": 26,
       "schedule": {
         "dow": "2-6",
         "hour": "10",
@@ -277,7 +277,7 @@
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-25 13:20:18 sector-rotation retry ====="
+        "===== 2026-06-26 12:00:17 sector-rotation retry ====="
       ]
     },
     {
@@ -293,12 +293,12 @@
       "hard_error": true,
       "job": "sector-trend-data",
       "label": "板块走势数据",
-      "last_done": "2026-06-24T08:45:34",
-      "last_start": "2026-06-25T11:20:01",
+      "last_done": null,
+      "last_start": "2026-06-26T11:20:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-trend-data.log",
-      "next_run": "2026-06-26T08:30:00",
+      "next_run": "2026-06-27T08:30:00",
       "notion_pages": [
         "https://www.notion.so/25775632b20f4af2940d40767f1120a3?pvs=21",
         "https://www.notion.so/2ccb130d13e147579319a9905a271d46?pvs=21",
@@ -306,7 +306,7 @@
         "https://www.notion.so/b4f850b429ce4a489f3919fd2d8028a1?pvs=21"
       ],
       "prompt_exists": true,
-      "retry_count": 18,
+      "retry_count": 32,
       "schedule": {
         "dow": "*",
         "hour": "8",
@@ -346,7 +346,7 @@
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-25 11:20:14 sector-trend-data retry ====="
+        "===== 2026-06-26 11:20:14 sector-trend-data retry ====="
       ]
     },
     {
@@ -363,16 +363,16 @@
       "job": "sector-trend-us-close-review",
       "label": "美股收盘复查",
       "last_done": "2026-06-24T10:42:32",
-      "last_start": "2026-06-25T12:50:01",
+      "last_start": "2026-06-26T12:00:02",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-trend-us-close-review.log",
-      "next_run": "2026-06-26T10:00:00",
+      "next_run": "2026-06-27T10:00:00",
       "notion_pages": [
         "https://www.notion.so/2ccb130d13e147579319a9905a271d46?pvs=21"
       ],
       "prompt_exists": true,
-      "retry_count": 26,
+      "retry_count": 39,
       "schedule": {
         "dow": "2-6",
         "hour": "10",
@@ -412,7 +412,7 @@
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-25 12:50:14 sector-trend-us-close-review retry ====="
+        "===== 2026-06-26 12:00:14 sector-trend-us-close-review retry ====="
       ]
     },
     {
@@ -428,8 +428,8 @@
       "hard_error": true,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
-      "last_done": "2026-06-24T08:11:59",
-      "last_start": "2026-06-26T08:00:02",
+      "last_done": null,
+      "last_start": "2026-06-26T10:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
@@ -445,7 +445,7 @@
         "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
       ],
       "prompt_exists": true,
-      "retry_count": 19,
+      "retry_count": 20,
       "schedule": {
         "dow": "2-6",
         "hour": "8",
@@ -485,7 +485,7 @@
         "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 08:00:12 stock-crypto-fundamentals retry ====="
+        "===== 2026-06-26 10:50:18 stock-crypto-fundamentals retry ====="
       ]
     },
     {
@@ -617,6 +617,6 @@
       ]
     }
   ],
-  "now": "2026-06-26T08:05:01.265316",
+  "now": "2026-06-26T12:05:01.307152",
   "snapshot_source": "local-cron"
 }
