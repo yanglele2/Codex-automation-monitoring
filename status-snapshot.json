@@ -429,11 +429,11 @@
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-06-24T08:11:59",
-      "last_start": "2026-06-25T10:50:01",
+      "last_start": "2026-06-26T08:00:02",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-26T08:00:00",
+      "next_run": "2026-06-27T08:00:00",
       "notion_pages": [
         "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
         "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
@@ -445,7 +445,7 @@
         "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
       ],
       "prompt_exists": true,
-      "retry_count": 18,
+      "retry_count": 19,
       "schedule": {
         "dow": "2-6",
         "hour": "8",
@@ -485,7 +485,7 @@
         "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-25 10:50:20 stock-crypto-fundamentals retry ====="
+        "===== 2026-06-26 08:00:12 stock-crypto-fundamentals retry ====="
       ]
     },
     {
@@ -617,6 +617,6 @@
       ]
     }
   ],
-  "now": "2026-06-26T04:05:02.145230",
+  "now": "2026-06-26T08:05:01.265316",
   "snapshot_source": "local-cron"
 }
