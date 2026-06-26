@@ -88,15 +88,15 @@
       "hard_error": true,
       "job": "earnings-vertical-compare",
       "label": "财报纵向对比",
-      "last_done": "2026-06-24T12:04:05",
-      "last_start": "2026-06-26T12:00:02",
+      "last_done": null,
+      "last_start": "2026-06-26T14:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-vertical-compare.log",
       "next_run": "2026-06-27T12:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 19,
+      "retry_count": 29,
       "schedule": {
         "dow": "2-6",
         "hour": "12",
@@ -107,6 +107,7 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
+        "",
         "- Use: **Base weights 70% + Industry/type adjustment 20% + Stage/risk adjustment 10%**.",
         "- Keep the total at **100**.",
         "- Briefly explain the adjustments in 1–2 lines (“Why weights changed”).",
@@ -133,10 +134,9 @@
         "Default to Chinese output unless the user asks for English。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
-        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 12:00:14 earnings-vertical-compare retry ====="
+        "===== 2026-06-26 14:50:11 earnings-vertical-compare retry ====="
       ]
     },
     {
@@ -223,7 +223,7 @@
       "job": "sector-rotation",
       "label": "板块轮动",
       "last_done": null,
-      "last_start": "2026-06-26T12:00:02",
+      "last_start": "2026-06-26T13:20:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-rotation.log",
@@ -248,7 +248,6 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
-        "- AI总结：3-6 条 bullets（结论式）",
         "- 相对强弱：强势 / 弱势板块各 3-8 条（紧凑文本）",
         "- 资金流向：一句话方向 + 2-4 条要点",
         "- 热点板块：3-8 条（主题 + 1 句判断）",
@@ -275,9 +274,10 @@
         "- 本任务只允许读取 Notion 板块记录并写入 Notion 分析数据库。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
+        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 12:00:17 sector-rotation retry ====="
+        "===== 2026-06-26 13:20:14 sector-rotation retry ====="
       ]
     },
     {
@@ -363,7 +363,7 @@
       "job": "sector-trend-us-close-review",
       "label": "美股收盘复查",
       "last_done": "2026-06-24T10:42:32",
-      "last_start": "2026-06-26T12:00:02",
+      "last_start": "2026-06-26T12:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-trend-us-close-review.log",
@@ -372,7 +372,7 @@
         "https://www.notion.so/2ccb130d13e147579319a9905a271d46?pvs=21"
       ],
       "prompt_exists": true,
-      "retry_count": 39,
+      "retry_count": 40,
       "schedule": {
         "dow": "2-6",
         "hour": "10",
@@ -383,7 +383,6 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
-        "   - 同步更新页面属性中的 **AI总结**",
         "   - 保留原页面，不创建重复页面",
         "   - 在正文「证据与引用」或末尾增加复查来源和复查时间",
         "",
@@ -410,9 +409,10 @@
         "- 本任务只允许复查和更新 Notion 中已有的美股板块日报。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
+        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 12:00:14 sector-trend-us-close-review retry ====="
+        "===== 2026-06-26 12:50:15 sector-trend-us-close-review retry ====="
       ]
     },
     {
@@ -502,14 +502,14 @@
       "job": "us-sector-opportunity",
       "label": "美股机会洞察",
       "last_done": "2026-06-24T13:02:36",
-      "last_start": "2026-06-25T15:50:01",
+      "last_start": "2026-06-26T15:50:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/us-sector-opportunity.log",
-      "next_run": "2026-06-26T13:00:00",
+      "next_run": "2026-06-27T13:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 25,
+      "retry_count": 36,
       "schedule": {
         "dow": "2-6",
         "hour": "13",
@@ -549,7 +549,7 @@
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-25 15:50:11 us-sector-opportunity retry ====="
+        "===== 2026-06-26 15:50:13 us-sector-opportunity retry ====="
       ]
     },
     {
@@ -566,14 +566,14 @@
       "job": "worldcup-over25-daily",
       "label": "世界杯总进球数",
       "last_done": null,
-      "last_start": "2026-06-25T17:50:01",
+      "last_start": "2026-06-26T16:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/worldcup-over25-daily.log",
-      "next_run": "2026-06-26T15:00:00",
+      "next_run": "2026-06-27T15:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 28,
+      "retry_count": 35,
       "schedule": {
         "dow": "*",
         "hour": "15",
@@ -584,6 +584,7 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
+        "6. 对每场需要补抓的比赛，获取 Polymarket full-match totals：",
         "   - Over 2.5",
         "   - Over 3.5",
         "   - Over 4.5",
@@ -610,13 +611,12 @@
         "本自动化只允许采集世界杯赛程/比分、Polymarket 赛前概率，并更新上述 Google Sheet。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
-        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-25 17:50:22 worldcup-over25-daily retry ====="
+        "===== 2026-06-26 16:00:09 worldcup-over25-daily retry ====="
       ]
     }
   ],
-  "now": "2026-06-26T12:05:01.307152",
+  "now": "2026-06-26T16:05:02.128585",
   "snapshot_source": "local-cron"
 }
