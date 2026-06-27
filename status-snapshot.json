@@ -153,11 +153,11 @@
       "job": "financial-news",
       "label": "金融消息",
       "last_done": null,
-      "last_start": "2026-06-26T21:50:01",
+      "last_start": "2026-06-27T20:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/financial-news.log",
-      "next_run": "2026-06-27T19:00:00",
+      "next_run": "2026-06-28T19:00:00",
       "notion_pages": [
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/1039cee4dcaa48b0b7f9a9215c62797b?db=f4c798ded03b4545a343102c842e87d8&pvs=21",
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/54aefec491604d6fa657c46f77a25117?db=06266436dd554154be19a00475973012&pvs=21",
@@ -206,7 +206,7 @@
         "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 21:50:09 financial-news retry ====="
+        "===== 2026-06-27 20:00:09 financial-news retry ====="
       ]
     },
     {
@@ -566,14 +566,14 @@
       "job": "worldcup-over25-daily",
       "label": "世界杯总进球数",
       "last_done": null,
-      "last_start": "2026-06-27T16:00:01",
+      "last_start": "2026-06-27T17:50:02",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/worldcup-over25-daily.log",
       "next_run": "2026-06-28T15:00:00",
       "notion_pages": [],
       "prompt_exists": true,
-      "retry_count": 53,
+      "retry_count": 64,
       "schedule": {
         "dow": "*",
         "hour": "15",
@@ -613,10 +613,10 @@
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-27 16:00:10 worldcup-over25-daily retry ====="
+        "===== 2026-06-27 17:50:09 worldcup-over25-daily retry ====="
       ]
     }
   ],
-  "now": "2026-06-27T16:05:01.617472",
+  "now": "2026-06-27T20:05:02.200153",
   "snapshot_source": "local-cron"
 }
