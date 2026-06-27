@@ -429,11 +429,11 @@
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": null,
-      "last_start": "2026-06-26T10:50:01",
+      "last_start": "2026-06-27T08:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-06-27T08:00:00",
+      "next_run": "2026-06-30T08:00:00",
       "notion_pages": [
         "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
         "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
@@ -456,6 +456,7 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
+        "- **行业**：对应行业分类",
         "- **核心观点**：一句话总结",
         "- **数据来源**：优先填写最主要的公开来源链接",
         "",
@@ -482,10 +483,9 @@
         "- 本任务只允许研究标的并写入 Notion database。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
-        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 10:50:18 stock-crypto-fundamentals retry ====="
+        "===== 2026-06-27 08:00:09 stock-crypto-fundamentals retry ====="
       ]
     },
     {
@@ -617,6 +617,6 @@
       ]
     }
   ],
-  "now": "2026-06-27T04:05:01.792021",
+  "now": "2026-06-27T08:05:01.710619",
   "snapshot_source": "local-cron"
 }
