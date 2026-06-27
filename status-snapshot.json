@@ -89,11 +89,11 @@
       "job": "earnings-vertical-compare",
       "label": "财报纵向对比",
       "last_done": null,
-      "last_start": "2026-06-26T14:50:01",
+      "last_start": "2026-06-27T12:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-vertical-compare.log",
-      "next_run": "2026-06-27T12:00:00",
+      "next_run": "2026-06-30T12:00:00",
       "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 29,
@@ -107,7 +107,6 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
-        "",
         "- Use: **Base weights 70% + Industry/type adjustment 20% + Stage/risk adjustment 10%**.",
         "- Keep the total at **100**.",
         "- Briefly explain the adjustments in 1–2 lines (“Why weights changed”).",
@@ -134,9 +133,10 @@
         "Default to Chinese output unless the user asks for English。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
+        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 14:50:11 earnings-vertical-compare retry ====="
+        "===== 2026-06-27 12:00:18 earnings-vertical-compare retry ====="
       ]
     },
     {
@@ -223,11 +223,11 @@
       "job": "sector-rotation",
       "label": "板块轮动",
       "last_done": null,
-      "last_start": "2026-06-26T13:20:01",
+      "last_start": "2026-06-27T12:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-rotation.log",
-      "next_run": "2026-06-27T10:30:00",
+      "next_run": "2026-06-30T10:30:00",
       "notion_pages": [
         "https://www.notion.so/1d677e56853444fc8cca13610b453241?pvs=21",
         "https://www.notion.so/25775632b20f4af2940d40767f1120a3?pvs=21",
@@ -248,6 +248,7 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
+        "- AI总结：3-6 条 bullets（结论式）",
         "- 相对强弱：强势 / 弱势板块各 3-8 条（紧凑文本）",
         "- 资金流向：一句话方向 + 2-4 条要点",
         "- 热点板块：3-8 条（主题 + 1 句判断）",
@@ -274,10 +275,9 @@
         "- 本任务只允许读取 Notion 板块记录并写入 Notion 分析数据库。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
-        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 13:20:14 sector-rotation retry ====="
+        "===== 2026-06-27 12:00:13 sector-rotation retry ====="
       ]
     },
     {
@@ -294,11 +294,11 @@
       "job": "sector-trend-data",
       "label": "板块走势数据",
       "last_done": null,
-      "last_start": "2026-06-26T11:20:01",
+      "last_start": "2026-06-27T11:20:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-trend-data.log",
-      "next_run": "2026-06-27T08:30:00",
+      "next_run": "2026-06-28T08:30:00",
       "notion_pages": [
         "https://www.notion.so/25775632b20f4af2940d40767f1120a3?pvs=21",
         "https://www.notion.so/2ccb130d13e147579319a9905a271d46?pvs=21",
@@ -306,7 +306,7 @@
         "https://www.notion.so/b4f850b429ce4a489f3919fd2d8028a1?pvs=21"
       ],
       "prompt_exists": true,
-      "retry_count": 32,
+      "retry_count": 31,
       "schedule": {
         "dow": "*",
         "hour": "8",
@@ -317,7 +317,6 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
-        "    - 例如：北京时间**周六**早上  8 点半触发 → 美东时间是**周五**下午 → 搜索分析**美东时间周五（3月6日）**的美股收盘数据，标题日期写 **3月6日**",
         "    - 例如：北京时间**周五**早上  8 点半触发 → 美东时间是**周四**下午 → 搜索分析**美东时间周四（3月5日）**的美股收盘数据，标题日期写 **3月5日**",
         "    - ⚠️ **切勿使用北京时间日期作为美股标题日期**，必须转换为美东时间日期",
         "- **加密货币**：7×24 小时交易，无休市日。数据统计窗口为**北京时间前一天早上 8:00 → 当天早上 8:00**（共 24 小时）。因此：",
@@ -344,9 +343,10 @@
         "- 本任务只允许搜索数据并写入 Notion database。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
+        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 11:20:14 sector-trend-data retry ====="
+        "===== 2026-06-27 11:20:14 sector-trend-data retry ====="
       ]
     },
     {
@@ -363,16 +363,16 @@
       "job": "sector-trend-us-close-review",
       "label": "美股收盘复查",
       "last_done": "2026-06-24T10:42:32",
-      "last_start": "2026-06-26T12:50:01",
+      "last_start": "2026-06-27T12:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/sector-trend-us-close-review.log",
-      "next_run": "2026-06-27T10:00:00",
+      "next_run": "2026-06-30T10:00:00",
       "notion_pages": [
         "https://www.notion.so/2ccb130d13e147579319a9905a271d46?pvs=21"
       ],
       "prompt_exists": true,
-      "retry_count": 40,
+      "retry_count": 49,
       "schedule": {
         "dow": "2-6",
         "hour": "10",
@@ -383,6 +383,7 @@
       "skipped_count": 0,
       "status": "failed",
       "tail": [
+        "   - 同步更新页面属性中的 **AI总结**",
         "   - 保留原页面，不创建重复页面",
         "   - 在正文「证据与引用」或末尾增加复查来源和复查时间",
         "",
@@ -409,10 +410,9 @@
         "- 本任务只允许复查和更新 Notion 中已有的美股板块日报。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
         "",
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
-        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-26 12:50:15 sector-trend-us-close-review retry ====="
+        "===== 2026-06-27 12:00:14 sector-trend-us-close-review retry ====="
       ]
     },
     {
@@ -429,7 +429,7 @@
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": null,
-      "last_start": "2026-06-27T08:00:01",
+      "last_start": "2026-06-27T10:50:02",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
@@ -485,7 +485,7 @@
         "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
         "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-27 08:00:09 stock-crypto-fundamentals retry ====="
+        "===== 2026-06-27 10:50:17 stock-crypto-fundamentals retry ====="
       ]
     },
     {
@@ -617,6 +617,6 @@
       ]
     }
   ],
-  "now": "2026-06-27T08:05:01.710619",
+  "now": "2026-06-27T12:05:01.604106",
   "snapshot_source": "local-cron"
 }
