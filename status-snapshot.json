@@ -433,25 +433,16 @@
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-07-07.done",
       "done_today": false,
       "duration_seconds": null,
-      "hard_error": true,
+      "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": null,
-      "last_start": "2026-06-27T10:50:02",
+      "last_start": "2026-07-07T08:00:01",
       "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-07-07T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-07-08T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 20,
       "schedule": {
@@ -462,38 +453,10 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "failed",
+      "status": "running",
       "tail": [
-        "- **行业**：对应行业分类",
-        "- **核心观点**：一句话总结",
-        "- **数据来源**：优先填写最主要的公开来源链接",
-        "",
-        "### 🪙 加密货币 → [319040fc80338055b729dfcf95f490cd](https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link)",
-        "",
-        "- **币种名称**：`TICKER - 项目名称`（例：`BTC - Bitcoin`）",
-        "- **研究日期**：当天日期",
-        "- **市值（亿美元）**：当前市值",
-        "- **评级**：强烈关注→强烈推荐；值得关注→推荐；观望→中性；回避→回避",
-        "- **赛道**：对应赛道分类",
-        "- **核心观点**：一句话总结",
-        "- **数据来源**：优先填写最主要的公开来源链接",
-        "",
-        "## ✅ 执行要求",
-        "",
-        "- 每次运行默认产出 **4 份报告**，每个市场 1 份",
-        "- 每个市场**独立成败**，单一市场失败不得阻塞其他市场",
-        "- 任一市场报告一旦完成，必须**立即写入对应数据库**，不得等待其余市场完成后再统一保存",
-        "- 若某市场当天缺乏足够可靠数据，可放弃该标的并改选其他候选，不要硬写",
-        "- 如最终仍无法满足最低数据质量要求，可跳过该市场，并在输出中明确说明原因",
-        "- 若运行时间过长或搜索明显陷入循环，优先保证**已完成市场先落库**，再处理剩余市场",
-        "- 任何结论必须与正文数据保持一致，避免评级与论据脱节。",
-        "- 写入 Notion 前，必须按研究日期和标的名称查询目标库，避免重复创建同一天同一标的记录；写入后，必须读取或重新查询刚创建的页面，确认已完成市场的页面属性和正文已落库；最终输出需明确写出校验结果。跳过的市场必须说明原因。",
-        "- 本任务只允许研究标的并写入 Notion database。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
-        "",
-        "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
-        "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-27 10:50:17 stock-crypto-fundamentals retry ====="
+        "===== 2026-07-07 08:00:01 stock-crypto-fundamentals start =====",
+        "===== 2026-07-07 08:00:01 stock-crypto-fundamentals missed check triggered ====="
       ]
     },
     {
@@ -629,6 +592,6 @@
       ]
     }
   ],
-  "now": "2026-07-07T04:05:01.780549",
+  "now": "2026-07-07T08:05:02.102235",
   "snapshot_source": "local-cron"
 }
