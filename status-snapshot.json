@@ -9,18 +9,22 @@
         "window_minutes": 59
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-search-2026-07-07.done",
+      "done_marker": "/root/codex-automations/state/earnings-search-2026-07-08.done",
       "done_today": false,
-      "duration_seconds": null,
-      "hard_error": true,
+      "duration_seconds": 529,
+      "hard_error": false,
       "job": "earnings-search",
       "label": "财报搜集",
-      "last_done": "2026-06-23T23:02:50",
-      "last_start": "2026-06-27T23:50:01",
-      "last_validation": null,
+      "last_done": "2026-07-07T23:08:51",
+      "last_start": "2026-07-07T23:00:02",
+      "last_validation": {
+        "detail": "create_count=0 notion_read_count=4 notion_write_or_update_count=0 google_drive_read_count=0 google_drive_write_or_update_count=0",
+        "status": "passed",
+        "time": null
+      },
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/earnings-search.log",
-      "next_run": "2026-07-07T23:00:00",
+      "next_run": "2026-07-08T23:00:00",
       "notion_pages": [
         "https://www.notion.so/4c70b7be52b34f83844b1304dd7e635f?pvs=21",
         "https://www.notion.so/4cf9dd08d838442d8a162046904a1904?pvs=21",
@@ -29,6 +33,7 @@
         "https://www.notion.so/6d1926a71b5b4712af93930a0a1aaf5d/ds/bee18a9273a14bab81617050f7b7f529?db=78ea12adbf0a459f8a0b1a34b0abae0e&pvs=21",
         "https://www.notion.so/78ea12adbf0a459f8a0b1a34b0abae0e?pvs=21",
         "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21",
+        "https://www.notion.so/Skill-Vegas-EMA-9d22be059210453dab4aa15940cbb42d?pvs=21\",",
         "https://www.notion.so/fbc627d633af442c961069c0006cbc2f?pvs=21"
       ],
       "prompt_exists": true,
@@ -41,38 +46,38 @@
         "raw": "0 23 * * 2-6 /root/codex-automations/run.sh earnings-search"
       },
       "skipped_count": 1,
-      "status": "failed",
+      "status": "idle",
       "tail": [
-        "        - `## 电话会议要点`",
-        "        - `## 市场反应`",
-        "        - `## 技术面分析（Vegas EMA）`",
-        "    - 若某个部分资料不足，在对应小节明确写：`公开资料不足，已跳过`",
         "",
-        "## 👀 跳过与失败规则",
+        "原因如下：",
+        "- 美股：公开财报日历显示 7 月 6 日无重要财报，7 月 7 日盘前无重要财报；EPAC、PENG 属于 7 月 7 日美股盘后，换算为北京时间 7 月 8 日凌晨，超出本窗口。参考：[Kiplinger earnings calendar](https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks)。",
+        "- 美股正式 Q2 财报季公开报道指向 7 月 14 日 JPMorgan 开始，当前窗口仍处于正式财报季前。参考：[Axios](https://www.axios.com/2026/07/07/earnings-q2-stocks-growth)。",
+        "- Rivian 相关信息为融资、预披露/运营数据和市场反应，不是完整正式财报；其 Q2 正式财报日期报道为 8 月 4 日，因此跳过。参考：[IBD](https://www.investors.com/news/rivian-stock-electric-vehicles-public-offering-goldman-sachs-jp-morgan-stanley/)。",
+        "- A股、港股：面向公告/交易所/公开网页的检索未找到本窗口内同时满足“披露时间可核验 + 核心财报数据 + 电话会/管理层表述/市场反应之一”的高置信度候选。",
         "",
-        "- **跳过单家公司**：无法确认披露时间、缺少核心财报数据、或资料来源不可靠",
-        "- **跳过单个市场**：当日未检索到足够高置信度的财报结果",
-        "- **本次运行仍算成功**：即使只写入少量高质量记录，或三个市场中只有一个市场有结果",
-        "- **仅在以下情况下判定为失败**：",
-        "    - 无法访问目标数据库",
-        "    - 完全无法执行基础检索",
-        "    - 页面写入权限异常导致无法保存任何结果",
+        "Notion 校验结果：",
+        "- 已成功读取三个目标库 schema：美股、A股、港股财报记录库均可访问。",
+        "- 因本次没有合格候选，未执行写入，因此没有新页面需要回读校验。",
+        "- 后续只读抽查当日记录时 Notion 查询接口触发 429 限流；不影响本次“不写入”的结论。",
+        "tokens used",
+        "124,611",
+        "本次运行窗口：**2026-07-06 23:00 ~ 2026-07-07 23:00（北京时间）**。",
         "",
-        "## 🧾 写作要求",
+        "结论：**本次无候选可写入，未创建 Notion 记录。**",
         "",
-        "- 优先简洁、结构化、可回溯",
-        "- 财报数据以公司官方披露为准",
-        "- 电话会议和市场反应以公开报道为准",
-        "- 若存在信息冲突，采用更高等级来源，并在表述中保持保守",
-        "- 宁可少写，不要错写；宁可跳过，不要臆造。",
-        "- 写入 Notion 前，必须按标题、股票代码、财报日期查询目标库，避免重复创建同一家公司同一财报日记录；写入后，必须读取或重新查询刚创建的页面，确认页面属性和正文已落库；最终输出需明确写出校验结果。若本次无候选可写入，必须明确说明无候选原因。",
-        "- 本任务只允许检索财报信息并写入 Notion database。不要修改本地文件、脚本、prompt、crontab 或任何自动化配置。",
+        "原因如下：",
+        "- 美股：公开财报日历显示 7 月 6 日无重要财报，7 月 7 日盘前无重要财报；EPAC、PENG 属于 7 月 7 日美股盘后，换算为北京时间 7 月 8 日凌晨，超出本窗口。参考：[Kiplinger earnings calendar](https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks)。",
+        "- 美股正式 Q2 财报季公开报道指向 7 月 14 日 JPMorgan 开始，当前窗口仍处于正式财报季前。参考：[Axios](https://www.axios.com/2026/07/07/earnings-q2-stocks-growth)。",
+        "- Rivian 相关信息为融资、预披露/运营数据和市场反应，不是完整正式财报；其 Q2 正式财报日期报道为 8 月 4 日，因此跳过。参考：[IBD](https://www.investors.com/news/rivian-stock-electric-vehicles-public-offering-goldman-sachs-jp-morgan-stanley/)。",
+        "- A股、港股：面向公告/交易所/公开网页的检索未找到本窗口内同时满足“披露时间可核验 + 核心财报数据 + 电话会/管理层表述/市场反应之一”的高置信度候选。",
         "",
-        "warning: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.",
-        "warning: Skill descriptions were shortened to fit the 2% skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest.",
-        "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "ERROR: You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Jun 28th, 2026 4:10 AM.",
-        "===== 2026-06-27 23:50:10 earnings-search retry ====="
+        "Notion 校验结果：",
+        "- 已成功读取三个目标库 schema：美股、A股、港股财报记录库均可访问。",
+        "- 因本次没有合格候选，未执行写入，因此没有新页面需要回读校验。",
+        "- 后续只读抽查当日记录时 Notion 查询接口触发 429 限流；不影响本次“不写入”的结论。",
+        "===== 2026-07-07 23:08:50 earnings-search validation start =====",
+        "validation passed: create_count=0 notion_read_count=4 notion_write_or_update_count=0 google_drive_read_count=0 google_drive_write_or_update_count=0",
+        "===== 2026-07-07 23:08:51 earnings-search done ====="
       ]
     },
     {
@@ -82,8 +87,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-07-07.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/earnings-vertical-compare-2026-07-08.done",
+      "done_today": false,
       "duration_seconds": 384,
       "hard_error": false,
       "job": "earnings-vertical-compare",
@@ -109,7 +114,7 @@
         "raw": "0 12 * * 2-6 /root/codex-automations/run.sh earnings-vertical-compare"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "无候选公司。",
         "",
@@ -150,8 +155,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/financial-news-2026-07-07.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/financial-news-2026-07-08.done",
+      "done_today": false,
       "duration_seconds": 559,
       "hard_error": false,
       "job": "financial-news",
@@ -183,7 +188,7 @@
         "raw": "0 19 * * * /root/codex-automations/run.sh financial-news"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "codex",
         "已完成采集并写入 Notion，时间窗口为 `2026-07-06 18:00` 至 `2026-07-07 18:00`（Asia/Shanghai）。",
@@ -224,8 +229,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-rotation-2026-07-07.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/sector-rotation-2026-07-08.done",
+      "done_today": false,
       "duration_seconds": 183,
       "hard_error": false,
       "job": "sector-rotation",
@@ -258,7 +263,7 @@
         "raw": "30 10 * * 2-6 /root/codex-automations/run.sh sector-rotation"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "|---|---|---|",
         "| 美股 | 已存在 `2026-07-07 美股板块分析` | 属性和正文已读取确认 |",
@@ -299,7 +304,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-07-07.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-data-2026-07-08.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -368,7 +373,7 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-07-07.done",
+      "done_marker": "/root/codex-automations/state/sector-trend-us-close-review-2026-07-08.done",
       "done_today": false,
       "duration_seconds": null,
       "hard_error": true,
@@ -434,8 +439,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-07-07.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-07-08.done",
+      "done_today": false,
       "duration_seconds": 1658,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
@@ -470,7 +475,7 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "美股候选池摘要：`index_pool_count≈523`，`eligible_after_market_cap=100+`，`excluded_by_prior_research_count=80+`，最终选择 `ABT`。前 5 个跳过 ticker：`GOOGL`、`NVDA`、`MSFT`、`AAPL`、`AMZN`，原因均为已在美股基本面库研究过；另跳过 `HON`，原因是拆分后当前市值口径不满足 1000 亿美元门槛。",
@@ -511,8 +516,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-07-07.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/us-sector-opportunity-2026-07-08.done",
+      "done_today": false,
       "duration_seconds": 270,
       "hard_error": true,
       "job": "us-sector-opportunity",
@@ -538,7 +543,7 @@
         "raw": "0 13 * * 2-6 /root/codex-automations/run.sh us-sector-opportunity"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "- 写入前已在目标库查询 `2026-07-07`，未发现同名页面，因此新建",
         "- 写入后已重新读取刚创建页面，确认：",
@@ -579,8 +584,8 @@
         "window_minutes": 180
       },
       "config_warning": false,
-      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-07-07.done",
-      "done_today": true,
+      "done_marker": "/root/codex-automations/state/worldcup-over25-daily-2026-07-08.done",
+      "done_today": false,
       "duration_seconds": null,
       "hard_error": false,
       "job": "worldcup-over25-daily",
@@ -606,7 +611,7 @@
         "raw": "0 15 * * * /root/codex-automations/run.sh worldcup-over25-daily"
       },
       "skipped_count": 0,
-      "status": "passed",
+      "status": "idle",
       "tail": [
         "",
         "- `today_match_count=2`",
@@ -641,6 +646,6 @@
       ]
     }
   ],
-  "now": "2026-07-07T20:05:01.771673",
+  "now": "2026-07-08T00:05:02.075896",
   "snapshot_source": "local-cron"
 }
