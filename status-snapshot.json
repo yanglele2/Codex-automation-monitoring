@@ -441,30 +441,17 @@
       "config_warning": false,
       "done_marker": "/root/codex-automations/state/stock-crypto-fundamentals-2026-07-08.done",
       "done_today": false,
-      "duration_seconds": 1658,
+      "duration_seconds": null,
       "hard_error": false,
       "job": "stock-crypto-fundamentals",
       "label": "个股/币种基本面",
       "last_done": "2026-07-07T08:27:39",
-      "last_start": "2026-07-07T08:00:01",
-      "last_validation": {
-        "detail": "create_count=4 notion_read_count=21 notion_write_or_update_count=4 google_drive_read_count=0 google_drive_write_or_update_count=0",
-        "status": "passed",
-        "time": null
-      },
+      "last_start": "2026-07-08T08:00:01",
+      "last_validation": null,
       "log_exists": true,
       "log_path": "/root/codex-automations/logs/stock-crypto-fundamentals.log",
-      "next_run": "2026-07-08T08:00:00",
-      "notion_pages": [
-        "https://www.notion.so/49beb263be324b71a7617ad2341bd67e?pvs=21",
-        "https://www.notion.so/4cb53905b23b4c9ab1f90cebaa3e0cd1?pvs=21",
-        "https://www.notion.so/83f5b3d0d63a4f39adfe57bbff2c0fb3?pvs=21",
-        "https://www.notion.so/Skill-9053a341495045d98780a35de08fc98f?pvs=21",
-        "https://www.notion.so/a8ec91318611460ab99a6c9de9809b67?pvs=21",
-        "https://www.notion.so/promptnest/319040fc8033804bba00c7ca67076ebc?v=319040fc803381998978000ca6a720e1&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc80338055b729dfcf95f490cd?v=319040fc803381af8f70000c21abda43&source=copy_link",
-        "https://www.notion.so/promptnest/319040fc803380b9bb03ff273554e080?v=319040fc803381df9274000ce73b786a&source=copy_link"
-      ],
+      "next_run": "2026-07-09T08:00:00",
+      "notion_pages": [],
       "prompt_exists": true,
       "retry_count": 18,
       "schedule": {
@@ -475,38 +462,10 @@
         "raw": "0 8 * * 2-6 /root/codex-automations/run.sh stock-crypto-fundamentals"
       },
       "skipped_count": 0,
-      "status": "idle",
+      "status": "running",
       "tail": [
-        "",
-        "美股候选池摘要：`index_pool_count≈523`，`eligible_after_market_cap=100+`，`excluded_by_prior_research_count=80+`，最终选择 `ABT`。前 5 个跳过 ticker：`GOOGL`、`NVDA`、`MSFT`、`AAPL`、`AMZN`，原因均为已在美股基本面库研究过；另跳过 `HON`，原因是拆分后当前市值口径不满足 1000 亿美元门槛。",
-        "",
-        "说明：当前工具环境未暴露 `crypto-price` worker；加密价格改用 Binance 实时报价，并用 CoinGecko、CoinMarketCap、DefiLlama、Circle 做交叉验证。Notion 后段查询遇到 429 时，已改用目标数据库 scoped search 做同日重复检查。未修改任何本地文件、脚本或自动化配置。",
-        "tokens used",
-        "802,026",
-        "已完成 2026-07-07 的 4 份报告写入，并逐页回读校验了属性和正文。",
-        "",
-        "- 美股：ABT - Abbott Laboratories  ",
-        "  https://app.notion.com/p/396040fc803381f8876ec7f5acfc9db1  ",
-        "  校验：市值 1664 亿美元，评级 推荐，行业 医疗，正文已落库。",
-        "",
-        "- 港股：9992 - 泡泡玛特  ",
-        "  https://app.notion.com/p/396040fc8033813ab607f7d683ffed27  ",
-        "  校验：市值 2033.5 亿港币，评级 推荐，行业 消费，正文已落库。",
-        "",
-        "- A股：300760 - 迈瑞医疗  ",
-        "  https://app.notion.com/p/396040fc803381f3bd31c52bdd48738a  ",
-        "  校验：市值 1687.7 亿人民币，评级 中性，行业 医疗，正文已落库。",
-        "",
-        "- 加密货币：USDC - USD Coin  ",
-        "  https://app.notion.com/p/396040fc803381caa151ee0a593b221b  ",
-        "  校验：市值 731.3 亿美元，评级 推荐，赛道 稳定币，正文已落库。",
-        "",
-        "美股候选池摘要：`index_pool_count≈523`，`eligible_after_market_cap=100+`，`excluded_by_prior_research_count=80+`，最终选择 `ABT`。前 5 个跳过 ticker：`GOOGL`、`NVDA`、`MSFT`、`AAPL`、`AMZN`，原因均为已在美股基本面库研究过；另跳过 `HON`，原因是拆分后当前市值口径不满足 1000 亿美元门槛。",
-        "",
-        "说明：当前工具环境未暴露 `crypto-price` worker；加密价格改用 Binance 实时报价，并用 CoinGecko、CoinMarketCap、DefiLlama、Circle 做交叉验证。Notion 后段查询遇到 429 时，已改用目标数据库 scoped search 做同日重复检查。未修改任何本地文件、脚本或自动化配置。",
-        "===== 2026-07-07 08:27:39 stock-crypto-fundamentals validation start =====",
-        "validation passed: create_count=4 notion_read_count=21 notion_write_or_update_count=4 google_drive_read_count=0 google_drive_write_or_update_count=0",
-        "===== 2026-07-07 08:27:39 stock-crypto-fundamentals done ====="
+        "===== 2026-07-08 08:00:01 stock-crypto-fundamentals start =====",
+        "===== 2026-07-08 08:00:01 stock-crypto-fundamentals missed check triggered ====="
       ]
     },
     {
@@ -646,6 +605,6 @@
       ]
     }
   ],
-  "now": "2026-07-08T04:05:01.750935",
+  "now": "2026-07-08T08:05:01.302697",
   "snapshot_source": "local-cron"
 }
